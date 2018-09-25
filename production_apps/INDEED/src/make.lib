@@ -1,0 +1,58 @@
+default all:: $(ARNAME)
+
+$(ARNAME): $(AROBJS)
+	@echo \'$(ARNAME)\' is now up-to-date
+
+.SUFFIXES: .c .f
+
+.c.o:
+	$(CC) $(CFLAGS) -D$(MACHIN) $(DEFINE) $(MPATH) -c ./$<
+	$(AR) $(ARFLAGS) $(ARNAME) $*.o
+	rm -f $*.o
+
+.f.a:
+	rm -f filter_$<
+	$(FILTER) $< filter_$<
+	@if $(HASSPEC) ; then \
+	   rm -f _tmpspec_ ; \
+	   for i in $(SPECSRC); do \
+	      if [ $$i = $< ] ; then \
+	         touch _tmpspec_; \
+	      fi; \
+	   done; \
+	   if (test -e _tmpspec_); then \
+	      rm -f _tmpspec_ ; \
+	      echo '$(FC) $(FFLAGSPEC) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$<' ; \
+	      $(FC) $(FFLAGSPEC) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$< ; \
+	   else \
+	      echo '$(FC) $(FFLAGS) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$<' ; \
+	      $(FC) $(FFLAGS) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$< ; \
+	   fi; \
+	else \
+	   echo '$(FC) $(FFLAGS) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$<' ; \
+	   $(FC) $(FFLAGS) $(DEFINE) $(MPATH) $(IFORMAT) -c ./filter_$< ; \
+	fi
+	mv filter_$*.o $*.o
+	$(AR) $(ARFLAGS) $(ARNAME) $*.o
+	rm -f $*.o
+	rm -f filter_$<
+
+.F.a:
+	$(FC) $(FFLAGS) $(DEFINE) $(MPATH) $(IFORMAT) -c ./$<
+	@if $(HASSPEC) ; then \
+	   for i in $(SPECSRC); do \
+	      if [ $$i = $< ] ; then \
+	         echo $(SPECSRC) ; \
+	         echo '$(FC) $(FFLAGSPEC)  -c ./$<' ; \
+	         $(FC) $(FFLAGSPEC) $(DEFINE) $(MPATH) $(IFORMAT) -c ./$< ; \
+	      fi; \
+	   done; \
+	fi
+	$(AR) $(ARFLAGS) $(ARNAME) $*.o
+	rm -f $*.o
+
+clean::
+	rm -rf *.o
+	rm -rf *.mod
+	rm -rf filter_*.f
+	rm -rf $(ARNAME)

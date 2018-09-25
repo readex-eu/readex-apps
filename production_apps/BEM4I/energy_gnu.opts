@@ -1,0 +1,27 @@
+{
+    "assemble_k": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "24",
+        "UNCORE_FREQUENCY": "14"
+    },
+    "assemble_v": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "24",
+        "UNCORE_FREQUENCY": "14"
+    },
+    "gmres_solve": {
+        "FREQUENCY": "13",
+        "NUM_THREADS": "16",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "main_phase": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "24",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "print_vtu": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "4",
+        "UNCORE_FREQUENCY": "22"
+    }
+}

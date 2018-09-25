@@ -1,0 +1,162 @@
+$-----------------------------
+$     INDEED CALCULATION
+$
+$    Created by OpenForm v2.1dev44702
+$      for Indeed v9.2.x
+$
+$ Process Name: Benchmark1
+$ Process Type: Deep Drawing
+$-----------------------------
+TITEL
+Normal User Input
+------------------------------
+ART DER BERECHNUNG
+ANALYSE
+NEUSTART
+MIT KONTAKT,,,
+MIT PROJEZIERTEN LINIEN
+ELEMENTGROESSEN IN-CORE
+------------------------------
+MATERIALBIBLIOTHEK,1,
+1,Steel,
+------------------------------
+POSTDATEN,2,0,0
+SKALAR,2
+DDICK
+HAUEPS,S3
+XYPLOT,1,
+ALLE,
+------------------------------
+RESTARTDATEN,2,
+------------------------------------------------------------
+------------------------------------------------------------
+$-----------------------------
+$ Type: User Defined
+$-----------------------------
+BLOCKNAME OP20: Block 1,1000,
+------------------------------
+GLEICHUNGSLOESER
+CHOLESKY,1
+KOMPAKT,2
+KONDITIONSZAHL,
+OHNE ITERATIVES VERFAHREN,,
+------------------------------
+STEUERUNG
+1,100,,1
+KRAFT
+RELATIV
+0.05,
+NEWTON
+MIT LINE-SEARCH
+3,6,,,,,,,
+------------------------------
+ZEITSCHRITT,0.1,1,0,,
+0.001,1,1E+06,1.5,,,,,10,
+------------------------------
+WERKZEUGSTEUERUNG
+ENTLASTUNG/POSITIONIERUNG,0,
+INITIALBEWEGUNG,2,
+BLECHHALTER
+0,0,-1,0,
+MATRIZE
+0,0,1,0,
+GESCHWINDIGKEITEN/LASTEN,,2,
+BLECHHALTER
+4,0,0,-700000,0,
+MATRIZE
+0,0,0,0,0,
+------------------------------
+KONTAKT
+KONTROLLE,1,
+2,20,,,,,
+LOESEN,1
+0.1,,,
+FESSELN,1,0,0,
+0.25,,,0,
+------------------------------
+RANDBEDINGUNGEN,2,0
+$ Boundary Condition
+PLATINE
+249.124,10.1308,0
+R,R,*,
+,,,
+$ Boundary Condition
+PLATINE
+-300.876,10.1308,0
+*,R,*,
+,,,
+------------------------------
+POSTINKREMENT,1,,0.00,10,10,1.00,
+------------------------------
+RESTARTINKREMENT,10,0,0,,,1,
+------------------------------------------------------------
+------------------------------------------------------------
+$-----------------------------
+$ Type: User Defined
+$-----------------------------
+BLOCKNAME OP20: Block 2,1000,
+------------------------------
+GLEICHUNGSLOESER
+CHOLESKY,1
+KOMPAKT,2
+KONDITIONSZAHL,
+OHNE ITERATIVES VERFAHREN,,
+------------------------------
+STEUERUNG
+1,100,,0
+KRAFT
+RELATIV
+0.05,
+NEWTON
+MIT LINE-SEARCH
+3,6,,,,,,,
+------------------------------
+ZEITSCHRITT,0.2,1,0,,
+0.001,0.5,1E+06,1.5,,,,,10,
+------------------------------
+WERKZEUGSTEUERUNG
+ENTLASTUNG/POSITIONIERUNG,0,
+INITIALBEWEGUNG,1,
+STEMPEL
+0,0,-1,0,
+GESCHWINDIGKEITEN/LASTEN,,3,
+BLECHHALTER
+1,0,0,0,0,
+MATRIZE
+0,0,0,0,0,
+STEMPEL
+3,0,0,-1,0,
+------------------------------
+PROJEZIERTE LINIEN,1,1,
+LEISTE_1
+ABSPERREN,
+------------------------------
+KONTAKT
+KONTROLLE,1,
+2,20,,,,,
+LOESEN,1
+0.1,,,
+FESSELN,1,0,0,
+0.25,,,0,
+------------------------------
+REIBUNG,3,1,,
+BLECHHALTER
+0.12,0.05,0,
+MATRIZE
+0.12,0.05,0,
+STEMPEL
+0.12,0.05,0,
+$------------------------------
+$ REZONING,2,1000,0.5,,1,,,
+$ PLATINE
+$ 1,15,3,
+$ PLATINE
+$ 4,0,3,
+------------------------------
+RANDBEDINGUNGEN,-1,0
+------------------------------
+POSTINKREMENT,1,,0.00,10,10,1.00,
+------------------------------
+RESTARTINKREMENT,20,0,0,,,1,
+------------------------------------------------------------
+------------------------------------------------------------

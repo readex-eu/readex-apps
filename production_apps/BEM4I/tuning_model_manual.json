@@ -1,0 +1,277 @@
+{
+    "iids": [
+        {
+            "id": 38753808,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 37299024,
+            "file": "testHelmholtzDirichlet.h",
+            "line": 243,
+            "name": "print_vtu"
+        },
+        {
+            "id": 37340528,
+            "file": "testHelmholtzDirichlet.h",
+            "line": 148,
+            "name": "assemble_k"
+        },
+        {
+            "id": 37325568,
+            "file": "testHelmholtzDirichlet.h",
+            "line": 57,
+            "name": "main_phase"
+        },
+        {
+            "id": 37321360,
+            "file": "testHelmholtzDirichlet.h",
+            "line": 134,
+            "name": "assemble_v"
+        },
+        {
+            "id": 37346624,
+            "file": "testHelmholtzDirichlet.h",
+            "line": 226,
+            "name": "gmres_solve"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 37299024,
+            "scenario": 37914352,
+            "exectime": 3.11799,
+            "iid": 38753808,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 57,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 86,
+                        "name": "helmholtz_dirichlet"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 243,
+                        "name": "print_vtu"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37340528,
+            "scenario": 37341504,
+            "exectime": 24.6501,
+            "iid": 38753808,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 57,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 86,
+                        "name": "helmholtz_dirichlet"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 148,
+                        "name": "assemble_k"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37321360,
+            "scenario": 37341504,
+            "exectime": 24.5293,
+            "iid": 38753808,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 57,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 86,
+                        "name": "helmholtz_dirichlet"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 134,
+                        "name": "assemble_v"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37325568,
+            "scenario": 37341504,
+            "exectime": 0.0,
+            "iid": 38753808,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 57,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37346624,
+            "scenario": 37298832,
+            "exectime": 12.8042,
+            "iid": 38753808,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 57,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 86,
+                        "name": "helmholtz_dirichlet"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "testHelmholtzDirichlet.h",
+                        "line": 226,
+                        "name": "gmres_solve"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 37341504,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 24,
+                    "value": 24
+                }
+            ]
+        },
+        {
+            "id": 37298832,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1300000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 24,
+                    "value": 16
+                }
+            ]
+        },
+        {
+            "id": 37914352,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 24,
+                    "value": 4
+                }
+            ]
+        }
+    ]
+}

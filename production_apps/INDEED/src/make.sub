@@ -1,0 +1,49 @@
+#################################################################### 
+# Titel	: Kompilieren von Unterverzeichnissen
+#
+# Autor	: Matthias Pietsch
+#
+#	  Vor dem Betreten des SubDirs pruefen, ob "CompSubDir"
+#	  existiert und ggf. aufrufen. Ist der "Rueckgabewert"
+#	  ungleich 0, wird das Verzeichnis nicht compiliert.
+#################################################################### 
+
+default all::
+	@if [ -f ./[Nn][Oo][Ss][Uu][Bb][Dd][Ii][Rr]* ] ; then \
+	    echo "skipping subdirs down here ..."; \
+	else \
+	    for i in $(SUBDIRS) ; do \
+		if [ -x ./CompSubDir ] ; then \
+		    dothedir="`./CompSubDir $$i $(CFLAGS)`" ; \
+		else \
+		    dothedir=0; \
+		fi; \
+		if [ "$$dothedir" = "0" ] ; then \
+		    echo "making $@ in $$i with $(MAKE)..." ; \
+		    ( cd $$i; $(MAKE) $@ ; ) \
+		else \
+		    echo "skipping $$i" ; \
+		fi; \
+	    done; \
+	fi; \
+	exit 0
+
+clean::
+	@if [ -f ./[Nn][Oo][Ss][Uu][Bb][Dd][Ii][Rr]* ] ; then \
+	    echo "skipping subdirs down here ..."; \
+	else \
+	    for i in $(SUBDIRS) ; do \
+		if [ -x ./CompSubDir ] ; then \
+		    dothedir="`./CompSubDir $$i $(CFLAGS)`" ; \
+		else \
+		    dothedir=0; \
+		fi; \
+		if [ "$$dothedir" = "0" ] ; then \
+		    echo "making $@ in $$i with $(MAKE)..." ; \
+		    ( cd $$i; $(MAKE) $@ ; ) \
+		else \
+		    echo "skipping $$i" ; \
+		fi; \
+	    done; \
+	fi; \
+	exit 0

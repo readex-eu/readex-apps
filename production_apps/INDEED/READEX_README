@@ -1,0 +1,40 @@
+This directory contains parts of the files required to
+build and run the Indeed code for READEX.
+It does not contain the Indeed source code itself. 
+This code can be found on Taurus at $PROJECT/Indeed_for_readex/src.
+In order to start working with Indeed, it is necessary to merge 
+that directory with this current one.
+
+The "readex_env" subdirectory is a symbolic link to the
+"env/intelmpi2017.2.174_intel2017.2.174" subdirectory of
+the global READEX apps directory.
+
+In the main directory, the user can find the "compile_for_*.sh"
+scripts that are required to build the various versions of Indeed.
+They can be simply passed to sbatch.
+
+The "testdata" directory contains thre typical data sets that 
+can be used for testing. The datasets are of different sizes: 
+* small ("H1N")
+* medium ("B1")
+* large ("SBC")
+
+The "scripts" subdirectory contains the scripts that are required
+to run Indeed. For each test case (plain, saf, rdd, etc.) there is
+a script called "run_*.sh" which sets some environment variables
+and then submits the associated "submit_*.sbatch" script to SLURM
+via sbatch, thus initiating the Indeed test tun. The "run_*.sh"
+script should be called from the shell with the command 
+    run_XXX.sh exampleID name@email.address
+where exampleID may be either H1N, B1 or SBC. This parameter defines
+which of the example datasets will be used. The second parameter is
+an email address. It is optional and may thus be omitted. If it is
+given then SLURM will send an email notification of the job start
+and end to this address; if it is not given then no such email will
+be sent. The process is organized in such a way that the input deck
+for Indeed is copied to the scratch file system, and the job is then 
+run there. After completion, the entire file collection (input and 
+output decks, including the READEX results) is copied back to the
+"testdata" directory where it is placed in a subdirectory named
+"Job_NNN" with "NNN" being the SLURM job id.
+
