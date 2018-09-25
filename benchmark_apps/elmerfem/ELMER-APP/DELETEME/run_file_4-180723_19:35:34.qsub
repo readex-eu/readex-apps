@@ -1,0 +1,29 @@
+#!/bin/bash
+source /scratch/work/user/lriha/elmer//env.sh
+syslist="50 51 52 53 54 55 56 43 14 1 2 3 4 5 6 7 8 9 10 11 12 13 16 17 18 19 20 21 22 23 24 25 26 30 31 32 33 40 41 42"
+for s in $syslist
+do
+cd /scratch/work/user/lriha/elmer/bench/readex-appparam-1
+mkdir tmp_4_${s}
+cd tmp_4_${s}
+cp -r ../*.sif .
+ln -s ../winkel .
+cp -r ../ELMERSOLVER_STARTINFO .
+cp -r ../linsys/*.xml .
+cp -r ../linsys/linsys${s}.sif linsys.sif
+cp -r ../linsys/espreso${s}.ecf espreso.ecf
+wait
+/scratch/work/user/lriha/elmer//staticMERICtool/multiNodeStaticMeasureStart.sh --rapl
+
+I_MPI_JOB_TIMEOUT=6000 mpirun -n 4 ElmerSolver_mpi
+
+# > >(tee -a LOG-el_es-4-180723_19:35:34.log_linsys${s}) 2> >(tee -a LOG-el_es-4-180723_19:35:34.err_linsys${s}) 
+#echo -e linsys'\t'${s}'\t'ranks'\t'4'\t'nodes'\t'1 | tr "\n" "\t" | tee -a /scratch/work/user/lriha/elmer/bench/readex-appparam-1/LOG-el_es-4-180723_19:35:34_energy.log
+
+/scratch/work/user/lriha/elmer//staticMERICtool/multiNodeStaticMeasureStop.sh --rapl
+#| tee -a /scratch/work/user/lriha/elmer/bench/readex-appparam-1/LOG-el_es-4-180723_19:35:34_energy.log
+#echo | tee -a /scratch/work/user/lriha/elmer/bench/readex-appparam-1/LOG-el_es-4-180723_19:35:34_energy.log
+wait
+cd ..
+done
+

@@ -1,0 +1,2 @@
+bt-mz_meric_opt 1 2 2 12 ./bin/bt-mz.C.2_plain ./bin/bt-mz.C.2_meric ./energy.opts  
+bt-mz_meric_opt_tm_ptf 1 2 2 12 ./bin/bt-mz.C.2_plain ./bin/bt-mz.C.2_meric ./energy_ptf.opts 

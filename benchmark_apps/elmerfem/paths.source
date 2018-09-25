@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+#SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+export ELMER_ROOT=$(pwd)/..
+export ELMER_HOME="${ELMER_ROOT}/install"
+#export MERIC_ROOT="${ELMER_ROOT}/../../meric/"
+
+echo "ELMER_ROOT: ${ELMER_ROOT}"
+echo "ELMER_HOME: ${ELMER_HOME}"
+
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${ELMER_HOME}/lib/elmersolver:${ELMER_HOME}/share/elmersolver/lib:${ELMER_ROOT}:${ELMER_HOME}/print-regions"
+export PATH="${PATH}:${ELMER_HOME}/bin"

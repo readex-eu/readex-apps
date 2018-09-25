@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$READEX_GNU" == "1" ]; then
+  module load mkl/2018.1.163
+fi
+
+#module load imkl/2018.1.163-iimpi-2018a

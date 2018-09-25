@@ -1,0 +1,17 @@
+
+#..............................................................................
+# Set MPI compilers. BLASBENCH is compiled by a compiler specified in CXX.
+# CXX compiler has to use Intel C++ compiler.
+
+CXX = mpic++
+CC  = mpicc
+
+#..............................................................................
+# Set global compiler attributes
+
+CXXFLAGS  = -Wall -Wextra -fopenmp -std=c++11 -mavx2 -O3
+LINKFLAGS = -Wall -Wextra -fopenmp
+INCLUDES  = -I/projects/p_readex/it4i/mericGCC/include  -I/sw/global/compilers/intel/2017/compilers_and_libraries_2017/linux/mkl/include/
+LIBPATH   = -L/projects/p_readex/it4i/mericGCC/lib/ -L/sw/global/compilers/intel/2017/compilers_and_libraries_2017/linux/mkl/lib/intel64
+LIBS      = -lmericmpi -lhdeem -lrt -lpapi -lcpufreq -lx86_adapt -lgomp -lmpi -lmkl_intel_lp64 -lmkl_core -lmkl_gnu_thread -lfreeipmi 
+

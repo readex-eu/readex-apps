@@ -1,0 +1,104 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 39699296,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 39696048,
+            "file": "integrate.cpp",
+            "line": 98,
+            "name": "INTEGRATE_RUN_LOOP"
+        },
+        {
+            "id": 39669120,
+            "file": "force_lj.cpp",
+            "line": 180,
+            "name": "FORCELJ_COMP_HALF"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 39696048,
+            "scenario": 39685184,
+            "exectime": 0.069082,
+            "iid": 39699296,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "integrate.cpp",
+                        "line": 98,
+                        "name": "INTEGRATE_RUN_LOOP"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 39669120,
+            "scenario": 39685184,
+            "exectime": 0.0553491,
+            "iid": 39699296,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "integrate.cpp",
+                        "line": 98,
+                        "name": "INTEGRATE_RUN_LOOP"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "force_lj.cpp",
+                        "line": 180,
+                        "name": "FORCELJ_COMP_HALF"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 39685184,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 30,
+                    "step": 30,
+                    "end": 30,
+                    "value": 30
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 2400000,
+                    "step": 2400000,
+                    "end": 2400000,
+                    "value": 2400000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 24,
+                    "step": 24,
+                    "end": 24,
+                    "value": 24
+                }
+            ]
+        }
+    ]
+}

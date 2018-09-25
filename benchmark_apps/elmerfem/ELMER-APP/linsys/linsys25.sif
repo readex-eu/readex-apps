@@ -1,0 +1,16 @@
+  $IterMethod = 25  
+! linsys(25)={'Trilinos: CG + ML(SGS)'}
+
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Use Trilinos = Logical True
+  Trilinos Parameter File = file ml.xml
+
+  Linear System Max Iterations = 1000
+  Linear System Convergence Tolerance = 1.0e-8
+  Linear System Abort Not Converged = True
+  Linear System Residual Output = 20
+  Linear System Preconditioning = none
+
+  Linear System Symmetric = Logical True
+

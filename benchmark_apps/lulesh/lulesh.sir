@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lrr.in.tum.de/Periscope" xsi:schemaLocation="http://www.lrr.in.tum.de/Periscope psc_properties.xsd" language="C">
+<!-- ./prep/lulesh.sir -->
+  <unit type="program" name="int main(int, char **) C" id="1-2698"> 
+    <position startLine="2698" endLine="2823">
+      <file name="./prep/lulesh.c"/>
+    </position>
+    <codeRegion type="userRegion" name="" id="1-2700">
+      <position startLine="2700" endLine="2824">
+        <file name="./prep/lulesh.c"/>
+      </position>
+    </codeRegion>
+  </unit>
+</sir>
+

@@ -1,0 +1,17 @@
+  $IterMethod = 54  
+! linsys(1)={'ESPRESO FETI'}
+
+  Linear System Solver = Direct
+  Linear System Direct Method = permon
+
+  Linear System Iterative Method = CG
+  Linear System Max Iterations = 1000
+  Linear System Convergence Tolerance = 1.0e-5
+  Linear System Preconditioning = ILU0
+  Linear System ILUT Tolerance = 1.0e-3
+  Linear System Abort Not Converged = True
+  Linear System Residual Output = 20
+  Linear System Precondition Recompute = 1
+
+
+

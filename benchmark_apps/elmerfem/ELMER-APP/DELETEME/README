@@ -1,0 +1,75 @@
+Elmer Winkel - parallel benchmark to compare Elmer solvers and ESPRESO FETI solver for Linear Elasticity
+--------------------------------------------------------------------------------------------------------
+
+The main focus of this test is the WEAK scalability tests 
+
+
+1.) Generate grid for different decompositions 
+
+	./elmer-solvers.sh gen-weak 		<---- generates grids for weak scalability evaluation
+
+	Note 1: the meshes are in "./winkel" directory  
+	
+	Note 2: Line 36 of the script elmer-solvers.sh defines number of partitions (default is 32, 108, 256 and 500)
+
+	Note 3: Mesh multiplication is used in case2.sif file - see line 18
+
+	-----------------------------------------------------------------------------------------
+
+	./elmer-solvers.sh gen-strong		<---- generates grids for strong scalability evaluation
+
+	Note 1: Line 66 of the script elmer-solvers.sh defines number of partitions (default is 32, 108, 256 and 500)
+	
+	Note 2: only one data set can ge generated at a time - strong and weak scalability test share the "./winkel" directory
+
+2.) Run the tests 
+
+	./elmer-solvers.sh run el 		<---- run a benchmark using set of Elmer solvers
+
+	Note 1: Elmer is loaded using modules
+	- module switch PrgEnv-cray/5.2.82 PrgEnv-gnu/5.2.56
+	- module load elmer/latest
+	
+	Note 2: solvers in the "./linsys" directory  
+	- default is 60 and 61 
+		- 60 - BiCGStab with Boomer AMG prec 
+		- 61 - boomer AMG
+
+	Note 3: line 115 of the script elmer-solvers.sh lists the Elmer solver to be tested 
+
+	-----------------------------------------------------------------------------------------
+	
+	./elmer-solvers.sh run 			<---- run benchmark using ESPRESO a various decomposition are used to find the best configuration 
+
+	Note 1: Elmer with ESPRESO interface is loaded from home directory 
+	- source modules.sh
+	- the results are precomputed for the benchmark in the .dat file 
+
+	Note 2: ESPRESO linsys setings are linsys50.sif
+
+	----------------------------------------------------------------------------------------
+	
+
+3.) Watch the progress of the Elmer runtime using the slurm log files  
+
+	./elmer-solvers.sh wslurm
+
+
+4.) Watch the results 
+
+	./elmer-solvers.sh wres 
+
+
+5.) Clean the data 
+	
+	./elmer-solvers.sh clean 
+
+	Note: removes all logs and temp direcory - keeps results in the .dat files
+
+	---------------------------------------------------------------------------------------
+
+	./elmer-solvers.sh cleanall
+	
+	Note: removes all generated data including meshes in ./winkel directory 
+
+	---------------------------------------------------------------------------------------

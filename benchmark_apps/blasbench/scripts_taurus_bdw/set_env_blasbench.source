@@ -1,0 +1,4 @@
+#!/bin/sh
+
+source /projects/p_readex/it4i/mkl_2018_3/mkl/bin/mklvars.sh intel64 
+

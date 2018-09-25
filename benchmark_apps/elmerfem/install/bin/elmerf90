@@ -1,0 +1,28 @@
+#!/bin/sh -f
+
+if test "$ELMER_LIB" = ""; then
+  if  test "$ELMER_HOME" = ""; then
+     LIBDIR=/home/bes0030/readex-apps/readex-repository/benchmark_apps/elmerfem/install/share/elmersolver/../../lib/elmersolver
+     INCLUDE=/home/bes0030/readex-apps/readex-repository/benchmark_apps/elmerfem/install/share/elmersolver/include
+  else
+     LIBDIR=$ELMER_HOME/lib/elmersolver
+     INCLUDE=$ELMER_HOME/share/elmersolver/include
+  fi
+else
+  LIBDIR=$ELMER_LIB
+  INCLUDE=$ELMER_LIB/../include
+fi
+
+if test "$ELMER_Fortran_COMPILER" = ""; then
+  FC=/scratch/work/user/lriha/readex-toolsuite-gcc-test/scorep/ci_TRY_READEX_online_access_call_tree_extensions_GCC7.1.0/bin/scorep
+else
+  FC=$ELMER_Fortran_COMPILER
+fi
+
+cmd="$FC $*  -DUSE_SCOREP  -DCONTIG=,CONTIGUOUS -DHAVE_EXECUTECOMMANDLINE -DUSE_ISO_C_BINDINGS -DUSE_ARPACK -O2 -g -DNDEBUG -fPIC -shared -I$INCLUDE -L$LIBDIR -shared -lelmersolver"
+printf "%s " $cmd
+printf "\n"
+$FC $*  -DUSE_SCOREP  -DCONTIG=,CONTIGUOUS -DHAVE_EXECUTECOMMANDLINE -DUSE_ISO_C_BINDINGS -DUSE_ARPACK -O2 -g -DNDEBUG -fPIC -shared -I$INCLUDE -L$LIBDIR -shared -lelmersolver
+# $FC  -DUSE_SCOREP  $*
+#$FC   $INCLUDE    $*
+#$FC  $INCLUDE    $* -L$LIBDIR -lelmersolver

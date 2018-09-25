@@ -1,0 +1,3 @@
+bt-mz_rrl 1 2 2 12 ./bin/bt-mz.C.2_plain ./bin/bt-mz.C.2_ptf ./tuning_model.json 
+bt-mz_rrl_tm_meric 1 2 2 12 ./bin/bt-mz.C.2_plain ./bin/bt-mz.C.2_ptf ./tuning_model_meric.json
+

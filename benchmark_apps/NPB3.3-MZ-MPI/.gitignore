@@ -1,0 +1,7 @@
+*~
+*.out
+config/make.def
+BT-MZ/tmp.mod
+bin/
+mericMeasurement*
+scorep-*

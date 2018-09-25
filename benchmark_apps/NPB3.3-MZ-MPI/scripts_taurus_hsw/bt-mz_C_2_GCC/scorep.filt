@@ -1,0 +1,78 @@
+SCOREP_REGION_NAMES_BEGIN
+EXCLUDE
+!$omp parallel @add.f:22
+!$omp parallel @error.f:27
+!$omp parallel @error.f:86
+!$omp parallel @exch_qbc.f:204
+!$omp parallel @exch_qbc.f:215
+!$omp parallel @exch_qbc.f:244
+!$omp parallel @exch_qbc.f:255
+!$omp parallel @rhs.f:28
+add
+binvcrhs
+binvrhs
+compute_rhs
+copy_x_face
+copy_y_face
+env_setup
+error_norm
+exact_solution
+get_comm_index
+lhsinit
+map_zones
+matmul_sub
+matvec_sub
+print_results
+rhs_norm
+set_constants
+timer_clear
+timer_read
+timer_start
+timer_stop
+zone_setup
+zone_starts
+!$omp*parallel*@add.f:22
+!$omp*parallel*@error.f:27
+!$omp*parallel*@error.f:86
+!$omp*parallel*@exch_qbc.f:217
+!$omp*parallel*@exch_qbc.f:228
+!$omp*parallel*@exch_qbc.f:257
+!$omp*parallel*@exch_qbc.f:268
+!$omp*parallel*@rhs.f:28
+!$omp*parallel*@x_solve.f:54
+!$omp*parallel*@z_solve.f:50
+EXCLUDE MANGLED
+add_
+binvcrhs_
+binvrhs_
+compute_rhs_
+copy_x_face_
+copy_y_face_
+env_setup_
+error_norm_
+exact_solution_
+get_comm_index_
+lhsinit_
+map_zones_
+matmul_sub_
+matvec_sub_
+print_results_
+rhs_norm_
+set_constants_
+timer_clear_
+timer_read_
+timer_start_
+timer_stop_
+z_solve_
+zone_setup_
+zone_starts_
+!$omp*parallel*@exact_rhs.f:21
+!$omp*parallel*@initialize.f:28
+!$omp*parallel*@y_solve.f:50
+adi_
+exact_rhs_
+exch_qbc_
+initialize_
+x_solve_
+y_solve_
+SCOREP_REGION_NAMES_END

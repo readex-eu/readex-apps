@@ -1,0 +1,27 @@
+{
+    "scenarios": [
+        {
+            "key": "foo",
+            "value": 0
+        }
+    ],
+    "tuning parameters": [
+        {
+            "key": 0,
+            "value": [
+                {
+                    "key": "SCHEDULE_TYPE",
+                    "value": 1
+                },
+                {
+                    "key": "SCHEDULE_CHUNK_SIZE",
+                    "value": 4
+                },
+                {
+                    "key": "NUMTHREADS",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}

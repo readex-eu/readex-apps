@@ -1,0 +1,25 @@
+
+USE, INTRINSIC :: ISO_C_BINDING
+
+INTERFACE
+
+  SUBROUTINE MERIC_Init() &
+        BIND(c,NAME='MERIC_Init')
+  END SUBROUTINE MERIC_Init
+
+  SUBROUTINE MERIC_Close() &
+        BIND(c,NAME='MERIC_Close')
+  END SUBROUTINE MERIC_Close
+
+  SUBROUTINE MERIC_MeasureStart(region) &
+        BIND(c,NAME='MERIC_MeasureStart')
+    IMPORT
+    CHARACTER(KIND=C_CHAR) :: region(*)
+  END SUBROUTINE MERIC_MeasureStart
+
+  SUBROUTINE MERIC_MeasureStop() &
+        BIND(c,NAME='MERIC_MeasureStop')
+  END SUBROUTINE MERIC_MeasureStop
+
+END INTERFACE
+

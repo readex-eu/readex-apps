@@ -1,0 +1,37 @@
+# Makefile for mpicxx compiler
+
+SHELL = /bin/sh
+#.IGNORE:
+
+# System-specific settings
+
+#compile with lower precision for floating point functions
+#INTEL_LOW_PREC=-fimf-precision=low -fimf-domain-exclusion=15
+
+MPIPATH=/sw/global/compilers/intel/2016/impi/5.1.3.181
+#MPIPATH=/sw/taurus/libraries/bullxmpi/1.2.8.4
+
+CC =		$(PREP) $(MPIPATH)/bin64/mpiicpc
+#CC =		$(PREP) $(MPIPATH)/bin64/mpicxx
+CCFLAGS =	-I/home/vekannan/install/scorep_readex/include/scorep -O3 -mavx -DMPICH_IGNORE_CXX_SEEK -fopenmp -DPREC_TIMER -restrict -vec_report1 -DVECTORLENGTH=8 -DOpenMP31 $(INTEL_LOW_PREC) -DPRECISION=2
+LINK =		$(PREP) $(MPIPATH)/bin64/mpiicpc  
+LINKFLAGS =	-O3 -mavx -fopenmp 
+USRLIB =	-lrt
+SYSLIB =	-lpthread
+SIZE =		size
+
+# Link rule
+
+$(EXE):	$(OBJ)
+	$(LINK) -L/sw/global/compilers/intel/2016/compilers_and_libraries_2016/linux/lib/intel64/ $(LINKFLAGS) $(OBJ) $(USRLIB) $(SYSLIB) -o $(EXE)
+	$(SIZE) $(EXE)
+	
+
+# Compilation rules
+
+.cpp.o:
+	$(CC) $(CCFLAGS) -c $<
+
+# Individual dependencies
+
+$(OBJ): $(INC)

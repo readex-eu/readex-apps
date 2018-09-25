@@ -1,0 +1,24 @@
+#!/bin/bash
+
+filtFileEndString="SCOREP_REGION_NAMES_END"
+
+sort $1 > "sorted_$1" #scorep.filt
+sort $2 > "sorted_$2" #old_scorep.filt
+
+commString=$(comm -2 -3 "sorted_$1" "sorted_$2")
+
+if [ "$commString" != "" ]; then
+  comm -2 -3 "sorted_$1" "sorted_$2" > "comm1.txt"
+  exec < $2
+  while read line; do
+    if [  "$line" != "$filtFileEndString" ]; then
+      echo $line >> "new_scorep.filt"
+    fi
+  done
+  cat "comm1.txt" >> "new_scorep.filt"
+  echo $filtFileEndString >> "new_scorep.filt"
+  rm "sorted_$1" "sorted_$2" "comm1.txt"
+  exit 1
+else
+  exit 0
+fi

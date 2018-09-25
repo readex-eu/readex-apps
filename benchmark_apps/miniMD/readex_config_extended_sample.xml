@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <readex-dyn-detect>
+        <Intra-phase>
+            <significantRegion>
+                <name>void Comm::borders(Atom&amp;)</name>
+                <granularity>0.0015272100000000002</granularity>
+                <weight>0.44279303049521435</weight>
+                <time_variation_reg>2.2415429358640746</time_variation_reg>
+                <time_variation_phase>0.099253958955639363</time_variation_phase>
+                <compute_intensity>218.8301079415595</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void ForceLJ::compute_halfneigh(Atom&amp;, Neighbor&amp;, int) [with int EVFLAG = 0; int GHOST_NEWTON = 1]</name>
+                <granularity>0.0145348</granularity>
+                <weight>68.882110022899241</weight>
+                <time_variation_reg>3.1167564257782598</time_variation_reg>
+                <time_variation_phase>2.1685733235862257</time_variation_phase>
+                <compute_intensity>82.338996709155339</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void ForceLJ::compute_halfneigh(Atom&amp;, Neighbor&amp;, int) [with int EVFLAG = 1; int GHOST_NEWTON = 1]</name>
+                <granularity>0.0159591</granularity>
+                <weight>0.78989334663071198</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>61.977244384880755</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void Neighbor::build(Atom&amp;)</name>
+                <granularity>0.048143700000000005</granularity>
+                <weight>23.101710423757122</weight>
+                <time_variation_reg>0.6487105548826233</time_variation_reg>
+                <time_variation_phase>1.4986323387733169</time_variation_phase>
+                <compute_intensity>401.96650462178678</compute_intensity>
+            </significantRegion>
+        </Intra-phase>
+        <Inter-phase>
+            <name>INTEGRATE_RUN_LOOP</name>
+            <variation>72.00724255290308</variation>
+        </Inter-phase>
+        <Thresholds>
+            <weight>10</weight>
+            <time_variation>10</time_variation>
+            <compute_intensity_variation>10</compute_intensity_variation>
+            <granularity_significant_region>0.001</granularity_significant_region>
+        </Thresholds>
+        <dynamism>
+            <dyn_time_variation/>
+            <dyn_comIn_variation>
+                <name>void ForceLJ::compute_halfneigh(Atom&amp;, Neighbor&amp;, int) [with int EVFLAG = 0; int GHOST_NEWTON = 1]</name>
+                <name>void Neighbor::build(Atom&amp;)</name>
+            </dyn_comIn_variation>
+        </dynamism>
+    </readex-dyn-detect>
+    <tuningParameter>
+        <frequency>
+            <min_freq>1200000</min_freq>
+            <max_freq>2400000</max_freq>
+            <freq_step>1200000</freq_step>
+        </frequency>
+        <uncore>
+            <min_freq>12</min_freq>
+            <max_freq>30</max_freq>
+            <freq_step>6</freq_step>
+        </uncore>
+        <openMPThreads>
+            <lower_value>24</lower_value>
+            <step>24</step>
+        </openMPThreads>
+    </tuningParameter>
+    <objectives>
+        <objective>Energy</objective>
+        <objective>Time</objective>
+        <objective>EDP</objective>
+        <objective>ED2P</objective>
+        <objective>CPUEnergy</objective>
+    </objectives>
+    <periscope>
+        <metricPlugin>
+            <name>hdeem_sync_plugin</name>
+        </metricPlugin>
+        <metrics>
+            <node_energy>hdeem/BLADE/E</node_energy>
+            <cpu0_energy>hdeem/CPU0/E</cpu0_energy>
+            <cpu1_energy>hdeem/CPU1/E</cpu1_energy>
+        </metrics>
+        <searchAlgorithm>
+            <name>exhaustive</name>
+        </searchAlgorithm>
+        <tuningModel>
+            <file_path>/projects/p_readex/ichec/test_apps/miniMD/tuning_model.json</file_path>
+        </tuningModel>
+    </periscope>
+    <scorep>
+        <tuningSubstrate>rrl</tuningSubstrate>
+    </scorep>
+</Configuration>

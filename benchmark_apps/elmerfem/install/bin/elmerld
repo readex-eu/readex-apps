@@ -1,0 +1,19 @@
+#!/bin/sh -f
+
+if test "$ELMER_LIB" = ""; then
+  if  test "$ELMER_HOME" = ""; then
+     LIBDIR=/home/bes0030/readex-apps/readex-repository/benchmark_apps/elmerfem/install/lib
+  else
+     LIBDIR=$ELMER_HOME/lib
+  fi
+else
+  LIBDIR=$ELMER_LIB
+fi
+
+LD=/scratch/work/user/lriha/readex-toolsuite-gcc-test/scorep/ci_TRY_READEX_online_access_call_tree_extensions_GCC7.1.0/bin/scorep
+cmd="$LD  -DUSE_SCOREP -fPIC -shared $* -L/home/bes0030/readex-apps/readex-repository/benchmark_apps/elmerfem/install/lib/elmersolver -L$LIBDIR -lelmersolver"
+printf "%s " $cmd
+printf "\n"
+$LD  -DUSE_SCOREP -fPIC -shared $* -L/home/bes0030/readex-apps/readex-repository/benchmark_apps/elmerfem/install/lib/elmersolver -L$LIBDIR -lelmersolver
+#      $* -L$LIBDIR -lelmersolver
+#      $*

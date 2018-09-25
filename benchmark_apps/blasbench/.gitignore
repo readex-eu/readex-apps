@@ -1,0 +1,8 @@
+blasbench
+blasbench_meric
+blasbench_saf
+blasbench_rdd
+blasbench_ptf
+scorep-
+slurm-*
+*~

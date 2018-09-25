@@ -1,0 +1,1128 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 181501760,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 187919360,
+            "file": "SolverUtils.F90",
+            "line": 6506,
+            "name": "solverutils::enforcedirichletconditions"
+        },
+        {
+            "id": 187919008,
+            "file": "BandwidthOptimize.F90",
+            "line": 71,
+            "name": "bandwidthoptimize::computebandwidth"
+        },
+        {
+            "id": 187917984,
+            "file": "huti_cg.F90",
+            "line": 281,
+            "name": "huti_cg::huti_dcgsolv"
+        },
+        {
+            "id": 187920976,
+            "file": "ListMatrix.F90",
+            "line": 69,
+            "name": "listmatrix::list_freematrix"
+        },
+        {
+            "id": 187918192,
+            "file": "SParIterComm.F90",
+            "line": 1825,
+            "name": "sparitercomm::sparglobalnumbering"
+        },
+        {
+            "id": 187919664,
+            "file": "ElementUtils.F90",
+            "line": 1069,
+            "name": "elementutils::initializematrix"
+        },
+        {
+            "id": 187918448,
+            "file": "psc_file_name_none",
+            "line": 255,
+            "name": "ElmerSolver_core"
+        },
+        {
+            "id": 187920320,
+            "file": "BandwidthOptimize.F90",
+            "line": 310,
+            "name": "levelize"
+        },
+        {
+            "id": 187920000,
+            "file": "ElementUtils.F90",
+            "line": 281,
+            "name": "elementutils::makelistmatrix"
+        },
+        {
+            "id": 187918704,
+            "file": "SParIterComm.F90",
+            "line": 3126,
+            "name": "sparitercomm::exchangeifvalues"
+        },
+        {
+            "id": 187920640,
+            "file": "SParIterComm.F90",
+            "line": 235,
+            "name": "sparitercomm::findactivepes"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 187919008,
+            "scenario": 187983936,
+            "exectime": 0.471688,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 970,
+                        "name": "addsolvers"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 980,
+                        "name": "mainutils::addequationbasics"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1147,
+                        "name": "elementutils::creatematrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "BandwidthOptimize.F90",
+                        "line": 114,
+                        "name": "bandwidthoptimize::optimizebandwidth"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "BandwidthOptimize.F90",
+                        "line": 71,
+                        "name": "bandwidthoptimize::computebandwidth"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187917984,
+            "scenario": 187957376,
+            "exectime": 44.0479,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 1657,
+                        "name": "execsimulation"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2516,
+                        "name": "mainutils::solveequations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2837,
+                        "name": "solvecoupled"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 5013,
+                        "name": "mainutils::solveractivate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 4853,
+                        "name": "mainutils::singlesolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "LoadMod.F90",
+                        "line": 426,
+                        "name": "loadmod::execsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HeatSolve.F90",
+                        "line": 45,
+                        "name": "heatsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "DefUtils.F90",
+                        "line": 2982,
+                        "name": "defutils::defaultsolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SolverUtils.F90",
+                        "line": 11576,
+                        "name": "solverutils::solvesystem"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SolverUtils.F90",
+                        "line": 10993,
+                        "name": "solverutils::solvelinearsystem"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ParallelUtils.F90",
+                        "line": 984,
+                        "name": "parallelutils::paralleliter"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 1382,
+                        "name": "sparitersolve::sparitersolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 2079,
+                        "name": "sparitersolve::solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "IterSolve.F90",
+                        "line": 164,
+                        "name": "itersolve::itersolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "LoadMod.F90",
+                        "line": 752,
+                        "name": "loadmod::itercallftnr"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "huti_sfe.F90",
+                        "line": 326,
+                        "name": "huti_sfe::huti_d_cg"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "huti_cg.F90",
+                        "line": 281,
+                        "name": "huti_cg::huti_dcgsolv"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187918192,
+            "scenario": 187977200,
+            "exectime": 13.4532,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ModelDescription.F90",
+                        "line": 2053,
+                        "name": "modeldescription::loadmodel"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MeshUtils.F90",
+                        "line": 13116,
+                        "name": "meshutils::splitmeshequal"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MeshUtils.F90",
+                        "line": 14716,
+                        "name": "updateparallelmesh"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ParallelUtils.F90",
+                        "line": 971,
+                        "name": "parallelutils::parallelglobalnumbering"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterComm.F90",
+                        "line": 1825,
+                        "name": "sparitercomm::sparglobalnumbering"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187919664,
+            "scenario": 187983936,
+            "exectime": 0.382797,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 970,
+                        "name": "addsolvers"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 980,
+                        "name": "mainutils::addequationbasics"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1147,
+                        "name": "elementutils::creatematrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1069,
+                        "name": "elementutils::initializematrix"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187918704,
+            "scenario": 187920400,
+            "exectime": 0.970688,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 1657,
+                        "name": "execsimulation"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2516,
+                        "name": "mainutils::solveequations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2837,
+                        "name": "solvecoupled"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 5013,
+                        "name": "mainutils::solveractivate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 4853,
+                        "name": "mainutils::singlesolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "LoadMod.F90",
+                        "line": 426,
+                        "name": "loadmod::execsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HeatSolve.F90",
+                        "line": 45,
+                        "name": "heatsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "DefUtils.F90",
+                        "line": 2982,
+                        "name": "defutils::defaultsolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SolverUtils.F90",
+                        "line": 11576,
+                        "name": "solverutils::solvesystem"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SolverUtils.F90",
+                        "line": 10993,
+                        "name": "solverutils::solvelinearsystem"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ParallelUtils.F90",
+                        "line": 984,
+                        "name": "parallelutils::paralleliter"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 1382,
+                        "name": "sparitersolve::sparitersolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 3017,
+                        "name": "sparitersolve::gluefinalize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterComm.F90",
+                        "line": 3126,
+                        "name": "sparitercomm::exchangeifvalues"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187920640,
+            "scenario": 187956464,
+            "exectime": 0.675162,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 1657,
+                        "name": "execsimulation"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2516,
+                        "name": "mainutils::solveequations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2837,
+                        "name": "solvecoupled"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 5013,
+                        "name": "mainutils::solveractivate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 4853,
+                        "name": "mainutils::singlesolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ParallelUtils.F90",
+                        "line": 85,
+                        "name": "parallelutils::parallelinitmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 86,
+                        "name": "sparitersolve::parinitmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterComm.F90",
+                        "line": 194,
+                        "name": "sparitercomm::parenvinit"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterComm.F90",
+                        "line": 235,
+                        "name": "sparitercomm::findactivepes"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187920976,
+            "scenario": 187977200,
+            "exectime": 0.130787,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 1657,
+                        "name": "execsimulation"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2516,
+                        "name": "mainutils::solveequations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2837,
+                        "name": "solvecoupled"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 5013,
+                        "name": "mainutils::solveractivate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 4853,
+                        "name": "mainutils::singlesolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ParallelUtils.F90",
+                        "line": 85,
+                        "name": "parallelutils::parallelinitmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 86,
+                        "name": "sparitersolve::parinitmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SParIterSolver.F90",
+                        "line": 126,
+                        "name": "sparitersolve::splitmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ListMatrix.F90",
+                        "line": 168,
+                        "name": "listmatrix::list_tocrsmatrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ListMatrix.F90",
+                        "line": 69,
+                        "name": "listmatrix::list_freematrix"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187918448,
+            "scenario": 187983936,
+            "exectime": 75.3228,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187920976,
+            "scenario": 187983936,
+            "exectime": 0.517576,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 970,
+                        "name": "addsolvers"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 980,
+                        "name": "mainutils::addequationbasics"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1147,
+                        "name": "elementutils::creatematrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ListMatrix.F90",
+                        "line": 69,
+                        "name": "listmatrix::list_freematrix"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187919360,
+            "scenario": 187960384,
+            "exectime": 0.152749,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 1657,
+                        "name": "execsimulation"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2516,
+                        "name": "mainutils::solveequations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 2837,
+                        "name": "solvecoupled"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 5013,
+                        "name": "mainutils::solveractivate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 4853,
+                        "name": "mainutils::singlesolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "LoadMod.F90",
+                        "line": 426,
+                        "name": "loadmod::execsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HeatSolve.F90",
+                        "line": 45,
+                        "name": "heatsolver"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "DefUtils.F90",
+                        "line": 4317,
+                        "name": "defutils::defaultdirichletbcs"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "SolverUtils.F90",
+                        "line": 6506,
+                        "name": "solverutils::enforcedirichletconditions"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187920320,
+            "scenario": 187983936,
+            "exectime": 0.285683,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 970,
+                        "name": "addsolvers"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 980,
+                        "name": "mainutils::addequationbasics"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1147,
+                        "name": "elementutils::creatematrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "BandwidthOptimize.F90",
+                        "line": 114,
+                        "name": "bandwidthoptimize::optimizebandwidth"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "BandwidthOptimize.F90",
+                        "line": 310,
+                        "name": "levelize"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 187920000,
+            "scenario": 187920400,
+            "exectime": 0.714677,
+            "iid": 181501760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 255,
+                        "name": "ElmerSolver_core"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElmerSolver.F90",
+                        "line": 970,
+                        "name": "addsolvers"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "MainUtils.F90",
+                        "line": 980,
+                        "name": "mainutils::addequationbasics"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 1147,
+                        "name": "elementutils::creatematrix"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "ElementUtils.F90",
+                        "line": 281,
+                        "name": "elementutils::makelistmatrix"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 187977200,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1700
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 1800
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 187957376,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1300
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 2200
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 187983936,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1700
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 2200
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 187920400,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 1400
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 187956464,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1700
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 2600
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 187960384,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 2100
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 1800
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}

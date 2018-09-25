@@ -1,0 +1,4 @@
+linsys40.sif:! linsys(40)={'BiCgStab(2) + BILU0'}
+linsys40.sif:  Linear System Preconditioning = BILU0
+linsys41.sif:! linsys(41)={'BiCgStab(2) + BILU1'}
+linsys41.sif:  Linear System Preconditioning = BILU1

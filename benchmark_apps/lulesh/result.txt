@@ -1,0 +1,391 @@
+Granularity threshold: 0.001000
+There is a phase region
+
+Granularity of foo: 65.275844
+Granularity of LagrangeLeapFrog: 65.275818
+Granularity of LagrangeNodal: 30.652447
+Granularity of CalcForceForNodes: 25.477436
+Granularity of CalcVolumeForceForElems: 24.338858
+Granularity of InitStressTermsForElems: 0.371059
+Granularity of IntegrateStressForElems: 9.161535
+Granularity of CalcHourglassControlForElems: 14.806071
+Granularity of CalcFBHourglassForceForElems: 9.542383
+Granularity of CommSend: 0.148708
+Granularity of CommSBN: 0.375841
+Granularity of CalcAccelerationForNodes: 1.845516
+Granularity of ApplyAccelerationBoundaryConditionsForNodes: 0.019945
+Granularity of CalcVelocityForNodes: 1.855768
+Granularity of CalcPositionForNodes: 1.228135
+Granularity of CommSend: 0.121956
+Granularity of CommSyncPosVel: 0.103555
+Granularity of LagrangeElements: 33.507377
+Granularity of CalcLagrangeElements: 11.822530
+Granularity of CalcKinematicsForElems: 10.524115
+Granularity of CalcQForElems: 16.260750
+Granularity of CalcMonotonicQGradientsForElems: 10.493600
+Granularity of CommSend: 0.129696
+Granularity of CommMonoQ: 0.433844
+Granularity of CalcMonotonicQForElems: 5.013689
+Granularity of CalcMonotonicQRegionForElems: 0.455785
+Granularity of ApplyMaterialPropertiesForElems: 5.236843
+Granularity of EvalEOSForElems: 0.458869
+Granularity of CalcEnergyForElems: 0.001922
+Granularity of CalcSoundSpeedForElems: 0.016883
+Granularity of UpdateVolumesForElems: 0.187156
+Granularity of CalcTimeConstraintsForElems: 1.115955
+Granularity of CalcCourantConstraintForElems: 0.084549
+Granularity of CalcHydroConstraintForElems: 0.016890
+Candidate regions are: 
+    foo 
+    LagrangeLeapFrog 
+    LagrangeNodal 
+    CalcForceForNodes 
+    CalcVolumeForceForElems 
+    InitStressTermsForElems 
+    IntegrateStressForElems 
+    CalcHourglassControlForElems 
+    CalcFBHourglassForceForElems 
+    CommSend 
+    CommSBN 
+    CalcAccelerationForNodes 
+    ApplyAccelerationBoundaryConditionsForNodes 
+    CalcVelocityForNodes 
+    CalcPositionForNodes 
+    CommSyncPosVel 
+    LagrangeElements 
+    CalcLagrangeElements 
+    CalcKinematicsForElems 
+    CalcQForElems 
+    CalcMonotonicQGradientsForElems 
+    CommMonoQ 
+    CalcMonotonicQForElems 
+    CalcMonotonicQRegionForElems 
+    ApplyMaterialPropertiesForElems 
+    EvalEOSForElems 
+    CalcEnergyForElems 
+    CalcSoundSpeedForElems 
+    UpdateVolumesForElems 
+    CalcTimeConstraintsForElems 
+    CalcCourantConstraintForElems 
+    CalcHydroConstraintForElems 
+
+
+
+
+
+ Significant regions are: 
+    ApplyAccelerationBoundaryConditionsForNodes 
+    CalcAccelerationForNodes 
+    CalcLagrangeElements 
+    CalcMonotonicQForElems 
+    CalcMonotonicQGradientsForElems 
+    CalcPositionForNodes 
+    CalcTimeConstraintsForElems 
+    CalcVelocityForNodes 
+    CalcVolumeForceForElems 
+    CommMonoQ 
+    CommSBN 
+    CommSend 
+    CommSyncPosVel 
+    EvalEOSForElems 
+    UpdateVolumesForElems 
+
+
+
+
+There is intra-phase dynamism 
+Region name                  Min(t)          Max(t)       Time Dev.(%Reg) Ops/L3miss      Weight(%Phase) 
+ApplyAccelerationBoundary    0.040             0.040            0.0            44                0 
+CalcAccelerationForNodes     1.876             1.876            0.0           199                3 
+CalcLagrangeElements        12.057            12.057            0.0           202               17 
+CalcMonotonicQForElems       5.125             5.125            0.0            80                7 
+CalcMonotonicQGradientsFo   10.688            10.688            0.0           126               15 
+CalcPositionForNodes         1.246             1.246            0.0           237                2 
+CalcTimeConstraintsForEle    1.133             1.133            0.0           139                2 
+CalcVelocityForNodes         1.885             1.885            0.0           485                3 
+CalcVolumeForceForElems     24.771            24.771            0.0            72               36 
+CommMonoQ                    0.057             0.057            0.0            47                0 
+CommSBN                      0.062             0.062            0.0            62                0 
+CommSend                     0.067             0.067            0.0             2                0 
+CommSyncPosVel               0.125             0.125            0.0            20                0 
+EvalEOSForElems              0.009             7.419            0.0           344               13 
+UpdateVolumesForElems        0.191             0.191            0.0           131                0 
+
+Phase information
+Min                  Max                  Mean                 Dev.(% Phase)        Dyn.(% Phase)        
+69.7118              69.7118              69.7118              0                    0                     
+
+There is no inter-phase dynamism
+
+threshold time variation (percent of mean region time): 10.000000
+threshold compute intensity deviation (#ops/L3 miss): 50.000000
+threshold region importance (percent of phase exec. time): 10.000000
+
+SUMMARY:   
+========
+
+No inter-phase dynamism
+
+No intra-phase dynamism due to time variation
+
+Intra-phase dynamism due to variation in the compute intensity of the following important significant regions 
+     CalcLagrangeElements      
+     CalcMonotonicQGradientsForElems 
+     CalcVolumeForceForElems   
+     EvalEOSForElems           
+Granularity threshold: 0.010000
+There is a phase region
+
+Granularity of foo: 65.275844
+Granularity of LagrangeLeapFrog: 65.275818
+Granularity of LagrangeNodal: 30.652447
+Granularity of CalcForceForNodes: 25.477436
+Granularity of CalcVolumeForceForElems: 24.338858
+Granularity of InitStressTermsForElems: 0.371059
+Granularity of IntegrateStressForElems: 9.161535
+Granularity of CalcHourglassControlForElems: 14.806071
+Granularity of CalcFBHourglassForceForElems: 9.542383
+Granularity of CommSend: 0.148708
+Granularity of CommSBN: 0.375841
+Granularity of CalcAccelerationForNodes: 1.845516
+Granularity of ApplyAccelerationBoundaryConditionsForNodes: 0.019945
+Granularity of CalcVelocityForNodes: 1.855768
+Granularity of CalcPositionForNodes: 1.228135
+Granularity of CommSend: 0.121956
+Granularity of CommSyncPosVel: 0.103555
+Granularity of LagrangeElements: 33.507377
+Granularity of CalcLagrangeElements: 11.822530
+Granularity of CalcKinematicsForElems: 10.524115
+Granularity of CalcQForElems: 16.260750
+Granularity of CalcMonotonicQGradientsForElems: 10.493600
+Granularity of CommSend: 0.129696
+Granularity of CommMonoQ: 0.433844
+Granularity of CalcMonotonicQForElems: 5.013689
+Granularity of CalcMonotonicQRegionForElems: 0.455785
+Granularity of ApplyMaterialPropertiesForElems: 5.236843
+Granularity of EvalEOSForElems: 0.458869
+Granularity of CalcSoundSpeedForElems: 0.016883
+Granularity of UpdateVolumesForElems: 0.187156
+Granularity of CalcTimeConstraintsForElems: 1.115955
+Granularity of CalcCourantConstraintForElems: 0.084549
+Granularity of CalcHydroConstraintForElems: 0.016890
+Candidate regions are: 
+    foo 
+    LagrangeLeapFrog 
+    LagrangeNodal 
+    CalcForceForNodes 
+    CalcVolumeForceForElems 
+    InitStressTermsForElems 
+    IntegrateStressForElems 
+    CalcHourglassControlForElems 
+    CalcFBHourglassForceForElems 
+    CommSend 
+    CommSBN 
+    CalcAccelerationForNodes 
+    ApplyAccelerationBoundaryConditionsForNodes 
+    CalcVelocityForNodes 
+    CalcPositionForNodes 
+    CommSyncPosVel 
+    LagrangeElements 
+    CalcLagrangeElements 
+    CalcKinematicsForElems 
+    CalcQForElems 
+    CalcMonotonicQGradientsForElems 
+    CommMonoQ 
+    CalcMonotonicQForElems 
+    CalcMonotonicQRegionForElems 
+    ApplyMaterialPropertiesForElems 
+    EvalEOSForElems 
+    CalcSoundSpeedForElems 
+    UpdateVolumesForElems 
+    CalcTimeConstraintsForElems 
+    CalcCourantConstraintForElems 
+    CalcHydroConstraintForElems 
+
+
+
+
+
+ Significant regions are: 
+    ApplyAccelerationBoundaryConditionsForNodes 
+    CalcAccelerationForNodes 
+    CalcLagrangeElements 
+    CalcMonotonicQForElems 
+    CalcMonotonicQGradientsForElems 
+    CalcPositionForNodes 
+    CalcTimeConstraintsForElems 
+    CalcVelocityForNodes 
+    CalcVolumeForceForElems 
+    CommMonoQ 
+    CommSBN 
+    CommSend 
+    CommSyncPosVel 
+    EvalEOSForElems 
+    UpdateVolumesForElems 
+
+
+
+
+There is intra-phase dynamism 
+Region name                  Min(t)          Max(t)       Time Dev.(%Reg) Ops/L3miss      Weight(%Phase) 
+ApplyAccelerationBoundary    0.040             0.040            0.0            44                0 
+CalcAccelerationForNodes     1.876             1.876            0.0           199                3 
+CalcLagrangeElements        12.057            12.057            0.0           202               17 
+CalcMonotonicQForElems       5.125             5.125            0.0            80                7 
+CalcMonotonicQGradientsFo   10.688            10.688            0.0           126               15 
+CalcPositionForNodes         1.246             1.246            0.0           237                2 
+CalcTimeConstraintsForEle    1.133             1.133            0.0           139                2 
+CalcVelocityForNodes         1.885             1.885            0.0           485                3 
+CalcVolumeForceForElems     24.771            24.771            0.0            72               36 
+CommMonoQ                    0.057             0.057            0.0            47                0 
+CommSBN                      0.062             0.062            0.0            62                0 
+CommSend                     0.067             0.067            0.0             2                0 
+CommSyncPosVel               0.125             0.125            0.0            20                0 
+EvalEOSForElems              0.009             7.419            0.0           344               13 
+UpdateVolumesForElems        0.191             0.191            0.0           131                0 
+
+Phase information
+Min                  Max                  Mean                 Dev.(% Phase)        Dyn.(% Phase)        
+69.7118              69.7118              69.7118              0                    0                     
+
+There is no inter-phase dynamism
+
+threshold time variation (percent of mean region time): 10.000000
+threshold compute intensity deviation (#ops/L3 miss): 50.000000
+threshold region importance (percent of phase exec. time): 10.000000
+
+SUMMARY:   
+========
+
+No inter-phase dynamism
+
+No intra-phase dynamism due to time variation
+
+Intra-phase dynamism due to variation in the compute intensity of the following important significant regions 
+     CalcLagrangeElements      
+     CalcMonotonicQGradientsForElems 
+     CalcVolumeForceForElems   
+     EvalEOSForElems           
+Granularity threshold: 0.100000
+There is a phase region
+
+Granularity of foo: 65.275844
+Granularity of LagrangeLeapFrog: 65.275818
+Granularity of LagrangeNodal: 30.652447
+Granularity of CalcForceForNodes: 25.477436
+Granularity of CalcVolumeForceForElems: 24.338858
+Granularity of InitStressTermsForElems: 0.371059
+Granularity of IntegrateStressForElems: 9.161535
+Granularity of CalcHourglassControlForElems: 14.806071
+Granularity of CalcFBHourglassForceForElems: 9.542383
+Granularity of CommSend: 0.148708
+Granularity of CommSBN: 0.375841
+Granularity of CalcAccelerationForNodes: 1.845516
+Granularity of CalcVelocityForNodes: 1.855768
+Granularity of CalcPositionForNodes: 1.228135
+Granularity of CommSend: 0.121956
+Granularity of CommSyncPosVel: 0.103555
+Granularity of LagrangeElements: 33.507377
+Granularity of CalcLagrangeElements: 11.822530
+Granularity of CalcKinematicsForElems: 10.524115
+Granularity of CalcQForElems: 16.260750
+Granularity of CalcMonotonicQGradientsForElems: 10.493600
+Granularity of CommSend: 0.129696
+Granularity of CommMonoQ: 0.433844
+Granularity of CalcMonotonicQForElems: 5.013689
+Granularity of CalcMonotonicQRegionForElems: 0.455785
+Granularity of ApplyMaterialPropertiesForElems: 5.236843
+Granularity of EvalEOSForElems: 0.458869
+Granularity of UpdateVolumesForElems: 0.187156
+Granularity of CalcTimeConstraintsForElems: 1.115955
+Candidate regions are: 
+    foo 
+    LagrangeLeapFrog 
+    LagrangeNodal 
+    CalcForceForNodes 
+    CalcVolumeForceForElems 
+    InitStressTermsForElems 
+    IntegrateStressForElems 
+    CalcHourglassControlForElems 
+    CalcFBHourglassForceForElems 
+    CommSend 
+    CommSBN 
+    CalcAccelerationForNodes 
+    CalcVelocityForNodes 
+    CalcPositionForNodes 
+    CommSyncPosVel 
+    LagrangeElements 
+    CalcLagrangeElements 
+    CalcKinematicsForElems 
+    CalcQForElems 
+    CalcMonotonicQGradientsForElems 
+    CommMonoQ 
+    CalcMonotonicQForElems 
+    CalcMonotonicQRegionForElems 
+    ApplyMaterialPropertiesForElems 
+    EvalEOSForElems 
+    UpdateVolumesForElems 
+    CalcTimeConstraintsForElems 
+
+
+
+
+
+ Significant regions are: 
+    ApplyMaterialPropertiesForElems 
+    CalcAccelerationForNodes 
+    CalcLagrangeElements 
+    CalcMonotonicQForElems 
+    CalcMonotonicQGradientsForElems 
+    CalcPositionForNodes 
+    CalcTimeConstraintsForElems 
+    CalcVelocityForNodes 
+    CalcVolumeForceForElems 
+    CommMonoQ 
+    CommSBN 
+    CommSend 
+    CommSyncPosVel 
+    UpdateVolumesForElems 
+
+
+
+
+There is intra-phase dynamism 
+Region name                  Min(t)          Max(t)       Time Dev.(%Reg) Ops/L3miss      Weight(%Phase) 
+ApplyMaterialPropertiesFo    9.515             9.515            0.0           271               14 
+CalcAccelerationForNodes     1.876             1.876            0.0           199                3 
+CalcLagrangeElements        12.057            12.057            0.0           202               17 
+CalcMonotonicQForElems       5.125             5.125            0.0            80                7 
+CalcMonotonicQGradientsFo   10.688            10.688            0.0           126               15 
+CalcPositionForNodes         1.246             1.246            0.0           237                2 
+CalcTimeConstraintsForEle    1.133             1.133            0.0           139                2 
+CalcVelocityForNodes         1.885             1.885            0.0           485                3 
+CalcVolumeForceForElems     24.771            24.771            0.0            72               36 
+CommMonoQ                    0.057             0.057            0.0            47                0 
+CommSBN                      0.062             0.062            0.0            62                0 
+CommSend                     0.067             0.067            0.0             2                0 
+CommSyncPosVel               0.125             0.125            0.0            20                0 
+UpdateVolumesForElems        0.191             0.191            0.0           131                0 
+
+Phase information
+Min                  Max                  Mean                 Dev.(% Phase)        Dyn.(% Phase)        
+69.7118              69.7118              69.7118              0                    0                     
+
+There is no inter-phase dynamism
+
+threshold time variation (percent of mean region time): 10.000000
+threshold compute intensity deviation (#ops/L3 miss): 50.000000
+threshold region importance (percent of phase exec. time): 10.000000
+
+SUMMARY:   
+========
+
+No inter-phase dynamism
+
+No intra-phase dynamism due to time variation
+
+Intra-phase dynamism due to variation in the compute intensity of the following important significant regions 
+     ApplyMaterialPropertiesForElems 
+     CalcLagrangeElements      
+     CalcMonotonicQGradientsForElems 
+     CalcVolumeForceForElems   

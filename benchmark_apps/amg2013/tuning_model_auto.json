@@ -1,0 +1,1972 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 54308000,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 54768880,
+            "file": "par_relax_more.c",
+            "line": 1613,
+            "name": "hypre_ParCSRComputeL1NormsThreads"
+        },
+        {
+            "id": 54764672,
+            "file": "par_relax_more.c",
+            "line": 1876,
+            "name": "hypre_ParCSRRelax_L1"
+        },
+        {
+            "id": 54768544,
+            "file": "pcg_par.c",
+            "line": 185,
+            "name": "hypre_ParKrylovCopyVector"
+        },
+        {
+            "id": 54767632,
+            "file": "par_strength.c",
+            "line": 87,
+            "name": "hypre_BoomerAMGCreateS"
+        },
+        {
+            "id": 54766016,
+            "file": "aux_interp.c",
+            "line": 284,
+            "name": "new_offd_nodes"
+        },
+        {
+            "id": 54764336,
+            "file": "csr_matvec.c",
+            "line": 28,
+            "name": "hypre_CSRMatrixMatvec"
+        },
+        {
+            "id": 54765920,
+            "file": "amg2013.c",
+            "line": 1687,
+            "name": "main_phase"
+        },
+        {
+            "id": 54768208,
+            "file": "sstruct_matrix.c",
+            "line": 761,
+            "name": "hypre_SStructUMatrixSetBoxValues"
+        },
+        {
+            "id": 54765632,
+            "file": "par_csr_communication.c",
+            "line": 273,
+            "name": "hypre_MatvecCommPkgCreate_core"
+        },
+        {
+            "id": 54764992,
+            "file": "par_coarsen.c",
+            "line": 1992,
+            "name": "hypre_BoomerAMGCoarsenPMIS"
+        },
+        {
+            "id": 54769216,
+            "file": "par_interp.c",
+            "line": 1002,
+            "name": "hypre_BoomerAMGInterpTruncation"
+        },
+        {
+            "id": 54765296,
+            "file": "IJMatrix_parcsr.c",
+            "line": 1676,
+            "name": "hypre_IJMatrixAssembleParCSR"
+        },
+        {
+            "id": 54766624,
+            "file": "HYPRE_sstruct_vector.c",
+            "line": 139,
+            "name": "HYPRE_SStructVectorInitialize"
+        },
+        {
+            "id": 54766992,
+            "file": "par_csr_matrix.c",
+            "line": 191,
+            "name": "hypre_ParCSRMatrixInitialize"
+        },
+        {
+            "id": 54766256,
+            "file": "aux_parcsr_matrix.c",
+            "line": 125,
+            "name": "hypre_AuxParCSRMatrixInitialize"
+        },
+        {
+            "id": 54767360,
+            "file": "vector.c",
+            "line": 390,
+            "name": "hypre_SeqVectorAxpy"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 54765632,
+            "scenario": 54849392,
+            "exectime": 0.0626162,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_lr_interp.c",
+                        "line": 1101,
+                        "name": "hypre_BoomerAMGBuildExtPIInterp"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54768880,
+            "scenario": 54844976,
+            "exectime": 0.226905,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_relax_more.c",
+                        "line": 1613,
+                        "name": "hypre_ParCSRComputeL1NormsThreads"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54769216,
+            "scenario": 54861632,
+            "exectime": 0.234649,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_lr_interp.c",
+                        "line": 1101,
+                        "name": "hypre_BoomerAMGBuildExtPIInterp"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_interp.c",
+                        "line": 1002,
+                        "name": "hypre_BoomerAMGInterpTruncation"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764992,
+            "scenario": 54882960,
+            "exectime": 3.73624,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_coarsen.c",
+                        "line": 1954,
+                        "name": "hypre_BoomerAMGCoarsenHMIS"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_coarsen.c",
+                        "line": 1992,
+                        "name": "hypre_BoomerAMGCoarsenPMIS"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765920,
+            "scenario": 54861632,
+            "exectime": 139.462,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54766624,
+            "scenario": 54861632,
+            "exectime": 0.341684,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_sstruct_vector.c",
+                        "line": 139,
+                        "name": "HYPRE_SStructVectorInitialize"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54871232,
+            "exectime": 0.0162091,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_matrix.c",
+                        "line": 305,
+                        "name": "HYPRE_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matvec.c",
+                        "line": 29,
+                        "name": "hypre_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765296,
+            "scenario": 54861632,
+            "exectime": 6.66497,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_sstruct_matrix.c",
+                        "line": 585,
+                        "name": "HYPRE_SStructMatrixAssemble"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "sstruct_matrix.c",
+                        "line": 1003,
+                        "name": "hypre_SStructUMatrixAssemble"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_IJMatrix.c",
+                        "line": 464,
+                        "name": "HYPRE_IJMatrixAssemble"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "IJMatrix_parcsr.c",
+                        "line": 1676,
+                        "name": "hypre_IJMatrixAssembleParCSR"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54766992,
+            "scenario": 54882960,
+            "exectime": 0.121263,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_sstruct_matrix.c",
+                        "line": 202,
+                        "name": "HYPRE_SStructMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "sstruct_matrix.c",
+                        "line": 457,
+                        "name": "hypre_SStructUMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_IJMatrix.c",
+                        "line": 281,
+                        "name": "HYPRE_IJMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "IJMatrix_parcsr.c",
+                        "line": 251,
+                        "name": "hypre_IJMatrixInitializeParCSR"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matrix.c",
+                        "line": 191,
+                        "name": "hypre_ParCSRMatrixInitialize"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764336,
+            "scenario": 54876432,
+            "exectime": 4.19509,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 68,
+                        "name": "HYPRE_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_solve.c",
+                        "line": 31,
+                        "name": "hypre_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_cycle.c",
+                        "line": 31,
+                        "name": "hypre_BoomerAMGCycle"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matvec.c",
+                        "line": 29,
+                        "name": "hypre_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "csr_matvec.c",
+                        "line": 28,
+                        "name": "hypre_CSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54768544,
+            "scenario": 54888336,
+            "exectime": 0.0331061,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg_par.c",
+                        "line": 185,
+                        "name": "hypre_ParKrylovCopyVector"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54879648,
+            "exectime": 0.0076936,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_multi_interp.c",
+                        "line": 23,
+                        "name": "hypre_BoomerAMGBuildMultipass"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54768208,
+            "scenario": 54834176,
+            "exectime": 9.0447,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_sstruct_matrix.c",
+                        "line": 356,
+                        "name": "HYPRE_SStructMatrixSetBoxValues"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "sstruct_matrix.c",
+                        "line": 761,
+                        "name": "hypre_SStructUMatrixSetBoxValues"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54855584,
+            "exectime": 0.010754,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_coarsen.c",
+                        "line": 1954,
+                        "name": "hypre_BoomerAMGCoarsenHMIS"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_coarsen.c",
+                        "line": 867,
+                        "name": "hypre_BoomerAMGCoarsenRuge"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54768352,
+            "exectime": 0.25173,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_rap.c",
+                        "line": 206,
+                        "name": "hypre_BoomerAMGBuildCoarseOperator"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764336,
+            "scenario": 54842384,
+            "exectime": 1.36158,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg_par.c",
+                        "line": 124,
+                        "name": "hypre_ParKrylovMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matvec.c",
+                        "line": 29,
+                        "name": "hypre_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "csr_matvec.c",
+                        "line": 28,
+                        "name": "hypre_CSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764336,
+            "scenario": 54844976,
+            "exectime": 0.111153,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_matrix.c",
+                        "line": 305,
+                        "name": "HYPRE_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matvec.c",
+                        "line": 29,
+                        "name": "hypre_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "csr_matvec.c",
+                        "line": 28,
+                        "name": "hypre_CSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54766016,
+            "scenario": 54873552,
+            "exectime": 2.34402,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_lr_interp.c",
+                        "line": 1101,
+                        "name": "hypre_BoomerAMGBuildExtPIInterp"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "aux_interp.c",
+                        "line": 284,
+                        "name": "new_offd_nodes"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54834176,
+            "exectime": 0.0118574,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_strength.c",
+                        "line": 1046,
+                        "name": "hypre_BoomerAMGCreate2ndS"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 503,
+                        "name": "hypre_MatvecCommPkgCreate"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764336,
+            "scenario": 54852640,
+            "exectime": 3.58377,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 68,
+                        "name": "HYPRE_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_solve.c",
+                        "line": 31,
+                        "name": "hypre_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_matvec.c",
+                        "line": 29,
+                        "name": "hypre_ParCSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "csr_matvec.c",
+                        "line": 28,
+                        "name": "hypre_CSRMatrixMatvec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54767632,
+            "scenario": 54768624,
+            "exectime": 1.48039,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_strength.c",
+                        "line": 87,
+                        "name": "hypre_BoomerAMGCreateS"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54767360,
+            "scenario": 54767952,
+            "exectime": 0.77397,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg_par.c",
+                        "line": 218,
+                        "name": "hypre_ParKrylovAxpy"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_vector.c",
+                        "line": 425,
+                        "name": "hypre_ParVectorAxpy"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vector.c",
+                        "line": 390,
+                        "name": "hypre_SeqVectorAxpy"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54765632,
+            "scenario": 54826944,
+            "exectime": 0.0935894,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 53,
+                        "name": "HYPRE_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 187,
+                        "name": "hypre_PCGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 52,
+                        "name": "HYPRE_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_setup.c",
+                        "line": 35,
+                        "name": "hypre_BoomerAMGSetup"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_lr_interp.c",
+                        "line": 1101,
+                        "name": "hypre_BoomerAMGBuildExtPIInterp"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_csr_communication.c",
+                        "line": 273,
+                        "name": "hypre_MatvecCommPkgCreate_core"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54766256,
+            "scenario": 54861632,
+            "exectime": 4.26633,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_sstruct_matrix.c",
+                        "line": 202,
+                        "name": "HYPRE_SStructMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "sstruct_matrix.c",
+                        "line": 457,
+                        "name": "hypre_SStructUMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_IJMatrix.c",
+                        "line": 281,
+                        "name": "HYPRE_IJMatrixInitialize"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "IJMatrix_parcsr.c",
+                        "line": 251,
+                        "name": "hypre_IJMatrixInitializeParCSR"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "aux_parcsr_matrix.c",
+                        "line": 125,
+                        "name": "hypre_AuxParCSRMatrixInitialize"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 54764672,
+            "scenario": 54855584,
+            "exectime": 10.4758,
+            "iid": 54308000,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_pcg.c",
+                        "line": 69,
+                        "name": "HYPRE_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "pcg.c",
+                        "line": 264,
+                        "name": "hypre_PCGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "HYPRE_parcsr_amg.c",
+                        "line": 68,
+                        "name": "HYPRE_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_amg_solve.c",
+                        "line": 31,
+                        "name": "hypre_BoomerAMGSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_cycle.c",
+                        "line": 31,
+                        "name": "hypre_BoomerAMGCycle"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "par_relax_more.c",
+                        "line": 1876,
+                        "name": "hypre_ParCSRRelax_L1"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 54882960,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 4
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54879648,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1700000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54876432,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2100000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54871232,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2100000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54861632,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54767952,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1300000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54768352,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 54873552,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 54834176,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54768624,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 4
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54842384,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1700000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 30
+                }
+            ]
+        },
+        {
+            "id": 54888336,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1300000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54852640,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1700000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54855584,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "id": 54826944,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 54844976,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 26
+                }
+            ]
+        },
+        {
+            "id": 54849392,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2100000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 14
+                }
+            ]
+        }
+    ]
+}

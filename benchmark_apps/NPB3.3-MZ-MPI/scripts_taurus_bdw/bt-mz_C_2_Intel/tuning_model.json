@@ -1,0 +1,74 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 18187696,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 18057104,
+            "file": "psc_file_name_none",
+            "line": 227,
+            "name": "phase"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 18057104,
+            "scenario": 18172256,
+            "exectime": 0.376447,
+            "iid": 18187696,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 227,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 18172256,
+            "configuration": [
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200,
+                    "step": 100,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1000,
+                    "step": 1000,
+                    "end": 3000,
+                    "value": 2000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 2,
+                    "end": 13,
+                    "value": 13
+                }
+            ]
+        }
+    ]
+}

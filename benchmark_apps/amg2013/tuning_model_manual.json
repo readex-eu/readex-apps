@@ -1,0 +1,241 @@
+{
+    "iids": [
+        {
+            "id": 32313920,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 32518880,
+            "file": "amg2013.c",
+            "line": 2515,
+            "name": "hypre_pcgsolve"
+        },
+        {
+            "id": 32506736,
+            "file": "amg2013.c",
+            "line": 1690,
+            "name": "set_up"
+        },
+        {
+            "id": 32327216,
+            "file": "amg2013.c",
+            "line": 2494,
+            "name": "hypre_pcgsetup"
+        },
+        {
+            "id": 32505952,
+            "file": "amg2013.c",
+            "line": 1687,
+            "name": "main_phase"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 32518880,
+            "scenario": 32334400,
+            "exectime": 30.3032,
+            "iid": 32313920,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 2515,
+                        "name": "hypre_pcgsolve"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 32506736,
+            "scenario": 32413440,
+            "exectime": 21.2567,
+            "iid": 32313920,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1690,
+                        "name": "set_up"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 32327216,
+            "scenario": 32496064,
+            "exectime": 80.9923,
+            "iid": 32313920,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 2494,
+                        "name": "hypre_pcgsetup"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 32505952,
+            "scenario": 32512656,
+            "exectime": 0.0,
+            "iid": 32313920,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "amg2013.c",
+                        "line": 1687,
+                        "name": "main_phase"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 32512656,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                }
+            ]
+        },
+        {
+            "id": 32496064,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 14
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 12
+                }
+            ]
+        },
+        {
+            "id": 32413440,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                }
+            ]
+        },
+        {
+            "id": 32334400,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 22
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 1700000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 4,
+                    "step": 4,
+                    "end": 12,
+                    "value": 8
+                }
+            ]
+        }
+    ]
+}

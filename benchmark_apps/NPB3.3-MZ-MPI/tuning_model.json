@@ -1,0 +1,322 @@
+{
+    "iids": [
+        {
+            "id": 30119760,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 30163216,
+            "file": "z_solve.input.prep.opari.F",
+            "line": 4,
+            "name": "z_solve"
+        },
+        {
+            "id": 30225376,
+            "file": "psc_file_name_none",
+            "line": 214,
+            "name": "phase"
+        },
+        {
+            "id": 29968608,
+            "file": "x_solve.input.prep.opari.F",
+            "line": 5,
+            "name": "x_solve"
+        },
+        {
+            "id": 29966144,
+            "file": "y_solve.input.prep.opari.F",
+            "line": 4,
+            "name": "y_solve"
+        },
+        {
+            "id": 30184384,
+            "file": "exch_qbc.input.prep.opari.F",
+            "line": 1,
+            "name": "exch_qbc"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 29968608,
+            "scenario": 28905664,
+            "exectime": 0.116839,
+            "iid": 30119760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 214,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "adi.input.prep.opari.F",
+                        "line": 4,
+                        "name": "adi"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "x_solve.input.prep.opari.F",
+                        "line": 5,
+                        "name": "x_solve"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 30163216,
+            "scenario": 28863552,
+            "exectime": 0.114918,
+            "iid": 30119760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 214,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "adi.input.prep.opari.F",
+                        "line": 4,
+                        "name": "adi"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "z_solve.input.prep.opari.F",
+                        "line": 4,
+                        "name": "z_solve"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 30225376,
+            "scenario": 30169392,
+            "exectime": 0.0,
+            "iid": 30119760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 214,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 29966144,
+            "scenario": 30192800,
+            "exectime": 0.11348,
+            "iid": 30119760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 214,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "adi.input.prep.opari.F",
+                        "line": 4,
+                        "name": "adi"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "y_solve.input.prep.opari.F",
+                        "line": 4,
+                        "name": "y_solve"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 30184384,
+            "scenario": 31460048,
+            "exectime": 0.451875,
+            "iid": 30119760,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "psc_file_name_none",
+                        "line": 214,
+                        "name": "phase"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "exch_qbc.input.prep.opari.F",
+                        "line": 1,
+                        "name": "exch_qbc"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 28863552,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 24,
+                    "value": 15
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 18
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                }
+            ]
+        },
+        {
+            "id": 30169392,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 24,
+                    "value": 23
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 26
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                }
+            ]
+        },
+        {
+            "id": 30192800,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 24,
+                    "value": 8
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 30
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                }
+            ]
+        },
+        {
+            "id": 31460048,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 24,
+                    "value": 17
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 26
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                }
+            ]
+        },
+        {
+            "id": 28905664,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 24,
+                    "value": 12
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 14,
+                    "step": 4,
+                    "end": 30,
+                    "value": 26
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300000,
+                    "step": 400000,
+                    "end": 2500000,
+                    "value": 2500000
+                }
+            ]
+        }
+    ]
+}
+

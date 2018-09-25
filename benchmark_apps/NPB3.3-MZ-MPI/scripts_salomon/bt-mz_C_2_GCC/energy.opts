@@ -1,0 +1,7 @@
+{
+    "phase": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    }
+}

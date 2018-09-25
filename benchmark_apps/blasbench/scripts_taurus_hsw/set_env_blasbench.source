@@ -1,0 +1,3 @@
+#!/bin/sh
+
+module load mkl/2017

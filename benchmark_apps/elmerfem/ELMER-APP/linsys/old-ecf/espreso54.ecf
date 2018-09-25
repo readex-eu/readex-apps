@@ -1,0 +1,44 @@
+|*****************************************************************************|
+|-----------------------------------------------------------------------------|
+|                                      |                                      |
+|     EPRESO CONFIGURATION FILE        |   ESPRESO Version:   1.0             |
+|                                      |   http://espreso.it4i.cz             |
+|-----------------------------------------------------------------------------|
+|Case Description: ESPRESO GENERATOR - CUBE decomposed by Metis in gravitation|
+|                                                                             |
+|-----------------------------------------------------------------------------|
+|*****************************************************************************|
+
+ESDATA {
+	DOMAINS 	4;
+}
+
+ENV {
+	VERBOSE_LEVEL	  3;
+	MEASURE_LEVEL   3;
+}
+
+STRUCTURAL_MECHANICS_3D {
+
+  PHYSICS_SOLVER {
+    LOAD_STEPS          1;
+
+    LOAD_STEPS_SETTINGS {
+      1 {
+        TYPE        STEADY_STATE;
+        MODE              LINEAR;
+        SOLVER_LIBRARY   ESPRESO;
+        
+        ESPRESO {
+        METHOD   	           TOTAL_FETI; 	// TOTAL_FETI; HYBRID_FETI;
+	      ITERATIONS	     	         1000;	// specifiy max number of iterations 
+        SOLVER            orthogonalPCG; 	// PCG; pipeCG; orthogonalPCG; GMRES; BICGSTAB; orthogonalPCG_CP
+	      EPSILON		                 1e-4;
+        PRECONDITIONER  SUPER_DIRICHLET; 	// NONE; LUMPED; WEIGHT_FUNCTION; DIRICHLET; SUPER_DIRICHLET
+        }
+      }
+    }
+  }
+}
+
+

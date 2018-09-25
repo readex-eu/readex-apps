@@ -1,0 +1,14 @@
+{
+    "ElmerSolver_core": {
+        "FREQUENCY": "16",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "exec_simulation": {
+        "FREQUENCY": "16",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "read_mesh": {
+        "FREQUENCY": "20",
+        "UNCORE_FREQUENCY": "20"
+    }
+}

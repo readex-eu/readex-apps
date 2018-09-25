@@ -1,0 +1,34 @@
+SCOREP_REGION_NAMES_BEGIN
+EXCLUDE
+!$omp parallel @add.f:22
+!$omp parallel @error.f:27
+!$omp parallel @error.f:86
+!$omp parallel @exch_qbc.f:204
+!$omp parallel @exch_qbc.f:215
+!$omp parallel @exch_qbc.f:244
+!$omp parallel @exch_qbc.f:255
+!$omp parallel @rhs.f:28
+add
+binvcrhs
+binvrhs
+compute_rhs
+copy_x_face
+copy_y_face
+env_setup
+error_norm
+exact_solution
+get_comm_index
+lhsinit
+map_zones
+matmul_sub
+matvec_sub
+print_results
+rhs_norm
+set_constants
+timer_clear
+timer_read
+timer_start
+timer_stop
+zone_setup
+zone_starts
+SCOREP_REGION_NAMES_END
