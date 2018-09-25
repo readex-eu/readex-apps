@@ -1,0 +1,5 @@
+*~
+build/*
+CMakeLists.txt
+readex_env*
+environment.sh

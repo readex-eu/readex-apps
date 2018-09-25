@@ -1,0 +1,26 @@
+{
+    "LPlusTimes": {
+        "FREQUENCY": "16",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "LTimes": {
+        "FREQUENCY": "22",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "Loop": {
+        "FREQUENCY": "22",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "SweepSubdomain": {
+        "FREQUENCY": "24",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "particleEdit": {
+        "FREQUENCY": "25",
+        "UNCORE_FREQUENCY": "26"
+    },
+    "scattering": {
+        "FREQUENCY": "12",
+        "UNCORE_FREQUENCY": "18"
+    }
+}

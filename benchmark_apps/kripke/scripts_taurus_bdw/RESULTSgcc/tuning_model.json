@@ -1,0 +1,276 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 44516032,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 44525952,
+            "file": "Kernel_3d_GZD.cpp",
+            "line": 121,
+            "name": "virtual void Kernel_3d_GZD::LPlusTimes(Grid_Data*)"
+        },
+        {
+            "id": 44527312,
+            "file": "Kernel_3d_GZD.cpp",
+            "line": 64,
+            "name": "virtual void Kernel_3d_GZD::LTimes(Grid_Data*)"
+        },
+        {
+            "id": 44526976,
+            "file": "Sweep_Solver.cpp",
+            "line": 65,
+            "name": "Loop"
+        },
+        {
+            "id": 44526640,
+            "file": "Kernel_3d_GZD.cpp",
+            "line": 181,
+            "name": "virtual void Kernel_3d_GZD::scattering(Grid_Data*)"
+        },
+        {
+            "id": 44526256,
+            "file": "Grid.cpp",
+            "line": 248,
+            "name": "double Grid_Data::particleEdit()"
+        },
+        {
+            "id": 44525440,
+            "file": "Sweep_Solver.cpp",
+            "line": 178,
+            "name": "void SweepSubdomains(std::vector<int>, Grid_Data*, bool)"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 44525952,
+            "scenario": 44534672,
+            "exectime": 1.44261,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "Kernel_3d_GZD.cpp",
+                        "line": 121,
+                        "name": "virtual void Kernel_3d_GZD::LPlusTimes(Grid_Data*)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44526976,
+            "scenario": 44534672,
+            "exectime": 4.10044,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44526640,
+            "scenario": 44534672,
+            "exectime": 0.708816,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "Kernel_3d_GZD.cpp",
+                        "line": 181,
+                        "name": "virtual void Kernel_3d_GZD::scattering(Grid_Data*)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44527312,
+            "scenario": 44534672,
+            "exectime": 1.66022,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "Kernel_3d_GZD.cpp",
+                        "line": 64,
+                        "name": "virtual void Kernel_3d_GZD::LTimes(Grid_Data*)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44526256,
+            "scenario": 44542080,
+            "exectime": 0.0600547,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "Grid.cpp",
+                        "line": 248,
+                        "name": "double Grid_Data::particleEdit()"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44525440,
+            "scenario": 44536416,
+            "exectime": 0.17356,
+            "iid": 44516032,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 65,
+                        "name": "Loop"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "Sweep_Solver.cpp",
+                        "line": 178,
+                        "name": "void SweepSubdomains(std::vector<int>, Grid_Data*, bool)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 44542080,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1000,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 1300
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 44536416,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1000,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 1400
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2100
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": 44534672,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1000,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 1200
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2100
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}

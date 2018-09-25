@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <readex-dyn-detect>
+        <Intra-phase>
+            <significantRegion>
+                <name>double Grid_Data::particleEdit()</name>
+                <granularity>0.068645800000000007</granularity>
+                <weight>2.0655562416952407</weight>
+                <time_variation_reg>15.060659324808029</time_variation_reg>
+                <time_variation_phase>0.3110863887240285</time_variation_phase>
+                <compute_intensity>189.31304598861774</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void Kernel_3d_GZD::LPlusTimes(Grid_Data*)</name>
+                <granularity>1.2979400000000001</granularity>
+                <weight>35.134089582076861</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>0.008049898952186935</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void Kernel_3d_GZD::LTimes(Grid_Data*)</name>
+                <granularity>1.5189600000000001</granularity>
+                <weight>41.157488280226922</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>185.66863624332728</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void Kernel_3d_GZD::scattering(Grid_Data*)</name>
+                <granularity>0.67981100000000005</granularity>
+                <weight>17.817851539128789</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>83.19935524230803</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void SweepSubdomains(std::vector&lt;int&gt;, Grid_Data*, bool)</name>
+                <granularity>0.59598099999999998</granularity>
+                <weight>3.8146990343051161</weight>
+                <time_variation_reg>6.3965507467293197</time_variation_reg>
+                <time_variation_phase>0.24400915956432004</time_variation_phase>
+                <compute_intensity>1160.8939846460162</compute_intensity>
+            </significantRegion>
+        </Intra-phase>
+        <Inter-phase>
+            <name>Loop</name>
+            <variation>0</variation>
+        </Inter-phase>
+        <Thresholds>
+            <weight>10</weight>
+            <time_variation>10</time_variation>
+            <compute_intensity_variation>10</compute_intensity_variation>
+            <granularity_significant_region>0.01</granularity_significant_region>
+        </Thresholds>
+        <dynamism>
+            <dyn_time_variation/>
+            <dyn_comIn_variation>
+                <name>virtual void Kernel_3d_GZD::LPlusTimes(Grid_Data*)</name>
+                <name>virtual void Kernel_3d_GZD::LTimes(Grid_Data*)</name>
+                <name>virtual void Kernel_3d_GZD::scattering(Grid_Data*)</name>
+            </dyn_comIn_variation>
+        </dynamism>
+    </readex-dyn-detect>
+    <tuningParameter>
+        <frequency>
+            <min_freq/>
+            <max_freq/>
+            <freq_step/>
+        </frequency>
+        <uncore>
+            <min_freq/>
+            <max_freq/>
+            <freq_step/>
+        </uncore>
+        <openMPThreads>
+            <lower_value/>
+            <step/>
+        </openMPThreads>
+    </tuningParameter>
+    <objectives>
+        <objective>Energy</objective>
+        <objective>Time</objective>
+        <objective>EDP</objective>
+        <objective>ED2P</objective>
+        <objective>CPUEnergy</objective>
+        <objective>TCO</objective>
+    </objectives>
+    <CostPerJoule>8.0000000000000002e-08</CostPerJoule>
+    <CostPerCoreHour>1</CostPerCoreHour>
+    <periscope>
+        <metrics>
+            <node_energy>hdeem/BLADE/E</node_energy>
+            <cpu0_energy>hdeem/CPU0/E</cpu0_energy>
+            <cpu1_energy>hdeem/CPU1/E</cpu1_energy>
+        </metrics>
+        <searchAlgorithm>
+            <name>exhaustive</name>
+        </searchAlgorithm>
+        <atp>
+            <searchAlgorithm>
+                <name>exhaustive_atp</name>
+            </searchAlgorithm>
+        </atp>
+        <tuningModel>
+            <file_path/>
+        </tuningModel>
+    </periscope>
+    <scorep>
+        <tuningSubstrate/>
+    </scorep>
+</Configuration>
