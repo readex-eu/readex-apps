@@ -1,0 +1,30 @@
+#!/bin/sh
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /scratch/work/user/lriha/readex-toolsuite-gcc-test/modules/
+module load readex_GCC7.1.0
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false
+
+if [ -n "$PBS_NODEFILE" ]
+then 
+	cat $PBS_NODEFILE > machfile
+	sed -i "/$HOSTNAME/d" ./machfile
+	export PSC_MACHINE_FILE="--machinefile machfile \
+	-x SCOREP_TOTAL_MEMORY \
+	-x SCOREP_SUBSTRATE_PLUGINS \
+	-x SCOREP_RRL_PLUGINS \
+	-x SCOREP_METRIC_PLUGINS \
+	-x SCOREP_METRIC_X86_ENERGY_SYNC_PLUGIN \
+	-x SCOREP_METRIC_PLUGINS_SEP \
+	-x SCOREP_METRIC_X86_ENERGY_SYNC_PLUGIN_CONNECTION \
+	-x SCOREP_METRIC_X86_ENERGY_SYNC_PLUGIN_STATS_TIMEOUT_MS \
+	-x SCOREP_MPI_ENABLE_GROUPS \
+	-x SCOREP_ENABLE_PROFILING \
+	-x SCOREP_ENABLE_TRACING \
+	"
+fi
+

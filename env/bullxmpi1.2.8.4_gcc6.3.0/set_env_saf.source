@@ -1,0 +1,8 @@
+#!/bin/sh
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /projects/p_readex/modules
+module load readex/ci_readex_bullxmpi1.2.8.4_gcc6.3.0
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false

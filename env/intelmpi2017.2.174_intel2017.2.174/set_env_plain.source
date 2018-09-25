@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module load intel/2017.2.174
+module load intelmpi/2017.2.174
+module load cmake
+

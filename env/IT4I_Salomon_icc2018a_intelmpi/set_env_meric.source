@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module load intel/2018a
+module load Python/3.6.4-base
+module load x86_adapt
+module load PAPI/5.5.1
+
+export MERIC_LIB_PATH="-L${MERIC_ROOT}/lib -L/usr/local/lib"
+export MERIC_LIBS="-lx86_adapt -lpapi -lrt -lmericmpi"
+export LD_LIBRARY_PATH+=":${MERIC_ROOT}/lib/:/usr/local/lib/"
+

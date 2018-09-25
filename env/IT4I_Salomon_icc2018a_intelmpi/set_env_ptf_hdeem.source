@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "ERROR: HDEEM not supported at the Salomon cluster"

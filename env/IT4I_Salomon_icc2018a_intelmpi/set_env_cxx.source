@@ -1,0 +1,23 @@
+#!/bin/sh
+
+export READEX_MACHINE=salomon
+
+export READEX_INTEL=1
+unset READEX_GNU
+
+export READEX_CXX="mpiicpc"
+export READEX_CC="mpiicpc"
+export READEX_CXX_FLAGS="-xcore-avx2"
+export READEX_FC="mpiifort"
+export READEX_OMP_FLAG="-qopenmp"
+export READEX_OMP_LIB="-liomp5"
+export READEX_MKL_THREAD_LIB="-lmkl_intel_thread"
+
+unset BIND_TO_SOCKETS
+
+export MERIC_ROOT="/scratch/work/user/vys0053/SOFTWARE/MERIC/icc2018a/"
+export MERIC_INC_PATH="-I${MERIC_ROOT}/include"
+export READEX_INC_PATH="${MERIC_INC_PATH} -I${SCOREP_ROOT}/include"
+
+#path to measure_rapl
+#export PATH+=:$PATH_TO_MEASURE_RAPL

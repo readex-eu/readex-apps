@@ -1,0 +1,11 @@
+#!/bin/sh
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /projects/p_readex/modules
+module load readex/ci_readex_intelmpi2017.2.174_intel2017.2.174
+module load scorep-hdeem/sync-intelmpi-intel2017
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false

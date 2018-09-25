@@ -1,0 +1,11 @@
+#!/bin/sh
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /projects/p_readex/modules
+module load readex/scs5_ci_readex_intel2018a
+module load scorep_plugin_x86_energy/intel_impi_2018
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false

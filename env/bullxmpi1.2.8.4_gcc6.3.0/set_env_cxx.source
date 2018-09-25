@@ -1,0 +1,19 @@
+#!/bin/sh
+
+export READEX_MACHINE=taurus_hsw
+
+unset READEX_INTEL
+export READEX_GNU=1
+
+export READEX_CXX="mpic++"
+export READEX_CC="mpicc"
+export READEX_CXX_FLAGS="-m64 -mavx2 -march=native"
+export READEX_FC="mpif90"
+export READEX_OMP_FLAG="-fopenmp"
+export READEX_OMP_LIB="-lgomp"
+export READEX_MKL_THREAD_LIB="-lmkl_gnu_thread"
+
+export MERIC_ROOT="/projects/p_readex/it4i/MERIC/gcc6.3.0"
+export MERIC_INC_PATH="-I${MERIC_ROOT}/include"
+
+export PATH+=:/lustre/ssd/p_readex/tools/bin/

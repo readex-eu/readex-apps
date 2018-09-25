@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "WARNING: deprecated environment file, use set_env_ptf_hdeem.source or set_env_ptf_rapl.source to source the modules - PTF modules with HDEEM will be sourced as default"
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_ptf_hdeem.source

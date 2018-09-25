@@ -1,0 +1,8 @@
+#!/bin/sh
+
+source  $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /scratch/work/user/lriha/readex-toolsuite-gcc-test/modules/
+module load readex_GCC7.1.0
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false

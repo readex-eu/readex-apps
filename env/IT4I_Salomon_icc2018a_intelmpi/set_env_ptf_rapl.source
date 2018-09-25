@@ -1,0 +1,17 @@
+#!/bin/sh
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module use /scratch/work/user/lriha/readex-toolsuite-intel2018a/modules/
+module load readex_intel2018a
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export SCOREP_ENABLE_PROFILING=true
+export SCOREP_ENABLE_TRACING=false
+
+if [ -n "$PBS_NODEFILE" ]
+then
+	cat $PBS_NODEFILE > machfile
+	sed -i "/$HOSTNAME/d" ./machfile
+	export PSC_MACHINE_FILE="--machinefile machfile"
+fi

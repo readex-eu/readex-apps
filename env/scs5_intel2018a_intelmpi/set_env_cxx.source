@@ -1,0 +1,22 @@
+#!/bin/sh
+
+export READEX_MACHINE=taurus_bdw
+
+export READEX_INTEL=1
+unset READEX_GNU
+
+export READEX_CXX="mpiicpc"
+export READEX_CC="mpiicpc"
+export READEX_CXX_FLAGS="-xcore-avx2"
+export READEX_FC="mpiifort"
+export READEX_OMP_FLAG="-qopenmp"
+export READEX_OMP_LIB="-liomp5"
+export READEX_MKL_THREAD_LIB="-lmkl_intel_thread"
+
+export MERIC_ROOT="/projects/p_readex/it4i/MERIC/SCS5/icc2018a/"
+export MERIC_INC_PATH="-I${MERIC_ROOT}/include"
+export READEX_INC_PATH="${MERIC_INC_PATH} -I${SCOREP_ROOT}/include"
+
+export LD_LIBRARY_PATH+=":/usr/local/lib/"
+export PATH+=:/lustre/ssd/p_readex/tools/bin/
+

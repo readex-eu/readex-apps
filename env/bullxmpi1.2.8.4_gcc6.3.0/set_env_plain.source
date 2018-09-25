@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+source $( dirname "${BASH_SOURCE[0]}" )/set_env_cxx.source
+module load gcc/6.3.0
+module load bullxmpi/1.2.8.4
+module load cmake
+
+#export MERIC_ROOT="/projects/p_readex/it4i/mericGCC/"
+#export MERIC_INC_PATH="-I${MERIC_ROOT}/include"
+#export MERIC_LIB_PATH="-L${MERIC_ROOT}/lib -L/sw/taurus/libraries/papi/5.5.1/lib"
+export LD_LIBRARY_PATH+=":${MERIC_ROOT}/lib/:/usr/local/lib/"
