@@ -1,0 +1,67 @@
+{
+    "Assembler--Assemble-B1": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "Assembler--AssembleStiffnesMatrices": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "Assembler--SaveResults": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "12"
+    },
+    "Assembler--SolverInit": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "Assembler--SolverSolve": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Cluster--CreateF0-AssembleF0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "16"
+    },
+    "Cluster--CreateF0-FactF0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "27"
+    },
+    "Cluster--CreateG1-perCluster": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "16"
+    },
+    "Cluster--CreateSa-SaFactorization": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "27"
+    },
+    "Cluster--CreateSa-SolveF0vG0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "27"
+    },
+    "Create_GGT_Inv": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "27"
+    },
+    "Main": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "instance--PrepareMesh": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "14",
+        "UNCORE_FREQUENCY": "24"
+    }
+}

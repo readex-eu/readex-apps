@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <!--  The following section specifies the dynamism results for each significant regions and across all phases  -->
+    <readex-dyn-detect>
+        <Intra-phase>
+            <significantRegion>
+                <name>void espreso::input::Block&lt;TElement&gt;::elements(std::vector&lt;espreso::Element*&gt;&amp;, size_t) [with TElement = espreso::input::Hexahedron8]</name>
+                <granularity>0.167492</granularity>
+                <weight>0.0065973420304240617</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>16174.85380046237</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::fillNodesFromCoordinates()</name>
+                <granularity>0.11780500000000001</granularity>
+                <weight>0.0046402208935000279</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>11595.107286736113</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::fillParentElementsToNodes()</name>
+                <granularity>0.29867100000000002</granularity>
+                <weight>0.025608914517996829</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>24.356077325020529</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::assignDomains(std::vector&lt;espreso::Element*&gt;&amp;)</name>
+                <granularity>0.116553</granularity>
+                <weight>0.16904261101789048</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>27.836401347826239</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::mapCoordinatesToDomains()</name>
+                <granularity>0.22067999999999999</granularity>
+                <weight>0.0086923640488738678</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>40.94103625276442</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;long unsigned int&gt; espreso::fillUniformDOFs(std::vector&lt;espreso::Element*&gt;&amp;, std::vector&lt;std::vector&lt;espreso::Element*&gt; &gt;&amp;, size_t, size_t, const std::vector&lt;long unsigned int&gt;&amp;, const std::vector&lt;long unsigned int&gt;&amp;)</name>
+                <granularity>0.14246500000000001</granularity>
+                <weight>0.05410433357754512</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>16.210568652093077</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::computeDOFsCounters(std::vector&lt;espreso::Element*&gt;&amp;, const std::vector&lt;espreso::Property&gt;&amp;, std::vector&lt;int&gt;, const std::vector&lt;int&gt;&amp;, const std::vector&lt;espreso::G2L&gt;&amp;)</name>
+                <granularity>0.14972199999999999</granularity>
+                <weight>0.051421155042973392</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>13.416160614008874</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Region::computeArea(const espreso::Coordinates&amp;) const</name>
+                <granularity>0.24258099999999999</granularity>
+                <weight>0.0095550224911177799</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>62688.595910721531</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;espreso::Element*&gt; espreso::mergeElements(size_t, std::vector&lt;std::vector&lt;espreso::Element*&gt; &gt;&amp;, MergeFunction) [with MergeFunction = espreso::Mesh::fillFacesFromElements(std::function&lt;bool(const std::vector&lt;espreso::Element*&gt;&amp;, const espreso::Element*)&gt;)::&lt;lambda(espreso::Element*, espreso::Element*)&gt;]</name>
+                <granularity>1.2619499999999999</granularity>
+                <weight>0.5766706843444489</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>54.787942759624009</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Assembler::timeWrapper(const string&amp;, std::function&lt;void()&gt;)</name>
+                <granularity>23.711500000000001</granularity>
+                <weight>41.455344693120317</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>73.736324572812165</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void espreso::Physics::updateMatrix(const espreso::Step&amp;, espreso::Matrices, const std::vector&lt;espreso::Solution*&gt;&amp;)</name>
+                <granularity>87.460999999999999</granularity>
+                <weight>41.339147149418224</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>75.819628869059827</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::EqualityConstraints::insertElementGluingToB1(const espreso::Step&amp;, bool, bool)</name>
+                <granularity>0.38460800000000001</granularity>
+                <weight>0.096151694908578125</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>12.246071342046527</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::DistributedInfo::prepare(const std::vector&lt;espreso::Element*&gt;&amp;, espreso::MeshInfo::InfoMode)</name>
+                <granularity>5.2003300000000001</granularity>
+                <weight>2.409964628679917</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>146.49151512927162</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>static std::__cxx11::string espreso::Esutils::createDirectory(const std::vector&lt;std::__cxx11::basic_string&lt;char&gt; &gt;&amp;)</name>
+                <granularity>0.100589</granularity>
+                <weight>0.0079241998125083694</weight>
+                <time_variation_reg>2.1536549722136615</time_variation_reg>
+                <time_variation_phase>8.5329961635116069e-05</time_variation_phase>
+                <compute_intensity>0.60387314612593446</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void storeData(std::ofstream&amp;, const string&amp;, const string&amp;, size_t, const std::vector&lt;TType&gt;&amp;) [with TType = double]</name>
+                <granularity>0.80847899999999995</granularity>
+                <weight>0.042460945808616736</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>6403.7774025421077</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void storeData(std::ofstream&amp;, const string&amp;, const string&amp;, size_t, const std::vector&lt;TType&gt;&amp;) [with TType = int]</name>
+                <granularity>0.17011100000000001</granularity>
+                <weight>0.020101505447498405</weight>
+                <time_variation_reg>100.72423300080536</time_variation_reg>
+                <time_variation_phase>0.0067490290612026247</time_variation_phase>
+                <compute_intensity>2481.4289479052422</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void espreso::Monitoring::storeSolution(const espreso::Step&amp;, const std::vector&lt;espreso::Solution*&gt;&amp;, const std::vector&lt;std::pair&lt;espreso::ElementType, espreso::Property&gt; &gt;&amp;)</name>
+                <granularity>0.638737</granularity>
+                <weight>0.26572960240745552</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>14.759378249503236</compute_intensity>
+            </significantRegion>
+        </Intra-phase>
+        <Inter-phase>
+            <name>Main</name>
+            <variation>0</variation>
+        </Inter-phase>
+        <Thresholds>
+            <weight>10</weight>
+            <time_variation>10</time_variation>
+            <compute_intensity_variation>10</compute_intensity_variation>
+            <granularity_significant_region>0.10000000000000001</granularity_significant_region>
+        </Thresholds>
+        <dynamism>
+            <dyn_time_variation/>
+            <dyn_comIn_variation/>
+        </dynamism>
+    </readex-dyn-detect>
+    <!--  This section specifies all the tuning parameter such as frequency, uncore frequency, no of threads and so on  -->
+    <tuningParameter>
+        <frequency>
+            <min_freq>1300</min_freq>
+            <max_freq>2500</max_freq>
+            <freq_step>200</freq_step>
+            <default>2500</default>
+        </frequency>
+        <uncore>
+            <min_freq>1200</min_freq>
+            <max_freq>3000</max_freq>
+            <freq_step>200</freq_step>
+            <default>3000</default>
+        </uncore>
+        <openMPThreads>
+            <lower_value>2</lower_value>
+            <step>2</step>
+        </openMPThreads>
+    </tuningParameter>
+    <!--  The following section specifies all the objective metrics  -->
+    <objectives>
+        <objective>Energy</objective>
+        <!--<objective>NormalizedEnergy</objective>-->
+        <objective>Time</objective>
+        <!--<objective>NormalizedTime</objective>-->
+        <!--<objective>EDP</objective>-->
+        <!--<objective>NormalizedEDP</objective>-->
+        <!--<objective>ED2P</objective>-->
+        <!--<objective>NormalizedED2P</objective>-->
+        <!--<objective>CPUEnergy</objective>-->
+        <!--<objective>NormalizedCPUEnergy</objective>-->
+        <!--<objective>TCO</objective>-->
+        <!--<objective>NormalizedTCO</objective>-->
+        <!--<CostPerJoule>0.00000008</CostPerJoule>-->
+        <!-- Euro -->
+        <!--<CostPerCoreHour>1.0</CostPerCoreHour>-->
+        <!-- Euro -->
+    </objectives>
+    <!--  metrics section specifies energy metrics to be measured across nodes. In SearchAlgorithm section one has to specify at least one search algorithm for readex tuning plugins  -->
+    <periscope>
+        <metricPlugin>
+            <!--<name>hdeem_sync_plugin</name>-->
+            <name>x86_energy_sync_plugin</name>
+        </metricPlugin>
+        <metrics>
+            <!--<node_energy>hdeem/BLADE/E</node_energy>-->
+            <!--<cpu0_energy>hdeem/CPU0/E</cpu0_energy>-->
+            <!--<cpu1_energy>hdeem/CPU1/E</cpu1_energy>-->
+            <node_energy>x86_energy/BLADE/E</node_energy>
+        </metrics>
+        <metricUnits>
+            <timeUnit>s</timeUnit>
+            <energyUnit>mj</energyUnit>
+            <currencyUnit>Euro</currencyUnit>
+        </metricUnits>
+        <searchAlgorithm>
+            <name>individual</name>
+            <keep>2</keep>
+            <!--<name>exhaustive</name>-->
+            <!--<name>random</name>-->
+            <!--<samples>2</samples>-->
+        </searchAlgorithm>
+        <atp>
+            <searchAlgorithm>
+                <name>individual_atp</name>
+                <!--<name>exhaustive_atp</name>-->
+            </searchAlgorithm>
+        </atp>
+        <tuningModel>
+            <file_path>tuning_model.json</file_path>
+        </tuningModel>
+    </periscope>
+    <!--  This section defines which substrate plugin to be used for READEX tuning plugins  -->
+    <scorep>
+        <tuningSubstrate>rrl</tuningSubstrate>
+    </scorep>
+</Configuration>

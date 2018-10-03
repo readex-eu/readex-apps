@@ -1,0 +1,322 @@
+SCOREP_REGION_NAMES_BEGIN
+EXCLUDE
+bool espreso::Assembler::checkForStore(const string&)
+bool espreso::Element::hasProperty(espreso::Property, size_t) const
+bool espreso::Mesh::hasProperty(size_t, espreso::Property, size_t) const
+bool espreso::Mesh::isAnyPropertyTimeDependent(const std::vector<espreso::Property>&, size_t) const
+bool espreso::Mesh::isPropertyTimeDependent(espreso::Property, size_t) const
+bool espreso::Solution::hasProperty(espreso::Property) const
+bool espreso::compare(const std::pair<int, double>&, const std::pair<int, double>&)
+bool espreso::compareDouble(const double&, const double&)
+bool isAssign(int)
+bool isDelimiter(int)
+bool isExpressionEnd(int)
+bool isLineComment(int, int)
+bool isLineEnd(int)
+bool isLinkEnd(int)
+bool isLinkStart(int)
+bool isMultiLineCommentStart(int, int)
+bool isObjectClose(int)
+bool isObjectOpen(int)
+bool isSingleCommentChar(int)
+bool isStringEnd(int)
+bool isStringStart(int)
+bool isWhiteSpace(int)
+double espreso::Element::getProperty(espreso::Property, int, size_t, double, double, double) const
+double espreso::Element::sumProperty(espreso::Property, int, size_t, double, double, double) const
+double espreso::GetProcessMemory_u()
+double espreso::Solution::getStatisticalData(const std::vector<espreso::Property>&, espreso::StatisticalData, const espreso::Region*) const
+double espreso::SparseMatrix::GetMeanOfDiagonalOfSymmetricMatrix()
+double espreso::SparseMatrix::dot_e(double*, double*, int)
+double espreso::SparseMatrix::getDiagonalMaximum() const
+double espreso::SparseMatrix::getNorm_K_R(espreso::SparseMatrix&, espreso::SparseMatrix&, char)
+double espreso::Statistic::get(const espreso::Region*, size_t, espreso::StatisticalData)
+double espreso::TimeEvent::getLastStat(double)
+double espreso::parallel_ddot_compressed(espreso::SuperCluster&, std::vector<double>&, std::vector<double>&)
+double espreso::parallel_norm_compressed(espreso::SuperCluster&, std::vector<double>&)
+espreso::AdvectionDiffusion3D::AdvectionDiffusion3D(espreso::Mesh*, espreso::Instance*, const espreso::AdvectionDiffusion3DConfiguration&)
+espreso::AdvectionDiffusion::AdvectionDiffusion(const espreso::AdvectionDiffusionConfiguration&)
+espreso::AdvectionDiffusionFactory::AdvectionDiffusionFactory(const espreso::AdvectionDiffusion3DConfiguration&, espreso::Mesh*)
+espreso::Assembler::Assembler(espreso::Instance&, espreso::Physics&, espreso::Mesh&, espreso::Store&, espreso::LinearSolver&)
+espreso::Assembler::~Assembler()
+espreso::Configuration::Configuration()
+espreso::Configuration::Configuration(const espreso::Configuration&)
+espreso::Configuration::~Configuration()
+espreso::ConstEvaluator::ConstEvaluator(double, espreso::Property)
+espreso::DataArrays::~DataArrays()
+espreso::DenseMatrix espreso::DenseMatrix::operator*(espreso::DenseMatrix&)
+espreso::DenseMatrix& espreso::DenseMatrix::operator=(double)
+espreso::DenseSolverMKL::DenseSolverMKL()
+espreso::DenseSolverMKL::~DenseSolverMKL()
+espreso::Domain::Domain(const espreso::ESPRESOSolver&, espreso::Instance*, int, int)
+espreso::Element* espreso::parentElement(const std::vector<espreso::Element*>&, const espreso::Element*)
+espreso::Environment::Environment()
+espreso::EqualityConstraints::EqualityConstraints(espreso::Instance&, const espreso::Mesh&, const std::vector<espreso::Element*>&, const std::vector<espreso::Element*>&, const std::vector<espreso::Property>&, const std::vector<long unsigned int>&, bool)
+espreso::Evaluator::Evaluator(espreso::Property)
+espreso::Expression& espreso::Expression::operator=(const espreso::Expression&)
+espreso::Expression::Expression(const espreso::Expression&)
+espreso::Expression::Expression(const string&, std::vector<std::__cxx11::basic_string<char> >)
+espreso::FETISolver::FETISolver(espreso::Instance*, const espreso::ESPRESOSolver&)
+espreso::FactoryLoader* espreso::Factory::createFactoryLoader(const espreso::GlobalConfiguration&)
+espreso::Hexahedron8::Hexahedron8(const int*, int, const int*)
+espreso::Info::~Info()
+espreso::Instance::Instance(const espreso::Mesh&)
+espreso::IterSolverBase::IterSolverBase(const espreso::ESPRESOSolver&)
+espreso::LinearSolver* espreso::FactoryLoader::getLinearSolver(const espreso::LoadStepSettingsBase&, espreso::Instance*) const
+espreso::LinearTimeStep::LinearTimeStep(espreso::Assembler&)
+espreso::LoadStepSolver::LoadStepSolver(const string&, espreso::TimeStepSolver&, double)
+espreso::Material::~Material()
+espreso::MaterialCoordination::MaterialCoordination(const espreso::Coordinates&, const espreso::CoordinateSystem&)
+espreso::MaterialCoordination::~MaterialCoordination()
+espreso::Mesh::Mesh()
+espreso::Monitoring::Monitoring(const espreso::OutputConfiguration&, const espreso::Mesh*)
+espreso::Parameter::Parameter(const string&, const string&, const string&)
+espreso::Parameter::~Parameter()
+espreso::ParameterBase::ParameterBase(const string&, const string&)
+espreso::Physics::Physics(const string&, espreso::Mesh*, espreso::Instance*)
+espreso::Physics::~Physics()
+espreso::Region* espreso::Mesh::region(const string&) const
+espreso::Region::Region(espreso::ElementType)
+espreso::Region::Region(espreso::ElementType, std::vector<espreso::Element*>&)
+espreso::Region::~Region()
+espreso::ResultStore::ResultStore(const espreso::OutputConfiguration&, const espreso::Mesh*, espreso::MeshInfo::InfoMode)
+espreso::Solution::Solution(const espreso::Mesh&, const string&, espreso::ElementType, const std::vector<espreso::Property>&, std::vector<std::vector<double> >&)
+espreso::SparseMatrix& espreso::SparseMatrix::operator=(const espreso::SparseCSRMatrix<int>&)
+espreso::SparseMatrix& espreso::SparseMatrix::operator=(const espreso::SparseMatrix&)
+espreso::SparseMatrix::SparseMatrix()
+espreso::SparseMatrix::SparseMatrix(const espreso::SparseMatrix&)
+espreso::SparseMatrix::~SparseMatrix()
+espreso::SparseSolverMKL::SparseSolverMKL()
+espreso::SparseSolverMKL::~SparseSolverMKL()
+espreso::Square4::Square4(const int*)
+espreso::Statistic::Statistic(espreso::ElementType, const espreso::Mesh&, const std::vector<std::vector<double> >&, const std::vector<espreso::Property>&)
+espreso::StatisticalData getStatistics(const string&)
+espreso::SteadyStateSolver::SteadyStateSolver(espreso::TimeStepSolver&, double)
+espreso::Test::~Test()
+espreso::TimeEval::TimeEval(std::__cxx11::string)
+espreso::TimeEvent::TimeEvent(std::__cxx11::string)
+espreso::TimeStepSolver::TimeStepSolver(const string&, espreso::Assembler&)
+espreso::Tokenizer::Token espreso::Tokenizer::_next()
+espreso::Tokenizer::Tokenizer(const string&)
+espreso::VTKXML::VTKXML(const espreso::OutputConfiguration&, const espreso::Mesh*, espreso::MeshInfo::InfoMode)
+espreso::VTKXMLASCII::VTKXMLASCII(const espreso::OutputConfiguration&, const espreso::Mesh*, espreso::MeshInfo::InfoMode)
+espreso::input::BlockBorder espreso::input::BlockBorder::intersect(const espreso::input::BlockSetting&) const
+espreso::input::BlockBorder::BlockBorder(const string&)
+espreso::input::CubeFace espreso::input::BlockBorder::getFace(const espreso::input::BlockSetting&) const
+espreso::input::Grid::~Grid()
+int espreso::parseLine_u(char*)
+size_t espreso::SparseVVPMatrix<TIndices>::nonZeroValues() const [with Tindices = int]
+size_t espreso::input::BlockBorder::dimension() const
+static Ttype espreso::Communication::exscan(Ttype&) [with Ttype = long unsigned int]
+static Ttype espreso::Esutils::getEnv(const string&) [with Ttype = int]
+static Ttype espreso::Esutils::getEnv(const string&) [with Ttype = long unsigned int]
+static Ttype espreso::Esutils::getEnv(const string&) [with Ttype = std::__cxx11::basic_string<char>]
+static Ttype espreso::Esutils::sizesToOffsets(std::vector<Tvalue>&) [with Ttype = long unsigned int]
+static bool espreso::Communication::exchangeUnknownSize(const std::vector<std::vector<Ttype> >&, std::vector<std::vector<Ttype> >&, const std::vector<int>&) [with Ttype = double]
+static bool espreso::Communication::exchangeUnknownSize(const std::vector<std::vector<Tvalue> >&, std::vector<std::vector<Tvalue> >&, const std::vector<int>&) [with Ttype = int]
+static bool espreso::Communication::gatherUnknownSize(const std::vector<Ttype>&, std::vector<Ttype>&) [with Ttype = double]
+static bool espreso::Communication::gatherUnknownSize(const std::vector<Ttype>&, std::vector<Ttype>&, std::vector<long unsigned int>&) [with Ttype = double]
+static bool espreso::Communication::receiveLowerKnownSize(const std::vector<std::vector<Ttype> >&, std::vector<std::vector<Ttype> >&, const std::vector<int>&) [with Ttype = int]
+static bool espreso::Communication::receiveUpperUnknownSize(const std::vector<std::vector<Tvalue> >&, std::vector<std::vector<Tvalue> >&, const std::vector<int>&) [with Ttype = double]
+static bool espreso::Expression::isValid(const string&, std::vector<std::__cxx11::basic_string<char> >)
+static bool espreso::Mesh::commonRegion(const std::vector<espreso::Region*>&, const std::vector<espreso::Region*>&)
+static double espreso::TimeEvent::time()
+static std::__cxx11::string espreso::Info::averageValue(const Tvalue&) [with Tvalue = long unsigned int]
+static std::__cxx11::string espreso::Info::averageValues(const std::vector<T>&) [with Tvalue = long unsigned int]
+static std::__cxx11::string espreso::Info::sumValue(const Tvalue&) [with Tvalue = long unsigned int]
+static std::__cxx11::string espreso::Logging::outputRoot()
+static std::__cxx11::string espreso::Parser::strip(const string&)
+static std::__cxx11::string espreso::Parser::uppercase(const string&)
+static std::vector<Tvalue> espreso::Esutils::getDistribution(size_t, Ttype) [with Ttype = long unsigned int]
+static std::vector<Tvalue> espreso::Esutils::getDistribution(size_t, Ttype, Ttype) [with Ttype = long unsigned int]
+static std::vector<std::__cxx11::basic_string<char> > espreso::Parser::split(const string&, const string&)
+static std::vector<std::vector<espreso::Region*> > espreso::Mesh::getRegionsWithProperties(const std::vector<espreso::Region*>&, size_t, const std::vector<espreso::Property>&)
+static void espreso::Esutils::removeDuplicity(std::vector<Tvalue>&) [with Ttype = espreso::Element*]
+static void espreso::Esutils::removeDuplicity(std::vector<Tvalue>&) [with Ttype = espreso::Region*]
+static void espreso::Esutils::removeDuplicity(std::vector<Tvalue>&) [with Ttype = int]
+static void espreso::Esutils::removeDuplicity(std::vector<_RealType>&) [with Ttype = long unsigned int]
+static void espreso::Esutils::setFromEnv(Ttype&, const string&) [with Ttype = int]
+static void espreso::Esutils::setFromEnv(Ttype&, const string&) [with Ttype = long unsigned int]
+static void espreso::Esutils::setFromEnv(Ttype&, const string&) [with Ttype = std::__cxx11::basic_string<char>]
+static void espreso::input::Hexahedron8::addElements(std::vector<espreso::Element*>&, const int*, const int*)
+static void espreso::input::Hexahedron8::addFaces(std::vector<espreso::Element*>&, const int*, espreso::input::CubeFace)
+static void espreso::input::Hexahedron8::pickNodes(const std::vector<espreso::Element*>&, std::vector<espreso::Element*>&, const int*, espreso::input::CubeFace)
+std::__cxx11::string center(const string&, size_t)
+std::__cxx11::string espreso::LoadStepSolver::description() const
+std::__cxx11::string espreso::TimeStepSolver::description() const
+std::__cxx11::string mNames(espreso::Matrices, const string&)
+std::__cxx11::string right(const string&, size_t)
+std::istream& espreso::operator>>(std::istream&, espreso::Property&)
+std::vector<double> Prisma15_weight()
+std::vector<double> Prisma6_weight()
+std::vector<double> Pyramid13_weight()
+std::vector<double> Pyramid5_weight()
+std::vector<double> Tetra10_Weight()
+std::vector<double> Tetra4_Weight()
+std::vector<double> espreso::SparseMatrix::getDiagonal() const
+std::vector<double> get_w()
+std::vector<espreso::DenseMatrix> Hexa20_N()
+std::vector<espreso::DenseMatrix> Hexa20_dN()
+std::vector<espreso::DenseMatrix> Hexa_N()
+std::vector<espreso::DenseMatrix> Hexa_dN()
+std::vector<espreso::DenseMatrix> Prisma15_N()
+std::vector<espreso::DenseMatrix> Prisma15_dN()
+std::vector<espreso::DenseMatrix> Prisma6_N()
+std::vector<espreso::DenseMatrix> Prisma6_dN()
+std::vector<espreso::DenseMatrix> Pyramid13_N()
+std::vector<espreso::DenseMatrix> Pyramid13_dN()
+std::vector<espreso::DenseMatrix> Pyramid5_N()
+std::vector<espreso::DenseMatrix> Pyramid5_dN()
+std::vector<espreso::DenseMatrix> Tetra10_N()
+std::vector<espreso::DenseMatrix> Tetra10_dN()
+std::vector<espreso::DenseMatrix> Tetra4_N()
+std::vector<espreso::DenseMatrix> Tetra4_dN()
+std::vector<espreso::DenseMatrix> get_N()
+std::vector<espreso::DenseMatrix> get_N(double)
+std::vector<espreso::DenseMatrix> get_dN()
+std::vector<espreso::DenseMatrix> get_dN(double)
+std::vector<espreso::Property> espreso::Monitoring::getProperties(const string&)
+std::vector<std::__cxx11::basic_string<char> > espreso::RegionData::pointDataNames() const
+std::vector<std::vector<double> > Hexa20_rst()
+std::vector<std::vector<double> > Prisma15_rst()
+std::vector<std::vector<double> > Prisma6_rst()
+std::vector<std::vector<double> > Pyramid13_rst()
+std::vector<std::vector<double> > Pyramid5_rst()
+std::vector<std::vector<double> > get_st()
+std::vector<std::vector<espreso::Region*> > espreso::Mesh::getRegionsWithProperties(size_t, const std::vector<espreso::Property>&) const
+virtual bool espreso::AdvectionDiffusion::isMatrixTemperatureDependent(const espreso::Step&) const
+virtual bool espreso::AdvectionDiffusion::isMatrixTimeDependent(const espreso::Step&) const
+virtual bool espreso::Configuration::set(const string&, const string&)
+virtual bool espreso::LoadStepSolver::hasNextTimeStep(espreso::Step&)
+virtual espreso::Configuration& espreso::Configuration::operator[](const string&)
+virtual espreso::LoadStepSolver* espreso::AdvectionDiffusionFactory::getLoadStepSolver(size_t, espreso::Mesh*, espreso::Store*)
+virtual espreso::Material::~Material()
+virtual espreso::MatrixType espreso::AdvectionDiffusion::getMatrixType(const espreso::Step&, size_t) const
+virtual espreso::Point espreso::DistributedInfo::shrink(const espreso::Point&, int) const
+virtual int espreso::DenseSolverMKL::Factorization(const string&)
+virtual size_t espreso::AdvectionDiffusionFactory::loadSteps() const
+virtual size_t espreso::Hexahedron8::fillFaces()
+virtual std::__cxx11::string espreso::VTKXML::initWriter(const string&, size_t, size_t)
+virtual std::__cxx11::string espreso::VTKXML::linkClusters(const string&, const string&, const espreso::RegionData&)
+virtual std::vector<long unsigned int> espreso::AdvectionDiffusion::solutionsIndicesToStore() const
+virtual std::vector<std::pair<espreso::ElementType, espreso::Property> > espreso::AdvectionDiffusion3D::propertiesToStore() const
+virtual void espreso::AdvectionDiffusion3D::processElement(const espreso::Step&, espreso::Matrices, const espreso::Element*, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, const std::vector<espreso::Solution*>&) const
+virtual void espreso::AdvectionDiffusion3D::processFace(const espreso::Step&, espreso::Matrices, const espreso::Element*, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, const std::vector<espreso::Solution*>&) const
+virtual void espreso::AdvectionDiffusion3D::processNode(const espreso::Step&, espreso::Matrices, const espreso::Element*, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, espreso::DenseMatrix&, const std::vector<espreso::Solution*>&) const
+virtual void espreso::ClusterCPU::SetupKsolvers()
+virtual void espreso::DenseMatrix::resize(size_t, size_t)
+virtual void espreso::DenseSolverMKL::Clear()
+virtual void espreso::DenseSolverMKL::ImportMatrix(espreso::SparseMatrix&)
+virtual void espreso::DenseSolverMKL::Solve(std::vector<double>&, std::vector<double>&, int)
+virtual void espreso::FETISolver::finalize()
+virtual void espreso::LoadStepSolver::finalizeLoadStep(espreso::Step&)
+virtual void espreso::Monitoring::finalize()
+virtual void espreso::Physics::fillDOFsIndices(const espreso::Element*, int, std::vector<int>&) const
+virtual void espreso::Physics::insertElementToDomain(espreso::SparseVVPMatrix<int>&, espreso::SparseVVPMatrix<int>&, const std::vector<int>&, const espreso::DenseMatrix&, const espreso::DenseMatrix&, const espreso::DenseMatrix&, const espreso::DenseMatrix&, const espreso::Step&, size_t, bool)
+virtual void espreso::ResultStore::finalize()
+virtual void espreso::ResultStore::storeFETIData(const espreso::Step&, const espreso::Instance&)
+virtual void espreso::SparseSolverMKL::Clear()
+virtual void espreso::SparseSolverMKL::ImportMatrix(espreso::SparseMatrix&)
+virtual void espreso::SparseSolverMKL::ImportMatrix_wo_Copy(espreso::SparseMatrix&)
+virtual void espreso::SparseSolverMKL::SetThreaded()
+virtual void espreso::SparseSolverMKL::Solve(std::vector<double>&, std::vector<double>&, int, int)
+virtual void espreso::VTKXML::finalizeWriter()
+virtual void espreso::VTKXML::linkSteps(const string&, const std::vector<std::pair<espreso::Step, std::vector<std::__cxx11::basic_string<char> > > >&)
+void espreso::AdvectionDiffusion3D::assembleMaterialMatrix(const espreso::Step&, const espreso::Element*, int, double, espreso::DenseMatrix&, espreso::DenseMatrix&, bool) const
+void espreso::AdvectionDiffusion3D::postProcessElement(const espreso::Step&, const espreso::Element*, std::vector<espreso::Solution*>&)
+void espreso::All_Reduce_lambdas_compB(espreso::SuperCluster&, std::vector<double>&, std::vector<double>&)
+void espreso::Assembler::finalize()
+void espreso::Assembler::setB0Callback()
+void espreso::Assembler::setRegularizationCallback()
+void espreso::Assembler::storeWrapper(const string&, espreso::Matrices)
+void espreso::Assembler::storeWrapper(const string&, espreso::Matrices, size_t)
+void espreso::BcastMatrix(int, int, int, espreso::SparseMatrix&)
+void espreso::ClusterBase::CreateVec_d_perCluster(std::vector<std::vector<double> >&)
+void espreso::ClusterBase::Create_G_perSubdomain(espreso::SparseMatrix&, espreso::SparseMatrix&, espreso::SparseMatrix&)
+void espreso::ClusterBase::SetupPreconditioner()
+void espreso::DataArrays::clear()
+void espreso::DenseMatrix::multiply(const espreso::DenseMatrix&, const espreso::DenseMatrix&, double, double, bool, bool)
+void espreso::Domain::multKplusLocal(std::vector<double>&, std::vector<double>&)
+void espreso::Domain::multKplusLocalCore(std::vector<double>&, std::vector<double>&)
+void espreso::Expression::parse()
+void espreso::FETISolver::setup_FactorizationOfStiffnessMatrices()
+void espreso::FETISolver::setup_LocalSchurComplement()
+void espreso::FETISolver::setup_Preconditioner()
+void espreso::Factory::finalize()
+void espreso::Factory::initAsync(const espreso::OutputConfiguration&)
+void espreso::Factory::setOutput(const espreso::OutputConfiguration&)
+void espreso::IterSolverBase::Projector_Inv(espreso::TimeEval&, espreso::SuperCluster&, std::vector<double>&, std::vector<double>&, int)
+void espreso::Mesh::addMonitoredRegion(espreso::Region*) const
+void espreso::Mesh::addPropertyGroup(const std::vector<espreso::Property>&)
+void espreso::Mesh::checkMaterials()
+void espreso::Mesh::fillEdgesParents()
+void espreso::Mesh::loadProperty(const std::map<long unsigned int, std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&, const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<espreso::Property>&)
+void espreso::Mesh::loadProperty(const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<espreso::Property>&, size_t)
+void espreso::Mesh::mapEdgesToClusters()
+void espreso::Mesh::mapEdgesToDomains()
+void espreso::RegionData::clearData()
+void espreso::SendMatrix(int, int, espreso::SparseMatrix&, int, espreso::SparseMatrix&)
+void espreso::SparseMatrix::Clear()
+void espreso::SparseMatrix::ConvertCSRToDense(int)
+void espreso::SparseMatrix::ConvertDenseToCSR(int)
+void espreso::SparseMatrix::ConvertToCOO(int)
+void espreso::SparseMatrix::ConvertToCSR()
+void espreso::SparseMatrix::ConvertToCSR(int)
+void espreso::SparseMatrix::ConvertToCSRwithSort(int)
+void espreso::SparseMatrix::CreateEye(int, double, int, int)
+void espreso::SparseMatrix::CreateMatFromRowsFromMatrix_NewSize(espreso::SparseMatrix&, std::vector<int>&)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&, char)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&, char, int)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&, char, int, int)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&, char, int, int, double)
+void espreso::SparseMatrix::DenseMatVec(std::vector<double>&, std::vector<double>&, char, int, int, double, double)
+void espreso::SparseMatrix::GramSchmidtOrtho()
+void espreso::SparseMatrix::MatAddInPlace(espreso::SparseMatrix&, char, double)
+void espreso::SparseMatrix::MatAppend(espreso::SparseMatrix&)
+void espreso::SparseMatrix::MatMat(espreso::SparseMatrix&, char, espreso::SparseMatrix&)
+void espreso::SparseMatrix::MatMatT(espreso::SparseMatrix&, espreso::SparseMatrix&)
+void espreso::SparseMatrix::MatScale(double)
+void espreso::SparseMatrix::MatTranspose()
+void espreso::SparseMatrix::MatTranspose(double)
+void espreso::SparseMatrix::MatTranspose(espreso::SparseMatrix&)
+void espreso::SparseMatrix::MatTransposeCOO()
+void espreso::SparseMatrix::MatVec(std::vector<double>&, std::vector<double>&, char)
+void espreso::SparseMatrix::MatVec(std::vector<double>&, std::vector<double>&, char, int, int)
+void espreso::SparseMatrix::MatVec(std::vector<double>&, std::vector<double>&, char, int, int, double)
+void espreso::SparseMatrix::MatVecCOO(std::vector<double>&, std::vector<double>&, char, double, double)
+void espreso::SparseMatrix::RemoveLower()
+void espreso::SparseMatrix::RemoveLowerDense()
+void espreso::SparseMatrix::getNullPivots(std::vector<int>&)
+void espreso::SparseMatrix::getSubBlockmatrix_rs(espreso::SparseMatrix&, espreso::SparseMatrix&, int, int, int, int)
+void espreso::SparseMatrix::getSubDiagBlockmatrix(espreso::SparseMatrix&, espreso::SparseMatrix&, int, int)
+void espreso::SparseMatrix::swap(espreso::SparseMatrix&)
+void espreso::SparseVVPMatrix<TIndices>::resize(size_t, size_t) [with Tindices = int]
+void espreso::TimeEval::addEvent(espreso::TimeEvent&)
+void espreso::TimeEval::addPointerToEvent(espreso::TimeEvent*)
+void espreso::TimeEval::printStatsMPI()
+void espreso::TimeEvent::end()
+void espreso::TimeEvent::endWithBarrier()
+void espreso::TimeEvent::endWithoutBarrier()
+void espreso::TimeEvent::endWithoutBarrier(double)
+void espreso::TimeEvent::evaluate()
+void espreso::TimeEvent::evaluateMPI()
+void espreso::TimeEvent::printStatMPI(double)
+void espreso::TimeEvent::reset()
+void espreso::TimeEvent::start()
+void espreso::TimeEvent::startWithBarrier()
+void espreso::TimeEvent::startWithoutBarrier()
+void espreso::TimeEvent::startWithoutBarrier(double)
+void espreso::clear(std::vector<T>&) [with TType = espreso::Assembler*]
+void espreso::clear(std::vector<T>&) [with TType = espreso::LoadStepSolver*]
+void espreso::clear(std::vector<T>&) [with TType = espreso::Physics*]
+void espreso::clear(std::vector<T>&) [with TType = espreso::TimeStepSolver*]
+void espreso::fillDOFsOffsets(std::vector<espreso::Property>&, const std::vector<espreso::Property>&, std::vector<long unsigned int>&)
+void espreso::gather(const Tvalue&, Tvalue&, Tvalue&, Tvalue&) [with Tvalue = long unsigned int]
+void espreso::gather(const std::pair<_FIter, _FIter>&, Tvalue&, Tvalue&) [with Tvalue = long unsigned int]
+void espreso::input::Block<TElement>::forEachElement(const espreso::input::Triple<long unsigned int>&, const espreso::input::Triple<long unsigned int>&, std::function<void(std::vector<int>&)>) [with TElement = espreso::input::Hexahedron8]
+void espreso::input::Block<TElement>::forEachElement(const espreso::input::Triple<long unsigned int>&, const espreso::input::Triple<long unsigned int>&, std::function<void(std::vector<int>&)>, std::function<void(espreso::input::Triple<long unsigned int>&)>) [with TElement = espreso::input::Hexahedron8]
+void espreso::input::Block<TElement>::uniformCorners(const std::vector<espreso::Element*>&, std::vector<espreso::Element*>&, size_t, bool, bool, bool) [with TElement = espreso::input::Hexahedron8]
+void espreso::input::Block<TElement>::uniformPartition(std::vector<int>&, size_t) [with TElement = espreso::input::Hexahedron8]
+void skipWhiteSpaces(std::ifstream&)
+SCOREP_REGION_NAMES_END

@@ -1,0 +1,619 @@
+{
+    "iids": [
+        {
+            "id": 11038400,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 11932800,
+            "file": "itersolvercpu.cpp",
+            "line": 15,
+            "name": "Apply_A"
+        },
+        {
+            "id": 12317664,
+            "file": "cluster.cpp",
+            "line": 2090,
+            "name": "Cluster--CreateG1-perCluster"
+        },
+        {
+            "id": 12288960,
+            "file": "factory.cpp",
+            "line": 214,
+            "name": "instance--PrepareMesh"
+        },
+        {
+            "id": 12275728,
+            "file": "itersolver.cpp",
+            "line": 378,
+            "name": "IterSolver_MakeSolution"
+        },
+        {
+            "id": 12317568,
+            "file": "physics.cpp",
+            "line": 451,
+            "name": "Assembler--Assemble-B1"
+        },
+        {
+            "id": 11932896,
+            "file": "itersolvercpu.cpp",
+            "line": 130,
+            "name": "Apply_Prec"
+        },
+        {
+            "id": 10242336,
+            "file": "assembler.cpp",
+            "line": 202,
+            "name": "Assembler--SaveResults"
+        },
+        {
+            "id": 12305056,
+            "file": "espreso.cpp",
+            "line": 38,
+            "name": "Main"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 11932800,
+            "scenario": 12388704,
+            "exectime": 3.53577,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolvercpu.cpp",
+                        "line": 15,
+                        "name": "Apply_A"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 11932800,
+            "scenario": 12388704,
+            "exectime": 51.725,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1544,
+                        "name": "RegCG-AllIterations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1551,
+                        "name": "RegCG-OneIteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolvercpu.cpp",
+                        "line": 15,
+                        "name": "Apply_A"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 12275728,
+            "scenario": 12393952,
+            "exectime": 1.17472,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 378,
+                        "name": "IterSolver_MakeSolution"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 11932896,
+            "scenario": 12294432,
+            "exectime": 32.3793,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1544,
+                        "name": "RegCG-AllIterations"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1551,
+                        "name": "RegCG-OneIteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolvercpu.cpp",
+                        "line": 130,
+                        "name": "Apply_Prec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 12317664,
+            "scenario": 12378848,
+            "exectime": 0.74659,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 173,
+                        "name": "Assembler--SolverInit"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 657,
+                        "name": "FETISolver--Init"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "cluster.cpp",
+                        "line": 2090,
+                        "name": "Cluster--CreateG1-perCluster"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 12288960,
+            "scenario": 12378848,
+            "exectime": 0.778019,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 214,
+                        "name": "instance--PrepareMesh"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 10242336,
+            "scenario": 12378848,
+            "exectime": 3.58894,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 202,
+                        "name": "Assembler--SaveResults"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 12317568,
+            "scenario": 12294432,
+            "exectime": 3.36533,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 112,
+                        "name": "Assembler--AssembleStiffnesMatrices"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics.cpp",
+                        "line": 451,
+                        "name": "Assembler--Assemble-B1"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 12305056,
+            "scenario": 12375680,
+            "exectime": 0.0,
+            "iid": 11038400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 12393952,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 6,
+                    "value": 2
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 10,
+                    "step": 20,
+                    "end": 30,
+                    "value": 30
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200000,
+                    "step": 1000000,
+                    "end": 2200000,
+                    "value": 1200000
+                }
+            ]
+        },
+        {
+            "id": 12294432,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 6,
+                    "value": 2
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 10,
+                    "step": 20,
+                    "end": 30,
+                    "value": 30
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200000,
+                    "step": 1000000,
+                    "end": 2200000,
+                    "value": 2200000
+                }
+            ]
+        },
+        {
+            "id": 12375680,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 6,
+                    "value": 6
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 10,
+                    "step": 20,
+                    "end": 30,
+                    "value": 10
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200000,
+                    "step": 1000000,
+                    "end": 2200000,
+                    "value": 2200000
+                }
+            ]
+        },
+        {
+            "id": 12378848,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 6,
+                    "value": 2
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 10,
+                    "step": 20,
+                    "end": 30,
+                    "value": 10
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200000,
+                    "step": 1000000,
+                    "end": 2200000,
+                    "value": 2200000
+                }
+            ]
+        },
+        {
+            "id": 12388704,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 6,
+                    "value": 4
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 10,
+                    "step": 20,
+                    "end": 30,
+                    "value": 10
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200000,
+                    "step": 1000000,
+                    "end": 2200000,
+                    "value": 2200000
+                }
+            ]
+        }
+    ]
+}

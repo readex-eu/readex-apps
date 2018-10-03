@@ -1,0 +1,47 @@
+{
+    "Assembler--Assemble-B1": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "6",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Assembler--AssembleStiffnesMatrices": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "16"
+    },
+    "Assembler--SaveResults": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "14"
+    },
+    "Assembler--SolverSolve": {
+        "FREQUENCY": "16",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Cluster--CreateF0-AssembleF0": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "IterSolver_MakeSolution": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "24"
+    },
+    "Main": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "instance--PrepareMesh": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "24"
+    },
+    "instance_solve": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    }
+}

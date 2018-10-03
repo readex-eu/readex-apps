@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <!--  The following section specifies the dynamism results for each significant regions and across all phases  -->
+    <readex-dyn-detect>
+        <Intra-phase>
+            <significantRegion>
+                <name>Foam::SolverPerformance&lt;Type&gt; Foam::fvMatrix&lt;Type&gt;::solve(const Foam::dictionary&amp;) [with Type = double]</name>
+                <granularity>1</granularity>
+                <weight>1</weight>
+                <time_variation_reg>1</time_variation_reg>
+                <time_variation_phase>1</time_variation_phase>
+                <compute_intensity>1</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>Foam::SolverPerformance&lt;Type&gt; Foam::fvMatrix&lt;Type&gt;::solveSegregated(const Foam::dictionary&amp;) [with Type = Foam::Vector&lt;double&gt;]</name>
+                <granularity>1</granularity>
+                <weight>1</weight>
+                <time_variation_reg>1</time_variation_reg>
+                <time_variation_phase>1</time_variation_phase>
+                <compute_intensity>1</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>Foam::tmp&lt;Foam::fvMatrix&lt;Type&gt; &gt; Foam::fvm::div(const surfaceScalarField&amp;, const Foam::GeometricField&lt;Type, Foam::fvPatchField, Foam::volMesh&gt;&amp;, const Foam::word&amp;) [with Type = Foam::Vector&lt;double&gt;]</name>
+                <granularity>1</granularity>
+                <weight>1</weight>
+                <time_variation_reg>1</time_variation_reg>
+                <time_variation_phase>1</time_variation_phase>
+                <compute_intensity>1</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>Foam::tmp&lt;Foam::fvMatrix&lt;Type&gt; &gt; Foam::fvm::laplacian(const Foam::GeometricField&lt;GType, Foam::fvPatchField, Foam::volMesh&gt;&amp;, const Foam::GeometricField&lt;Type, Foam::fvPatchField, Foam::volMesh&gt;&amp;, const Foam::word&amp;) [with Type = double; GType = double]</name>
+                <granularity>1</granularity>
+                <weight>1</weight>
+                <time_variation_reg>1</time_variation_reg>
+                <time_variation_phase>1</time_variation_phase>
+                <compute_intensity>1</compute_intensity>
+            </significantRegion>
+        </Intra-phase>
+        <Inter-phase>
+            <name>iteration</name>
+            <variation>0</variation>
+        </Inter-phase>
+        <Thresholds>
+            <weight>10</weight>
+            <time_variation>10</time_variation>
+            <compute_intensity_variation>10</compute_intensity_variation>
+            <granularity_significant_region>0.10000000000000001</granularity_significant_region>
+        </Thresholds>
+        <dynamism>
+            <dyn_time_variation/>
+            <dyn_comIn_variation/>
+        </dynamism>
+    </readex-dyn-detect>
+    <!--  This section specifies all the tuning parameter such as frequency, uncore frequency, no of threads and so on  -->
+    <tuningParameter>
+        <frequency>
+            <min_freq>1300</min_freq>
+            <max_freq>2500</max_freq>
+            <freq_step>200</freq_step>
+            <default>2500</default>
+        </frequency>
+        <uncore>
+            <min_freq>1200</min_freq>
+            <max_freq>3000</max_freq>
+            <freq_step>200</freq_step>
+            <default>3000</default>
+        </uncore>
+    </tuningParameter>
+    <!--  The following section specifies all the objective metrics  -->
+    <objectives>
+        <objective>Energy</objective>
+        <!--<objective>NormalizedEnergy</objective>-->
+        <objective>Time</objective>
+        <!--<objective>NormalizedTime</objective>-->
+        <!--<objective>EDP</objective>-->
+        <!--<objective>NormalizedEDP</objective>-->
+        <!--<objective>ED2P</objective>-->
+        <!--<objective>NormalizedED2P</objective>-->
+        <!--<objective>CPUEnergy</objective>-->
+        <!--<objective>NormalizedCPUEnergy</objective>-->
+        <!--<objective>TCO</objective>-->
+        <!--<objective>NormalizedTCO</objective>-->
+        <!--<CostPerJoule>0.00000008</CostPerJoule>-->
+        <!-- Euro -->
+        <!--<CostPerCoreHour>1.0</CostPerCoreHour>-->
+        <!-- Euro -->
+    </objectives>
+    <!--  metrics section specifies energy metrics to be measured across nodes. In SearchAlgorithm section one has to specify at least one search algorithm for readex tuning plugins  -->
+    <periscope>
+        <metricPlugin>
+            <name>x86_energy_sync_plugin</name>
+        </metricPlugin>
+        <metrics>
+            <node_energy>x86_energy/BLADE/E</node_energy>
+        </metrics>
+        <metricUnits>
+            <timeUnit>s</timeUnit>
+            <energyUnit>mj</energyUnit>
+            <currencyUnit>Euro</currencyUnit>
+        </metricUnits>
+        <searchAlgorithm>
+            <!--<name>individual</name>-->
+            <!--<keep>2</keep>-->
+            <name>exhaustive</name>
+            <!--<name>random</name>-->
+            <!--<samples>2</samples>-->
+        </searchAlgorithm>
+        <atp>
+            <searchAlgorithm>
+                <name>individual_atp</name>
+                <!--<name>exhaustive_atp</name>-->
+            </searchAlgorithm>
+        </atp>
+        <tuningModel>
+            <file_path>tuning_model.json</file_path>
+        </tuningModel>
+    </periscope>
+    <!--  This section defines which substrate plugin to be used for READEX tuning plugins  -->
+    <scorep>
+        <tuningSubstrate>rrl</tuningSubstrate>
+    </scorep>
+</Configuration>

@@ -1,0 +1,183 @@
+
+
+INPUT GENERATOR;
+PHYSICS HEAT_TRANSFER_2D;
+
+GENERATOR {
+
+  SHAPE GRID;
+
+  GRID {
+    UNIFORM_DECOMPOSITION 0;
+
+    ELEMENT_TYPE   square8;
+
+    LENGTH_X            1;
+    LENGTH_Y            1;
+    LENGTH_Z            1;
+
+    BLOCKS_X            1;
+    BLOCKS_Y            1;
+    BLOCKS_Z            1;
+
+
+    CLUSTERS_X       6;    
+    CLUSTERS_Y       4;
+    CLUSTERS_Z       1;
+
+    NONUNIFORM_NPARTS   ACP_ARG0;  # [1:40:200]
+
+    DOMAINS_X      1;
+    DOMAINS_Y      1;
+    DOMAINS_Z      1;
+
+    ELEMENTS_X     400;         
+    ELEMENTS_Y     600;    
+    ELEMENTS_Z       1;
+
+    NODES {
+        LEFT   "<0, 0> <0, 1> <0, 0>";
+        TOP    "<0, 1> <1 ,1> <0, 0>";
+        RIGHT1  "<1, 1> <0, 1> <0, 0>"; 
+    }
+
+    EDGES{
+        RIGHT  "<1, 1> <0, 1> <0, 0>";
+    }
+  }
+}
+
+HEAT_TRANSFER_2D {
+
+
+
+    LOAD_STEPS          1;
+
+    LOAD_STEPS_SETTINGS {
+      1 {
+        TYPE        STEADY_STATE;
+        MODE           NONLINEAR;
+        SOLVER   FETI;
+        FETI {
+
+          METHOD           ACP_ARG1;  # [TOTAL_FETI,HYBRID_FETI]
+          ITERATIVE_SOLVER ACP_ARG2;  # [GMRES,BICGSTAB]
+          PRECONDITIONER   ACP_ARG3;  # [NONE,LUMPED,DIRICHLET,SUPER_DIRICHLET]
+          REGULARIZATION   ALGEBRAIC;  # [ALGEBRAIC]
+          REDUNDANT_LAGRANGE         ACP_ARG5;   # [FALSE, TRUE]
+          SCALING                    ACP_ARG6;   # [FALSE, TRUE]
+          PRECISION                  1e-8;   #[ARG7] [1e-5, 1e-8]  if ADAPTIVE_PRECISION set to TRUE then 1e-5 else 1e-8
+          MAX_ITERATIONS             100; #2000 original
+
+          B0_TYPE                    ACP_ARG8;   # if METHOD is set to HYBRID_FETI [CORNERS,KERNELS]
+        }
+
+
+        
+        DURATION_TIME    1;
+        NONLINEAR_SOLVER {
+          METHOD          NEWTON_RAPHSON;
+            TANGENT_MATRIX_CORRECTION TRUE;
+          LINE_SEARCH               TRUE;
+          ADAPTIVE_PRECISION        TRUE; #[ARG9] [TRUE, FALSE] if true PRECISION set to 1e-5 else 1e-8
+             R_TOL                  ACP_ARG10;      # only if  adaptive_precision true [0.1:0.1:0.9 ]
+             C_FACT                 ACP_ARG11;      # only if  adaptive_precision true [0.1:0.1:0.9 ]
+          STEPPING                  FALSE;
+          SUBSTEPS                    1;
+          MAX_ITERATIONS              5; #50 original
+        CHECK_TEMPERATURE                 TRUE;
+        CHECK_HEAT                       TRUE;
+        REQUESTED_TEMPERATURE_RESIDUAL   0.1; #original 0.001
+        REQUESTED_HEAT_RESIDUAL          0.1; #original 0.001
+        }
+     
+
+  TRANSLATION_MOTIONS {
+    
+        ALL_ELEMENTS  X 500*(y-0.5), Y -500*(x-0.5);
+    
+  
+  }
+
+  TEMPERATURE {
+    
+      LEFT   280; // [K]
+      TOP    800; // [K]    
+    
+  }
+
+
+  CONVECTION {
+  
+      RIGHT {
+
+        TYPE                    EXTERNAL_FORCED;  
+        VARIANT                 AVERAGE_PLATE;
+        EXTERNAL_TEMPERATURE    360;     // Ambient temperature [K]
+        LENGTH                  1;  // [m]
+        FLUID_VELOCITY          10; // [m . s-1]
+        FLUID                   WATER;  //[AIR, WATER, ENGINE_OIL,TRANSFORMER_OIL]
+      }
+    
+  }
+
+
+      }
+    }
+  
+
+
+  STABILIZATION CAU;
+  SIGMA          0.1;
+
+  THICKNESS {
+    
+      ALL_NODES   1;  
+    
+  }
+
+  INITIAL_TEMPERATURE {
+    ALL_ELEMENTS  293.15;   // [K]
+  }
+
+
+
+
+  MATERIALS {
+    MAT_01 {
+
+      DENS  1;   // [kg/m3]
+      CP       1;   // [J/(kg . K)]
+
+      THERMAL_CONDUCTIVITY {
+        MODEL   ISOTROPIC;
+
+        KXX           2; // [W m-1 K-1];
+      }
+    }
+  }
+
+  MATERIAL_SET{ 
+    ALL_ELEMENTS MAT_01;
+  }
+
+}
+
+OUTPUT {
+  PATH                              results;
+  FORMAT                      VTK_XML_ASCII;
+
+  
+
+  STORE_RESULTS                       BASIC;
+
+  COLLECTED                           FALSE;
+  SEPARATE_BODIES                     FALSE;
+  SEPARATE_MATERIALS                  FALSE;
+
+  DOMAIN_SHRINK_RATIO                  1;
+  CLUSTER_SHRINK_RATIO                 1;
+
+  
+}
+

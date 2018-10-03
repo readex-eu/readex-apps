@@ -1,0 +1,193 @@
+
+
+INPUT GENERATOR;
+PHYSICS ADVECTION_DIFFUSION_2D;
+
+GENERATOR {
+
+  SHAPE GRID;
+
+  GRID {
+    UNIFORM_DECOMPOSITION 0;
+
+    ELEMENT_TYPE   square8;
+
+    LENGTH_X            1;
+    LENGTH_Y            1;
+    LENGTH_Z            1;
+
+    BLOCKS_X            1;
+    BLOCKS_Y            1;
+    BLOCKS_Z            1;
+
+
+    CLUSTERS_X       6;    
+    CLUSTERS_Y       4;
+    CLUSTERS_Z       1;
+
+//    NONUNIFORM_NPARTS   1;  # [1:40:200]
+
+    DOMAINS_X      20;
+    DOMAINS_Y      30;
+    DOMAINS_Z      1;
+
+    ELEMENTS_X     10;         
+    ELEMENTS_Y     10;    
+    ELEMENTS_Z       1;
+
+    NODES {
+        LEFT   "<0, 0> <0, 1> <0, 0>";
+        TOP    "<0, 1> <1 ,1> <0, 0>";
+        RIGHT1  "<1, 1> <0, 1> <0, 0>"; 
+    }
+
+    EDGES{
+        RIGHT  "<1, 1> <0, 1> <0, 0>";
+    }
+  }
+}
+
+ADVECTION_DIFFUSION_2D {
+
+
+  PHYSICS_SOLVER {
+    LOAD_STEPS          1;
+
+    LOAD_STEPS_SETTINGS {
+      1 {
+        TYPE        STEADY_STATE;
+        MODE           NONLINEAR;
+        SOLVER_LIBRARY   ESPRESO;
+        ESPRESO {
+
+          METHOD           TOTAL_FETI;  # [TOTAL_FETI,HYBRID_FETI]
+          SOLVER GMRES;  # [GMRES,BICGSTAB]
+          PRECONDITIONER   LUMPED;  # [NONE,LUMPED,DIRICHLET,SUPER_DIRICHLET]
+          REGULARIZATION   NULL_PIVOTS;  # [ALGEBRAIC]
+          REDUNDANT_LAGRANGE         TRUE;   # [FALSE, TRUE]
+          SCALING                    TRUE;   # [FALSE, TRUE]
+          EPSILON                    1e-8;   #[ARG7] [1e-5, 1e-8]  if ADAPTIVE_PRECISION set to TRUE then 1e-5 else 1e-8
+          ITERATIONS             100; #2000 original
+
+          B0_TYPE                    CORNERS;   # if METHOD is set to HYBRID_FETI [CORNERS,KERNELS]
+        }
+
+
+        
+        DURATION_TIME    1;
+        NONLINEAR_SOLVER {
+          METHOD          NEWTON_RHAPSON;
+            TANGENT_MATRIX_CORRECTION TRUE;
+          LINE_SEARCH               TRUE;
+          ADAPTIVE_PRECISION        TRUE; #[ARG9] [TRUE, FALSE] if true PRECISION set to 1e-5 else 1e-8
+             R_TOL                  0.1;      # only if  adaptive_precision true [0.1:0.1:0.9 ]
+             C_FACT                 0.1;      # only if  adaptive_precision true [0.1:0.1:0.9 ]
+          STEPPING                  FALSE;
+          SUBSTEPS                    1;
+          MAX_ITERATIONS              5; #50 original
+
+	CONVERGENCE_PARAMETERS { # Convergence parameters.
+
+            # Turn on/off temperature residual check. [bool]
+            TEMPERATURE 1;
+
+            # Turn on/off heat residual check. [bool]
+            HEAT 0;
+
+            # Requested temperature residual [double]
+            TEMPERATURE_RESIDUAL 0.001;
+
+            # Requested heat residual [double]
+            HEAT_RESIDUAL 0.001;
+          }
+          
+        }
+     
+       }
+       }
+   }
+
+  TRANSLATION_MOTIONS {
+    1{
+        ALL_ELEMENTS  X 500*(y-0.5), Y -500*(x-0.5);
+    }
+  
+  }
+
+  TEMPERATURE {
+    1{ 
+      LEFT   280; // [K]
+      TOP    800; // [K]    
+    }
+  }
+
+
+  CONVECTION {
+  1{
+      RIGHT {
+
+        TYPE                    EXTERNAL_FORCED;  
+        VARIANT                 AVERAGE_PLATE;
+        EXTERNAL_TEMPERATURE    360;     // Ambient temperature [K]
+        LENGTH                  1;  // [m]
+        FLUID_VELOCITY          10; // [m . s-1]
+        FLUID                   WATER;  //[AIR, WATER, ENGINE_OIL,TRANSFORMER_OIL]
+      }
+    }
+  }
+
+
+     
+ 
+  STABILIZATION CAU;
+  SIGMA          0.1;
+
+
+
+
+
+  INITIAL_TEMPERATURE {
+    ALL_ELEMENTS  293.15;   // [K]
+  }
+
+
+
+
+  MATERIALS {
+    MAT_01 {
+
+      DENSITY  1;   // [kg/m3]
+      CP       1;   // [J/(kg . K)]
+
+      
+        MODEL   ISOTROPIC;
+
+        KXX           2; // [W m-1 K-1];
+      
+    }
+  }
+
+  MATERIAL_SET{ 
+    ALL_ELEMENTS MAT_01;
+  }
+
+}
+
+OUTPUT {
+  PATH                              results;
+  FORMAT                      VTK_XML_ASCII;
+
+  
+
+
+
+  COLLECTED                           FALSE;
+  SEPARATE_BODIES                     FALSE;
+  SEPARATE_MATERIALS                  FALSE;
+
+  DOMAIN_SHRINK_RATIO                  1;
+  CLUSTER_SHRINK_RATIO                 1;
+
+  
+}
+

@@ -1,0 +1,169 @@
+diff -Naur OpenFOAM-v1612+PLAIN/applications/solvers/incompressible/simpleFoam/simpleFoam.C OpenFOAM-v1612+EDITED/applications/solvers/incompressible/simpleFoam/simpleFoam.C
+--- OpenFOAM-v1612+PLAIN/applications/solvers/incompressible/simpleFoam/simpleFoam.C	2016-12-23 15:22:59.000000000 +0100
++++ OpenFOAM-v1612+EDITED/applications/solvers/incompressible/simpleFoam/simpleFoam.C	2018-09-12 11:17:36.000000000 +0200
+@@ -67,48 +67,107 @@
+ #include "simpleControl.H"
+ #include "fvOptions.H"
+ 
++#include <readex.h>
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ int main(int argc, char *argv[])
+ {
+-    #include "postProcess.H"
++	#include "postProcess.H"
++	#include "setRootCase.H"
+ 
+-    #include "setRootCase.H"
+-    #include "createTime.H"
+-    #include "createMesh.H"
+-    #include "createControl.H"
+-    #include "createFields.H"
+-    #include "createFvOptions.H"
+-    #include "initContinuityErrs.H"
++	READEX_INIT();
++	READEX_REGION_DEFINE(simpleFoam);
++	READEX_PHASE_START(simpleFoam, "simpleFoam", SCOREP_USER_REGION_TYPE_COMMON);
++
++	READEX_REGION_DEFINE(init);
++	READEX_REGION_START(init, "init", SCOREP_USER_REGION_TYPE_COMMON);
++
++		READEX_REGION_DEFINE(initCreateTime);
++		READEX_REGION_START(initCreateTime, "init-createTime", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "createTime.H"
++		READEX_REGION_STOP(initCreateTime);
++
++		READEX_REGION_DEFINE(initCreateMesh);
++		READEX_REGION_START(initCreateMesh, "init-createMesh", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "createMesh.H"
++		READEX_REGION_STOP(initCreateMesh);
++
++		READEX_REGION_DEFINE(initCreateControl);
++		READEX_REGION_START(initCreateControl, "init-createControl", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "createControl.H"
++		READEX_REGION_STOP(initCreateControl);
++
++		READEX_REGION_DEFINE(initCreateFields);
++		READEX_REGION_START(initCreateFields, "init-createFields", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "createFields.H"
++		READEX_REGION_STOP(initCreateFields);
++
++		READEX_REGION_DEFINE(initCreateFvOptions);
++		READEX_REGION_START(initCreateFvOptions, "init-createFvOptions", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "createFvOptions.H"
++		READEX_REGION_STOP(initCreateFvOptions);
++
++		READEX_REGION_DEFINE(initContinuityErrs);
++		READEX_REGION_START(initContinuityErrs, "init-ContinuityErrs", SCOREP_USER_REGION_TYPE_COMMON);
++			#include "initContinuityErrs.H"
++		READEX_REGION_STOP(initContinuityErrs);
++	READEX_REGION_STOP(init);
+ 
+     turbulence->validate();
+ 
+     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
++
++	READEX_REGION_DEFINE(simpleLoop);
++	READEX_REGION_START(simpleLoop, "simple-loop", SCOREP_USER_REGION_TYPE_COMMON);
++	READEX_REGION_DEFINE(iteration);
+     Info<< "\nStarting time loop\n" << endl;
+ 
++	int i = 0;
+     while (simple.loop())
+     {
+-        Info<< "Time = " << runTime.timeName() << nl << endl;
+-
+-        // --- Pressure-velocity SIMPLE corrector
+-        {
+-            #include "UEqn.H"
+-            #include "pEqn.H"
+-        }
+-
+-        laminarTransport.correct();
+-        turbulence->correct();
+-
+-        runTime.write();
+-
+-        Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
+-            << "  ClockTime = " << runTime.elapsedClockTime() << " s"
+-            << nl << endl;
++		i++;
++		READEX_PHASE_START(iteration, "iteration", SCOREP_USER_REGION_TYPE_COMMON);
++		    Info<< "Time = " << runTime.timeName() << nl << endl;
++
++		    // --- Pressure-velocity SIMPLE corrector
++		    {
++				READEX_REGION_DEFINE(simpleUEqn);
++				READEX_REGION_START(simpleUEqn, "UEqn", SCOREP_USER_REGION_TYPE_COMMON);
++		        	#include "UEqn.H"
++				READEX_REGION_STOP(simpleUEqn);
++
++				READEX_REGION_DEFINE(simplepEqn);
++				READEX_REGION_START(simplepEqn, "pEqn", SCOREP_USER_REGION_TYPE_COMMON);
++			        #include "pEqn.H"
++				READEX_REGION_STOP(simplepEqn);
++		    }
++//start k+omega
++			READEX_REGION_DEFINE(transportAndTurbulance);
++			READEX_REGION_START(transportAndTurbulance, "transportAndTurbulance", SCOREP_USER_REGION_TYPE_COMMON);
++			    laminarTransport.correct();
++			    turbulence->correct();
++			READEX_REGION_STOP(transportAndTurbulance);
++//stop
++			READEX_REGION_DEFINE(write);
++
++//region can be added if you add results write
++//			if (i%10 == 0)
++//				READEX_REGION_START(write, "write", SCOREP_USER_REGION_TYPE_COMMON);
++		    runTime.write();
++//			if(i%10 == 0)
++//				READEX_REGION_STOP(write);
++
++		    Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
++		        << "  ClockTime = " << runTime.elapsedClockTime() << " s"
++		        << nl << endl;
++		READEX_PHASE_STOP(iteration);
+     }
++	READEX_REGION_STOP(simpleLoop);
++	READEX_PHASE_STOP(simpleFoam);
+ 
++	READEX_CLOSE();
+     Info<< "End\n" << endl;
+-
+     return 0;
+ }
+ 
+diff -Naur OpenFOAM-v1612+PLAIN/etc/bashrc OpenFOAM-v1612+EDITED/etc/bashrc
+--- OpenFOAM-v1612+PLAIN/etc/bashrc	2016-12-23 15:22:59.000000000 +0100
++++ OpenFOAM-v1612+EDITED/etc/bashrc	2018-09-06 09:30:16.000000000 +0200
+@@ -43,7 +43,8 @@
+ # Please set to the appropriate path if the default is not correct.
+ #
+ [ $BASH_SOURCE ] && FOAM_INST_DIR=$(\cd ${BASH_SOURCE%/*/*/*} && \pwd -P) || \
+-FOAM_INST_DIR=$HOME/$WM_PROJECT
++FOAM_INST_DIR=$(FM_DIR)
++# FOAM_INST_DIR=$HOME/$WM_PROJECT
+ # FOAM_INST_DIR=~$WM_PROJECT
+ # FOAM_INST_DIR=/opt/$WM_PROJECT
+ # FOAM_INST_DIR=/usr/local/$WM_PROJECT
+diff -Naur OpenFOAM-v1612+PLAIN/wmake/rules/linux64Gcc/c++ OpenFOAM-v1612+EDITED/wmake/rules/linux64Gcc/c++
+--- OpenFOAM-v1612+PLAIN/wmake/rules/linux64Gcc/c++	2016-12-23 15:22:59.000000000 +0100
++++ OpenFOAM-v1612+EDITED/wmake/rules/linux64Gcc/c++	2018-09-06 09:22:02.000000000 +0200
+@@ -5,13 +5,14 @@
+ # Suppress some warnings for flex++ and CGAL
+ c++LESSWARN = -Wno-old-style-cast -Wno-unused-local-typedefs -Wno-array-bounds
+ 
+-CC          = g++ -std=c++11 -m64
++#CC          = g++ -std=c++11 -m64
++CC          = $(FOAM_CC)
+ 
+ include $(DEFAULT_RULES)/c++$(WM_COMPILE_OPTION)
+ 
+ ptFLAGS     = -DNoRepository -ftemplate-depth-100
+ 
+-c++FLAGS    = $(GFLAGS) $(c++WARN) $(c++OPT) $(c++DBUG) $(ptFLAGS) $(LIB_HEADER_DIRS) -fPIC
++c++FLAGS    = $(GFLAGS) $(c++WARN) $(c++OPT) $(c++DBUG) $(ptFLAGS) $(LIB_HEADER_DIRS) -fPIC -fuse-ld=bfd
+ 
+ Ctoo        = $(WM_SCHEDULER) $(CC) $(c++FLAGS) -c $< -o $@
+ cxxtoo      = $(Ctoo)

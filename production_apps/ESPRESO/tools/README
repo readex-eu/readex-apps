@@ -1,0 +1,16 @@
+If there is a problem with builded external libraries, rebuild the following libraries and copy them to "espreso/libs" directory:
+
+METIS:
+	libmetis
+
+SCOTCH:
+	libesmumps
+	libscotch
+	libscotcherr
+
+MUMPS:
+	libdmumps
+	libpmiseq
+	libmumps_common
+	libpord
+

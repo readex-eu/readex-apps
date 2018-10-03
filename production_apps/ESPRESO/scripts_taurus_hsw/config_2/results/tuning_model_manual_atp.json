@@ -1,0 +1,273 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 37258688,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 37313024,
+            "file": "FETISolver.cpp",
+            "line": 691,
+            "name": "FETISolver--Create_Dirichlet_Prec"
+        },
+        {
+            "id": 37191888,
+            "file": "assembler.cpp",
+            "line": 112,
+            "name": "Assembler--AssembleStiffnesMatrices"
+        },
+        {
+            "id": 36746000,
+            "file": "assembler.cpp",
+            "line": 202,
+            "name": "Assembler--SaveResults"
+        },
+        {
+            "id": 37256816,
+            "file": "espreso.cpp",
+            "line": 38,
+            "name": "Main"
+        },
+        {
+            "id": 37307712,
+            "file": "itersolver.cpp",
+            "line": 1544,
+            "name": "RegCG-AllIterations"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 37191888,
+            "scenario": 37309840,
+            "exectime": 10.4503,
+            "iid": 37258688,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 112,
+                        "name": "Assembler--AssembleStiffnesMatrices"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 36746000,
+            "scenario": 37309840,
+            "exectime": 0.0989814,
+            "iid": 37258688,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 202,
+                        "name": "Assembler--SaveResults"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37256816,
+            "scenario": 37309840,
+            "exectime": 2120.22,
+            "iid": 37258688,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37313024,
+            "scenario": 37309840,
+            "exectime": 0.0849977,
+            "iid": 37258688,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 173,
+                        "name": "Assembler--SolverInit"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 657,
+                        "name": "FETISolver--Init"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 691,
+                        "name": "FETISolver--Create_Dirichlet_Prec"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 37307712,
+            "scenario": 37309840,
+            "exectime": 2074.69,
+            "iid": 37258688,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1544,
+                        "name": "RegCG-AllIterations"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 37309840,
+            "configuration": [
+                {
+                    "id": "PRECOND",
+                    "start": 3,
+                    "step": 3,
+                    "end": 3,
+                    "value": 3
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 2500000,
+                    "step": 1000000,
+                    "end": 2500000,
+                    "value": 2500000
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 30,
+                    "step": 20,
+                    "end": 30,
+                    "value": 30
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 6,
+                    "step": 3,
+                    "end": 6,
+                    "value": 6
+                }
+            ]
+        }
+    ]
+}

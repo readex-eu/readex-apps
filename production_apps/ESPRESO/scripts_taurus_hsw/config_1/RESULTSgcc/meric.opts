@@ -1,0 +1,67 @@
+{
+    "Assembler--Assemble-B1": {
+        "FREQUENCY": "26",
+        "NUM_THREADS": "6",
+        "UNCORE_FREQUENCY": "24"
+    },
+    "Assembler--AssembleStiffnesMatrices": {
+        "FREQUENCY": "18",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "Assembler--SaveResults": {
+        "FREQUENCY": "16",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "12"
+    },
+    "Assembler--SolverInit": {
+        "FREQUENCY": "18",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "Assembler--SolverSolve": {
+        "FREQUENCY": "16",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Cluster--CreateF0-AssembleF0": {
+        "FREQUENCY": "18",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "18"
+    },
+
+
+
+
+
+    "Cluster--CreateG1-perCluster": {
+        "FREQUENCY": "26",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "20"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "Main": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "instance--PrepareMesh": {
+        "FREQUENCY": "26",
+        "NUM_THREADS": "2",
+        "UNCORE_FREQUENCY": "20"
+    }
+}

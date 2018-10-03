@@ -1,0 +1,82 @@
+{
+    "Assembler--Assemble-B1": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "4",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Assembler--AssembleStiffnesMatrices": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "12"
+    },
+    "Assembler--SaveResults": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "4",
+        "UNCORE_FREQUENCY": "16"
+    },
+    "Assembler--SolverInit": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "Assembler--SolverSolve": {
+        "FREQUENCY": "18",
+        "NUM_THREADS": "10",
+        "UNCORE_FREQUENCY": "26"
+    },
+    "Cluster--CreateF0-AssembleF0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "Cluster--CreateF0-FactF0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "14"
+    },
+    "Cluster--CreateG1-perCluster": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "24"
+    },
+    "Cluster--CreateSa": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "2",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Cluster--CreateSa-SaFactorization": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "2",
+        "UNCORE_FREQUENCY": "26"
+    },
+    "Cluster--CreateSa-SaReg": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "2",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "Cluster--CreateSa-SolveF0vG0": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "2",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "Create_GGT_Inv": {
+        "FREQUENCY": "22",
+        "NUM_THREADS": "4",
+        "UNCORE_FREQUENCY": "28"
+    },
+    "Main": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "instance--PrepareMesh": {
+        "FREQUENCY": "24",
+        "NUM_THREADS": "6",
+        "UNCORE_FREQUENCY": "18"
+    },
+    "instance_solve": {
+        "FREQUENCY": "25",
+        "NUM_THREADS": "12",
+        "UNCORE_FREQUENCY": "22"
+    }
+}

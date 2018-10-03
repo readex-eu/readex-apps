@@ -1,0 +1,416 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 38480240,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 38548144,
+            "file": "factory.cpp",
+            "line": 214,
+            "name": "instance--PrepareMesh"
+        },
+        {
+            "id": 38575088,
+            "file": "espreso.cpp",
+            "line": 38,
+            "name": "Main"
+        },
+        {
+            "id": 38571824,
+            "file": "itersolver.cpp",
+            "line": 1544,
+            "name": "RegCG-AllIterations"
+        },
+        {
+            "id": 38579376,
+            "file": "assembler.cpp",
+            "line": 202,
+            "name": "Assembler--SaveResults"
+        },
+        {
+            "id": 38575296,
+            "file": "physics.cpp",
+            "line": 451,
+            "name": "Assembler--Assemble-B1"
+        },
+        {
+            "id": 38500512,
+            "file": "cluster.cpp",
+            "line": 1590,
+            "name": "Cluster--CreateSa-SaReg"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 38548144,
+            "scenario": 38607488,
+            "exectime": 1.9852,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 214,
+                        "name": "instance--PrepareMesh"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38575088,
+            "scenario": 38607488,
+            "exectime": 32.0151,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38571824,
+            "scenario": 38608352,
+            "exectime": 1.40404,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 188,
+                        "name": "Assembler--SolverSolve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 751,
+                        "name": "FETISolver--Solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 105,
+                        "name": "Solve_RegCG"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "itersolver.cpp",
+                        "line": 1544,
+                        "name": "RegCG-AllIterations"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38500512,
+            "scenario": 38608544,
+            "exectime": 0.143091,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 173,
+                        "name": "Assembler--SolverInit"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 657,
+                        "name": "FETISolver--Init"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "cluster.cpp",
+                        "line": 1521,
+                        "name": "Cluster--CreateSa"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "cluster.cpp",
+                        "line": 1590,
+                        "name": "Cluster--CreateSa-SaReg"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38579376,
+            "scenario": 38615536,
+            "exectime": 8.28605,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 202,
+                        "name": "Assembler--SaveResults"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38575296,
+            "scenario": 38585440,
+            "exectime": 0.284646,
+            "iid": 38480240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 58,
+                        "name": "instance_solve"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 112,
+                        "name": "Assembler--AssembleStiffnesMatrices"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics.cpp",
+                        "line": 451,
+                        "name": "Assembler--Assemble-B1"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 38608352,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 2400
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 14,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 38615536,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 1600
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 14,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 38585440,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 2600
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 14,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 38608544,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 2200
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 14,
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "id": 38607488,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 2000
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 14,
+                    "value": 14
+                }
+            ]
+        }
+    ]
+}

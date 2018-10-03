@@ -1,0 +1,282 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 152078400,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 152671104,
+            "file": "simpleFoam.C",
+            "line": 168,
+            "name": "iteration"
+        },
+        {
+            "id": 152671008,
+            "file": "fvMatrixSolve.C",
+            "line": 106,
+            "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solveSegregated(const Foam::dictionary&) [with Type = Foam::Vector<double>]"
+        },
+        {
+            "id": 152671200,
+            "file": "fvMatrixSolve.C",
+            "line": 57,
+            "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = double]"
+        },
+        {
+            "id": 152672320,
+            "file": "fvmDiv.C",
+            "line": 45,
+            "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::div(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = Foam::Vector<double>]"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 152671200,
+            "scenario": 152674224,
+            "exectime": 0.586674,
+            "iid": 152078400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 317,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve() [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 57,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 152671104,
+            "scenario": 152674352,
+            "exectime": 3.43846,
+            "iid": 152078400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 152671008,
+            "scenario": 152685968,
+            "exectime": 0.633178,
+            "iid": 152078400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrix.C",
+                        "line": 1356,
+                        "name": "Foam::SolverPerformance<Type> Foam::solve(const Foam::tmp<Foam::fvMatrix<Type> >&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 317,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve() [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 57,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 106,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solveSegregated(const Foam::dictionary&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 152672320,
+            "scenario": 152683792,
+            "exectime": 0.137948,
+            "iid": 152078400,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmDiv.C",
+                        "line": 77,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::div(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmDiv.C",
+                        "line": 45,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::div(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 152685968,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1300,
+                    "step": 100,
+                    "end": 2700,
+                    "value": 2300
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200,
+                    "step": 100,
+                    "end": 2400,
+                    "value": 1300
+                }
+            ]
+        },
+        {
+            "id": 152683792,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1300,
+                    "step": 100,
+                    "end": 2700,
+                    "value": 2200
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200,
+                    "step": 100,
+                    "end": 2400,
+                    "value": 1400
+                }
+            ]
+        },
+        {
+            "id": 152674352,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1300,
+                    "step": 100,
+                    "end": 2700,
+                    "value": 2100
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200,
+                    "step": 100,
+                    "end": 2400,
+                    "value": 1500
+                }
+            ]
+        },
+        {
+            "id": 152674224,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1300,
+                    "step": 100,
+                    "end": 2700,
+                    "value": 2400
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1200,
+                    "step": 100,
+                    "end": 2400,
+                    "value": 1500
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <readex-dyn-detect>
+        <Intra-phase>
+            <significantRegion>
+                <name>espreso::input::Grid::Grid(const espreso::GridConfiguration&amp;, espreso::Mesh&amp;, size_t, size_t)</name>
+                <granularity>0.169159</granularity>
+                <weight>0.017646279508872223</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>15146.685741068131</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::input::Block&lt;TElement&gt;::points(std::vector&lt;espreso::Point&gt;&amp;) [with TElement = espreso::input::Hexahedron8]</name>
+                <granularity>0.12596499999999999</granularity>
+                <weight>0.013140380342370724</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>452315.97988837992</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::input::Block&lt;TElement&gt;::elements(std::vector&lt;espreso::Element*&gt;&amp;, size_t) [with TElement = espreso::input::Hexahedron8]</name>
+                <granularity>0.23561399999999999</granularity>
+                <weight>0.024578712928093802</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>89699.926806443109</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::fillNodesFromCoordinates()</name>
+                <granularity>0.15093500000000001</granularity>
+                <weight>0.01574519356151094</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>68599.533476994213</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::fillParentElementsToNodes()</name>
+                <granularity>0.32297500000000001</granularity>
+                <weight>0.046586933163643193</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>85.889688691991424</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::input::Block&lt;TElement&gt;::boundaries(std::vector&lt;espreso::Element*&gt;&amp;, const std::vector&lt;int&gt;&amp;) [with TElement = espreso::input::Hexahedron8]</name>
+                <granularity>0.16452700000000001</granularity>
+                <weight>0.017163079876070561</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>30.929859689750401</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;int&gt; espreso::continuousReorder(std::vector&lt;espreso::Element*&gt;&amp;, size_t, size_t)</name>
+                <granularity>2.29088</granularity>
+                <weight>0.23897935552518751</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>533.86447712922541</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;int&gt; espreso::computePartition(std::vector&lt;int&gt;&amp;, std::vector&lt;int&gt;&amp;, int, int, int, int)</name>
+                <granularity>4.6764299999999999</granularity>
+                <weight>0.48783446865774405</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>124.00478258808157</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::mapNodesToDomains()</name>
+                <granularity>0.23403099999999999</granularity>
+                <weight>0.29291891384400331</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>0.020779634657347435</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::mapCoordinatesToDomains()</name>
+                <granularity>0.41048299999999999</granularity>
+                <weight>0.042820646561166686</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>102.24293473753762</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;long unsigned int&gt; espreso::fillUniformDOFs(std::vector&lt;espreso::Element*&gt;&amp;, std::vector&lt;std::vector&lt;espreso::Element*&gt; &gt;&amp;, size_t, size_t, const std::vector&lt;long unsigned int&gt;&amp;, const std::vector&lt;long unsigned int&gt;&amp;)</name>
+                <granularity>0.114909</granularity>
+                <weight>0.14287249246304545</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>69.905378722415477</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>std::vector&lt;espreso::Element*&gt; espreso::mergeElements(size_t, std::vector&lt;std::vector&lt;espreso::Element*&gt; &gt;&amp;, MergeFunction) [with MergeFunction = espreso::Mesh::fillFacesFromElements(std::function&lt;bool(const std::vector&lt;espreso::Element*&gt;&amp;, const espreso::Element*)&gt;)::&lt;lambda(espreso::Element*, espreso::Element*)&gt;]</name>
+                <granularity>1.57836</granularity>
+                <weight>1.9738058230145732</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>167.38181763864202</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Mesh::fillParentFacesToNodes()</name>
+                <granularity>0.114791</granularity>
+                <weight>0.022826279717507642</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>18.704618226647884</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::Assembler::timeWrapper(const string&amp;, std::function&lt;void()&gt;)</name>
+                <granularity>9.7697199999999995</granularity>
+                <weight>0.0005533929335183234</weight>
+                <time_variation_reg>14.441231469891875</time_variation_reg>
+                <time_variation_phase>3.9958377233702967e-05</time_variation_phase>
+                <compute_intensity>244.190747208137</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void espreso::Physics::updateMatrix(const espreso::Step&amp;, espreso::Matrices, const std::vector&lt;espreso::Solution*&gt;&amp;)</name>
+                <granularity>10.0648</granularity>
+                <weight>12.599075745089245</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>260.34389729793998</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::EqualityConstraints::insertElementGluingToB1(const espreso::Step&amp;, bool, bool)</name>
+                <granularity>0.65498100000000004</granularity>
+                <weight>0.24094052847351896</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>62.867798628845129</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::FETISolver::setup_InitClusterAndSolver()</name>
+                <granularity>0.13892199999999999</granularity>
+                <weight>0.021583334202647585</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>110.26619173826711</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::EqualityConstraints::insertKernelsGluingToB0(const std::vector&lt;espreso::SparseMatrix&gt;&amp;)</name>
+                <granularity>0.196717</granularity>
+                <weight>0.14108657326754365</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>84.141171717294554</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::ClusterBase::CompressB0()</name>
+                <granularity>0.15273700000000001</granularity>
+                <weight>0.19114029688820272</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>626.06311095775334</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual int espreso::SparseSolverMKL::Factorization(const string&amp;)</name>
+                <granularity>0.14061799999999999</granularity>
+                <weight>0.0308467468522131</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>370.90450077212375</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>virtual void espreso::SparseSolverMKL::Solve(std::vector&lt;double&gt;&amp;, std::vector&lt;double&gt;&amp;, int)</name>
+                <granularity>0.10943600000000001</granularity>
+                <weight>0.0051505617508684452</weight>
+                <time_variation_reg>74.080990322802776</time_variation_reg>
+                <time_variation_phase>0.0019077935761154172</time_variation_phase>
+                <compute_intensity>844.98585156344359</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::ClusterBase::Create_G_perCluster()</name>
+                <granularity>0.40115899999999999</granularity>
+                <weight>0.49499170674205362</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>197.57692861692612</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::ExchangeMatrices(espreso::SparseMatrix&amp;, std::vector&lt;espreso::SparseMatrix&gt;&amp;, std::vector&lt;int&gt;)</name>
+                <granularity>0.117017</granularity>
+                <weight>0.012206945473132972</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>10251.099809374487</compute_intensity>
+            </significantRegion>
+            <significantRegion>
+                <name>void espreso::ClusterBase::multKplusGlobal_l(std::vector&lt;std::vector&lt;double&gt; &gt;&amp;)</name>
+                <granularity>0.347163</granularity>
+                <weight>0.41204973868413636</weight>
+                <time_variation_reg>0</time_variation_reg>
+                <time_variation_phase>0</time_variation_phase>
+                <compute_intensity>15.668669699250753</compute_intensity>
+            </significantRegion>
+        </Intra-phase>
+        <Inter-phase>
+            <name>Main</name>
+            <variation>0</variation>
+        </Inter-phase>
+        <Thresholds>
+            <weight>10</weight>
+            <time_variation>10</time_variation>
+            <compute_intensity_variation>10</compute_intensity_variation>
+            <granularity_significant_region>0.10000000000000001</granularity_significant_region>
+        </Thresholds>
+        <dynamism>
+            <dyn_time_variation/>
+            <dyn_comIn_variation/>
+        </dynamism>
+    </readex-dyn-detect>
+    <tuningParameter>
+        <frequency>
+            <min_freq>1200</min_freq>
+            <max_freq>2500</max_freq>
+            <freq_step>400</freq_step>
+            <default>2500</default>
+        </frequency>
+        <uncore>
+            <min_freq>1400</min_freq>
+            <max_freq>3000</max_freq>
+            <freq_step>400</freq_step>
+            <default>3000</default>
+        </uncore>
+        <openMPThreads>
+            <lower_value>2</lower_value>
+            <step>2</step>
+        </openMPThreads>
+    </tuningParameter>
+    <objectives>
+        <objective>Energy</objective>
+        <objective>Time</objective>
+        <objective>EDP</objective>
+        <objective>ED2P</objective>
+        <objective>CPUEnergy</objective>
+    </objectives>
+    <periscope>
+        <metricPlugin>
+            <name>hdeem_sync_plugin</name>
+        </metricPlugin>
+        <metrics>
+            <node_energy>hdeem/BLADE/E</node_energy>
+            <cpu0_energy>hdeem/CPU0/E</cpu0_energy>
+            <cpu1_energy>hdeem/CPU1/E</cpu1_energy>
+        </metrics>
+        <searchAlgorithm>
+            <name>exhaustive</name>
+        </searchAlgorithm>
+        <atp>
+            <searchAlgorithm>
+                <name>individual_atp</name>
+                    <keep>1</keep>
+            </searchAlgorithm>
+        </atp>
+        <tuningModel>
+            <file_path>tuning_model.json</file_path>
+        </tuningModel>
+    </periscope>
+    <scorep>
+        <tuningSubstrate>rrl</tuningSubstrate>
+    </scorep>
+</Configuration>

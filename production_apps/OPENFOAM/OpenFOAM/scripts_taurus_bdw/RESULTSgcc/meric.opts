@@ -1,0 +1,30 @@
+{
+    "UEqn": {
+        "FREQUENCY": "12",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "init-createFields": {
+        "FREQUENCY": "22",
+        "UNCORE_FREQUENCY": "22"
+    },
+    "init-createMesh": {
+        "FREQUENCY": "22",
+        "UNCORE_FREQUENCY": "16"
+    },
+    "pEqn": {
+        "FREQUENCY": "16",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "simpleFoam": {
+        "FREQUENCY": "14",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "transportAndTurbulance": {
+        "FREQUENCY": "14",
+        "UNCORE_FREQUENCY": "20"
+    },
+    "write": {
+        "FREQUENCY": "20",
+        "UNCORE_FREQUENCY": "22"
+    }
+}

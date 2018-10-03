@@ -1,0 +1,2516 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 21520496,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 21556096,
+            "file": "mesh.cpp",
+            "line": 1332,
+            "name": "void espreso::Mesh::fillNodesFromCoordinates()"
+        },
+        {
+            "id": 21559008,
+            "file": "mesh.cpp",
+            "line": 2156,
+            "name": "void espreso::computeDOFsCounters(std::vector<espreso::Element*>&, const std::vector<espreso::Property>&, std::vector<int>, const std::vector<int>&, const std::vector<espreso::G2L>&)"
+        },
+        {
+            "id": 21558048,
+            "file": "mesh.cpp",
+            "line": 2082,
+            "name": "std::vector<long unsigned int> espreso::fillUniformDOFs(std::vector<espreso::Element*>&, std::vector<std::vector<espreso::Element*> >&, size_t, size_t, const std::vector<long unsigned int>&, const std::vector<long unsigned int>&)"
+        },
+        {
+            "id": 21554080,
+            "file": "assembler.cpp",
+            "line": 485,
+            "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+        },
+        {
+            "id": 21557712,
+            "file": "vtkxmlascii.cpp",
+            "line": 21,
+            "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = int]"
+        },
+        {
+            "id": 21558256,
+            "file": "monitoring.cpp",
+            "line": 136,
+            "name": "virtual void espreso::Monitoring::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+        },
+        {
+            "id": 21554176,
+            "file": "mesh.cpp",
+            "line": 1842,
+            "name": "void espreso::assignDomains(std::vector<espreso::Element*>&)"
+        },
+        {
+            "id": 21552816,
+            "file": "vtkxmlascii.cpp",
+            "line": 21,
+            "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = double]"
+        },
+        {
+            "id": 21556368,
+            "file": "physics.cpp",
+            "line": 42,
+            "name": "virtual void espreso::Physics::updateMatrix(const espreso::Step&, espreso::Matrices, const std::vector<espreso::Solution*>&)"
+        },
+        {
+            "id": 21554576,
+            "file": "mesh.cpp",
+            "line": 1345,
+            "name": "void espreso::Mesh::fillParentElementsToNodes()"
+        },
+        {
+            "id": 21559584,
+            "file": "region.cpp",
+            "line": 24,
+            "name": "void espreso::Region::computeArea(const espreso::Coordinates&) const"
+        },
+        {
+            "id": 21553744,
+            "file": "distributedinfo.cpp",
+            "line": 91,
+            "name": "void espreso::DistributedInfo::prepare(const std::vector<espreso::Element*>&, espreso::MeshInfo::InfoMode)"
+        },
+        {
+            "id": 21555872,
+            "file": "mesh.cpp",
+            "line": 2354,
+            "name": "void espreso::Mesh::mapCoordinatesToDomains()"
+        },
+        {
+            "id": 21556464,
+            "file": "espreso.cpp",
+            "line": 38,
+            "name": "Main"
+        },
+        {
+            "id": 21553280,
+            "file": "utils.cpp",
+            "line": 9,
+            "name": "static std::__cxx11::string espreso::Esutils::createDirectory(const std::vector<std::__cxx11::basic_string<char> >&)"
+        },
+        {
+            "id": 21559104,
+            "file": "mesh.cpp",
+            "line": 773,
+            "name": "std::vector<espreso::Element*> espreso::mergeElements(size_t, std::vector<std::vector<espreso::Element*> >&, MergeFunction) [with MergeFunction = espreso::Mesh::fillFacesFromElements(std::function<bool(const std::vector<espreso::Element*>&, const espreso::Element*)>)::<lambda(espreso::Element*, espreso::Element*)>]"
+        },
+        {
+            "id": 21555408,
+            "file": "equalityconstraints.cpp",
+            "line": 289,
+            "name": "void espreso::EqualityConstraints::insertElementGluingToB1(const espreso::Step&, bool, bool)"
+        },
+        {
+            "id": 21556560,
+            "file": "block.hpp",
+            "line": 83,
+            "name": "void espreso::input::Block<TElement>::elements(std::vector<espreso::Element*>&, size_t) [with TElement = espreso::input::Hexahedron8]"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 21556096,
+            "scenario": 21724400,
+            "exectime": 0.107097,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1332,
+                        "name": "void espreso::Mesh::fillNodesFromCoordinates()"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21559008,
+            "scenario": 21724400,
+            "exectime": 0.128211,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 200,
+                        "name": "void espreso::Factory::loadPhysics(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 211,
+                        "name": "void espreso::FactoryLoader::preprocessMesh()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics3d.cpp",
+                        "line": 15,
+                        "name": "virtual void espreso::Physics3D::prepareHybridTotalFETIWithKernels()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion3d.cpp",
+                        "line": 31,
+                        "name": "virtual void espreso::AdvectionDiffusion3D::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion.cpp",
+                        "line": 72,
+                        "name": "virtual void espreso::AdvectionDiffusion::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 2327,
+                        "name": "void espreso::Mesh::computeNodesDOFsCounters(const std::vector<espreso::Property>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 2156,
+                        "name": "void espreso::computeDOFsCounters(std::vector<espreso::Element*>&, const std::vector<espreso::Property>&, std::vector<int>, const std::vector<int>&, const std::vector<espreso::G2L>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21552816,
+            "scenario": 21724400,
+            "exectime": 1.74857,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 71,
+                        "name": "virtual std::vector<std::__cxx11::basic_string<char> > espreso::ResultStore::store(const string&, const espreso::Step&, const espreso::MeshInfo*)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 14,
+                        "name": "virtual std::__cxx11::string espreso::VTKXML::store(const string&, const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 50,
+                        "name": "virtual void espreso::VTKXML::addData(const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 57,
+                        "name": "virtual void espreso::VTKXMLASCII::storeCellData(const string&, size_t, const std::vector<double>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 21,
+                        "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554176,
+            "scenario": 21553472,
+            "exectime": 0.0706998,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 200,
+                        "name": "void espreso::Factory::loadPhysics(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 211,
+                        "name": "void espreso::FactoryLoader::preprocessMesh()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics3d.cpp",
+                        "line": 15,
+                        "name": "virtual void espreso::Physics3D::prepareHybridTotalFETIWithKernels()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1553,
+                        "name": "virtual void espreso::Mesh::computeFacesSharedByDomains()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1292,
+                        "name": "void espreso::Mesh::fillFacesFromElements(std::function<bool(const std::vector<espreso::Element*>&, const espreso::Element*)>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1871,
+                        "name": "void espreso::Mesh::mapFacesToDomains()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1842,
+                        "name": "void espreso::assignDomains(std::vector<espreso::Element*>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554176,
+            "scenario": 21553472,
+            "exectime": 0.287074,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1881,
+                        "name": "void espreso::Mesh::mapNodesToDomains()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1842,
+                        "name": "void espreso::assignDomains(std::vector<espreso::Element*>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554176,
+            "scenario": 21553472,
+            "exectime": 0.00009707,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1842,
+                        "name": "void espreso::assignDomains(std::vector<espreso::Element*>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21559104,
+            "scenario": 21553472,
+            "exectime": 1.11918,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 200,
+                        "name": "void espreso::Factory::loadPhysics(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 211,
+                        "name": "void espreso::FactoryLoader::preprocessMesh()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics3d.cpp",
+                        "line": 15,
+                        "name": "virtual void espreso::Physics3D::prepareHybridTotalFETIWithKernels()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1553,
+                        "name": "virtual void espreso::Mesh::computeFacesSharedByDomains()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1292,
+                        "name": "void espreso::Mesh::fillFacesFromElements(std::function<bool(const std::vector<espreso::Element*>&, const espreso::Element*)>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 773,
+                        "name": "std::vector<espreso::Element*> espreso::mergeElements(size_t, std::vector<std::vector<espreso::Element*> >&, MergeFunction) [with MergeFunction = espreso::Mesh::fillFacesFromElements(std::function<bool(const std::vector<espreso::Element*>&, const espreso::Element*)>)::<lambda(espreso::Element*, espreso::Element*)>]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21552816,
+            "scenario": 21677408,
+            "exectime": 1.06467,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 71,
+                        "name": "virtual std::vector<std::__cxx11::basic_string<char> > espreso::ResultStore::store(const string&, const espreso::Step&, const espreso::MeshInfo*)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 14,
+                        "name": "virtual std::__cxx11::string espreso::VTKXML::store(const string&, const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 37,
+                        "name": "virtual void espreso::VTKXML::addMesh(const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 42,
+                        "name": "virtual void espreso::VTKXMLASCII::storePointData(const string&, size_t, const std::vector<double>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 21,
+                        "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21558048,
+            "scenario": 21553472,
+            "exectime": 0.0871734,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 200,
+                        "name": "void espreso::Factory::loadPhysics(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 211,
+                        "name": "void espreso::FactoryLoader::preprocessMesh()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics3d.cpp",
+                        "line": 15,
+                        "name": "virtual void espreso::Physics3D::prepareHybridTotalFETIWithKernels()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion3d.cpp",
+                        "line": 31,
+                        "name": "virtual void espreso::AdvectionDiffusion3D::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion.cpp",
+                        "line": 72,
+                        "name": "virtual void espreso::AdvectionDiffusion::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 2127,
+                        "name": "std::vector<long unsigned int> espreso::Mesh::assignUniformDOFsIndicesToNodes(const std::vector<long unsigned int>&, const std::vector<espreso::Property>&, std::vector<long unsigned int>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 2082,
+                        "name": "std::vector<long unsigned int> espreso::fillUniformDOFs(std::vector<espreso::Element*>&, std::vector<std::vector<espreso::Element*> >&, size_t, size_t, const std::vector<long unsigned int>&, const std::vector<long unsigned int>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21556368,
+            "scenario": 21677408,
+            "exectime": 122.293,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linear.cpp",
+                        "line": 16,
+                        "name": "virtual void espreso::LinearTimeStep::solve(espreso::Step&, espreso::LoadStepSolver&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 17,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::updateStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 24,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::reassembleStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 109,
+                        "name": "void espreso::Assembler::updateMatrices(const espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics.cpp",
+                        "line": 42,
+                        "name": "virtual void espreso::Physics::updateMatrix(const espreso::Step&, espreso::Matrices, const std::vector<espreso::Solution*>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21677408,
+            "exectime": 122.656,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linear.cpp",
+                        "line": 16,
+                        "name": "virtual void espreso::LinearTimeStep::solve(espreso::Step&, espreso::LoadStepSolver&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 17,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::updateStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 24,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::reassembleStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 109,
+                        "name": "void espreso::Assembler::updateMatrices(const espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554576,
+            "scenario": 21677408,
+            "exectime": 0.26401,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1345,
+                        "name": "void espreso::Mesh::fillParentElementsToNodes()"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21555872,
+            "scenario": 21752736,
+            "exectime": 0.212987,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 2354,
+                        "name": "void espreso::Mesh::mapCoordinatesToDomains()"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21557712,
+            "scenario": 21677408,
+            "exectime": 0.48947,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 71,
+                        "name": "virtual std::vector<std::__cxx11::basic_string<char> > espreso::ResultStore::store(const string&, const espreso::Step&, const espreso::MeshInfo*)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 14,
+                        "name": "virtual std::__cxx11::string espreso::VTKXML::store(const string&, const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 37,
+                        "name": "virtual void espreso::VTKXML::addMesh(const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 47,
+                        "name": "virtual void espreso::VTKXMLASCII::storeCellData(const string&, size_t, const std::vector<int>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 21,
+                        "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = int]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21739680,
+            "exectime": 14.6237,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21556464,
+            "scenario": 21717712,
+            "exectime": 323.925,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21559584,
+            "scenario": 21739680,
+            "exectime": 0.020845,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 200,
+                        "name": "void espreso::Factory::loadPhysics(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 211,
+                        "name": "void espreso::FactoryLoader::preprocessMesh()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics3d.cpp",
+                        "line": 15,
+                        "name": "virtual void espreso::Physics3D::prepareHybridTotalFETIWithKernels()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion3d.cpp",
+                        "line": 31,
+                        "name": "virtual void espreso::AdvectionDiffusion3D::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "advectiondiffusion.cpp",
+                        "line": 72,
+                        "name": "virtual void espreso::AdvectionDiffusion::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "region.cpp",
+                        "line": 24,
+                        "name": "void espreso::Region::computeArea(const espreso::Coordinates&) const"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21677408,
+            "exectime": 0.191506,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linear.cpp",
+                        "line": 16,
+                        "name": "virtual void espreso::LinearTimeStep::solve(espreso::Step&, espreso::LoadStepSolver&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 169,
+                        "name": "void espreso::Assembler::solve(const espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 64,
+                        "name": "virtual void espreso::FETISolver::update(espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 654,
+                        "name": "void espreso::FETISolver::init(const std::vector<int>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "FETISolver.cpp",
+                        "line": 138,
+                        "name": "void espreso::FETISolver::setup_HTFETI()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21739680,
+            "exectime": 88.705,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21553472,
+            "exectime": 53.395,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linear.cpp",
+                        "line": 16,
+                        "name": "virtual void espreso::LinearTimeStep::solve(espreso::Step&, espreso::LoadStepSolver&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 169,
+                        "name": "void espreso::Assembler::solve(const espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21556560,
+            "scenario": 21724400,
+            "exectime": 0.154045,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 208,
+                        "name": "virtual void espreso::input::Grid::elements(std::vector<long unsigned int>&, std::vector<espreso::Element*>&, std::vector<espreso::Element*>&, std::vector<espreso::Element*>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "block.hpp",
+                        "line": 83,
+                        "name": "void espreso::input::Block<TElement>::elements(std::vector<espreso::Element*>&, size_t) [with TElement = espreso::input::Hexahedron8]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554176,
+            "scenario": 21553472,
+            "exectime": 0.000114482,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 35,
+                        "name": "espreso::Factory::Factory(const espreso::GlobalConfiguration&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 23,
+                        "name": "static void espreso::input::Loader::load(const espreso::GlobalConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "generator.cpp",
+                        "line": 14,
+                        "name": "static void espreso::input::Generator::generate(const espreso::ESPRESOGenerator&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "grid.cpp",
+                        "line": 69,
+                        "name": "static void espreso::input::Grid::load(const espreso::GridConfiguration&, espreso::Mesh&, size_t, size_t)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loader.cpp",
+                        "line": 41,
+                        "name": "void espreso::input::Loader::fill()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1871,
+                        "name": "void espreso::Mesh::mapFacesToDomains()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "mesh.cpp",
+                        "line": 1842,
+                        "name": "void espreso::assignDomains(std::vector<espreso::Element*>&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21553744,
+            "scenario": 21739680,
+            "exectime": 10.1092,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 60,
+                        "name": "void espreso::ResultStore::prepare()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "distributedinfo.cpp",
+                        "line": 44,
+                        "name": "espreso::DistributedInfo::DistributedInfo(const espreso::Mesh*, double, double, espreso::MeshInfo::InfoMode)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "distributedinfo.cpp",
+                        "line": 91,
+                        "name": "void espreso::DistributedInfo::prepare(const std::vector<espreso::Element*>&, espreso::MeshInfo::InfoMode)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21552816,
+            "scenario": 21718848,
+            "exectime": 0.380238,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 71,
+                        "name": "virtual std::vector<std::__cxx11::basic_string<char> > espreso::ResultStore::store(const string&, const espreso::Step&, const espreso::MeshInfo*)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 14,
+                        "name": "virtual std::__cxx11::string espreso::VTKXML::store(const string&, const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxml.cpp",
+                        "line": 50,
+                        "name": "virtual void espreso::VTKXML::addData(const espreso::RegionData&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 42,
+                        "name": "virtual void espreso::VTKXMLASCII::storePointData(const string&, size_t, const std::vector<double>&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "vtkxmlascii.cpp",
+                        "line": 21,
+                        "name": "void storeData(std::ofstream&, const string&, const string&, size_t, const std::vector<TType>&) [with TType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21555408,
+            "scenario": 21553472,
+            "exectime": 0.316635,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linear.cpp",
+                        "line": 16,
+                        "name": "virtual void espreso::LinearTimeStep::solve(espreso::Step&, espreso::LoadStepSolver&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 17,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::updateStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 24,
+                        "name": "virtual espreso::Matrices espreso::SteadyStateSolver::reassembleStructuralMatrices(espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 109,
+                        "name": "void espreso::Assembler::updateMatrices(const espreso::Step&, espreso::Matrices)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "physics.cpp",
+                        "line": 448,
+                        "name": "virtual void espreso::Physics::assembleB1(const espreso::Step&, bool, bool, bool)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "equalityconstraints.cpp",
+                        "line": 289,
+                        "name": "void espreso::EqualityConstraints::insertElementGluingToB1(const espreso::Step&, bool, bool)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21553280,
+            "scenario": 21553472,
+            "exectime": 0.135966,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 140,
+                        "name": "virtual void espreso::ResultStore::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "resultstore.cpp",
+                        "line": 71,
+                        "name": "virtual std::vector<std::__cxx11::basic_string<char> > espreso::ResultStore::store(const string&, const espreso::Step&, const espreso::MeshInfo*)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "utils.cpp",
+                        "line": 9,
+                        "name": "static std::__cxx11::string espreso::Esutils::createDirectory(const std::vector<std::__cxx11::basic_string<char> >&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21558256,
+            "scenario": 21553472,
+            "exectime": 0.52858,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 30,
+                        "name": "virtual void espreso::SteadyStateSolver::runNextTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "steadystate.cpp",
+                        "line": 38,
+                        "name": "virtual void espreso::SteadyStateSolver::processTimeStep(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 199,
+                        "name": "void espreso::Assembler::storeSolution(const espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "monitoring.cpp",
+                        "line": 136,
+                        "name": "virtual void espreso::Monitoring::storeSolution(const espreso::Step&, const std::vector<espreso::Solution*>&, const std::vector<std::pair<espreso::ElementType, espreso::Property> >&)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 21554080,
+            "scenario": 21553472,
+            "exectime": 0.0408917,
+            "iid": 21520496,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "espreso.cpp",
+                        "line": 38,
+                        "name": "Main"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "factory.cpp",
+                        "line": 55,
+                        "name": "void espreso::Factory::solve()"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "loadstepsolver.cpp",
+                        "line": 52,
+                        "name": "void espreso::LoadStepSolver::run(espreso::Step&)"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "assembler.cpp",
+                        "line": 485,
+                        "name": "void espreso::Assembler::timeWrapper(const string&, std::function<void()>)"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 21677408,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 8
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "id": 21752736,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 4
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "id": 21739680,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "id": 21718848,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 10
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "id": 21553472,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 2
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "id": 21717712,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 1400
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 12
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2300
+                }
+            ]
+        },
+        {
+            "id": 21724400,
+            "configuration": [
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1200,
+                    "step": 200,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "NUMTHREADS",
+                    "start": 2,
+                    "step": 2,
+                    "end": 12,
+                    "value": 6
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 200,
+                    "end": 2500,
+                    "value": 2500
+                }
+            ]
+        }
+    ]
+}

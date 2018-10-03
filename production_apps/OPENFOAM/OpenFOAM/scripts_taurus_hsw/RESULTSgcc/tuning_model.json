@@ -1,0 +1,608 @@
+{
+    "clusters": [],
+    "iids": [
+        {
+            "id": 40246240,
+            "identifiers": [
+                {
+                    "type": "string",
+                    "name": "Thread",
+                    "value": "0"
+                },
+                {
+                    "type": "string",
+                    "name": "Process",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "id": 41007552,
+            "file": "GAMGSolverSolve.C",
+            "line": 33,
+            "name": "virtual Foam::solverPerformance Foam::GAMGSolver::solve(Foam::scalarField&, const scalarField&, Foam::direction) const"
+        },
+        {
+            "id": 38920304,
+            "file": "gaussLaplacianSchemes.C",
+            "line": 114,
+            "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussLaplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvsPatchField, Foam::surfaceMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+        },
+        {
+            "id": 33451984,
+            "file": "simpleFoam.C",
+            "line": 168,
+            "name": "iteration"
+        },
+        {
+            "id": 41035136,
+            "file": "PBiCG.C",
+            "line": 73,
+            "name": "virtual Foam::solverPerformance Foam::PBiCG::solve(Foam::scalarField&, const scalarField&, Foam::direction) const"
+        },
+        {
+            "id": 44606560,
+            "file": "gaussLaplacianSchemes.C",
+            "line": 115,
+            "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussLaplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvsPatchField, Foam::surfaceMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>; GType = double]"
+        },
+        {
+            "id": 42450208,
+            "file": "gaussConvectionScheme.C",
+            "line": 76,
+            "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussConvectionScheme<Type>::fvmDiv(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) const [with Type = Foam::Vector<double>]"
+        }
+    ],
+    "rtss": [
+        {
+            "region": 38920304,
+            "scenario": 36403392,
+            "exectime": 0.143172,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 240,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 208,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "laplacianScheme.C",
+                        "line": 97,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::laplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "gaussLaplacianSchemes.C",
+                        "line": 114,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussLaplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvsPatchField, Foam::surfaceMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 41035136,
+            "scenario": 36403392,
+            "exectime": 1.05389,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrix.C",
+                        "line": 1356,
+                        "name": "Foam::SolverPerformance<Type> Foam::solve(const Foam::tmp<Foam::fvMatrix<Type> >&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 317,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve() [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 57,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 106,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solveSegregated(const Foam::dictionary&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "PBiCG.C",
+                        "line": 73,
+                        "name": "virtual Foam::solverPerformance Foam::PBiCG::solve(Foam::scalarField&, const scalarField&, Foam::direction) const"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 44606560,
+            "scenario": 36413072,
+            "exectime": 0.189283,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "IncompressibleTurbulenceModel.C",
+                        "line": 110,
+                        "name": "Foam::tmp<Foam::fvMatrix<Foam::Vector<double> > > Foam::IncompressibleTurbulenceModel<TransportModel>::divDevReff(Foam::volVectorField&) const [with TransportModel = Foam::transportModel]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "linearViscousStress.C",
+                        "line": 93,
+                        "name": "Foam::tmp<Foam::fvMatrix<Foam::Vector<double> > > Foam::linearViscousStress<BasicTurbulenceModel>::divDevRhoReff(Foam::volVectorField&) const [with BasicTurbulenceModel = Foam::RASModel<Foam::IncompressibleTurbulenceModel<Foam::transportModel> >]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 257,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::tmp<Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh> >&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 240,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 208,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = Foam::Vector<double>; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "laplacianScheme.C",
+                        "line": 97,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::laplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "gaussLaplacianSchemes.C",
+                        "line": 115,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussLaplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvsPatchField, Foam::surfaceMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>; GType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 38920304,
+            "scenario": 36403392,
+            "exectime": 0.185255,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "kOmegaSSTBase.C",
+                        "line": 425,
+                        "name": "void Foam::kOmegaSSTBase<BasicEddyViscosityModel>::correct() [with BasicEddyViscosityModel = Foam::eddyViscosity<Foam::RASModel<Foam::IncompressibleTurbulenceModel<Foam::transportModel> > >]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 257,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::tmp<Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh> >&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 240,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmLaplacian.C",
+                        "line": 208,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::laplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "laplacianScheme.C",
+                        "line": 97,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::laplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvPatchField, Foam::volMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "gaussLaplacianSchemes.C",
+                        "line": 114,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussLaplacianScheme<Type, GType>::fvmLaplacian(const Foam::GeometricField<GType, Foam::fvsPatchField, Foam::surfaceMesh>&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = double; GType = double]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 41007552,
+            "scenario": 36412608,
+            "exectime": 0.557683,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 317,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve() [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 57,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvScalarMatrix.C",
+                        "line": 140,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solveSegregated(const Foam::dictionary&) [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "GAMGSolverSolve.C",
+                        "line": 33,
+                        "name": "virtual Foam::solverPerformance Foam::GAMGSolver::solve(Foam::scalarField&, const scalarField&, Foam::direction) const"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 42450208,
+            "scenario": 36278160,
+            "exectime": 0.168889,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmDiv.C",
+                        "line": 77,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::div(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvmDiv.C",
+                        "line": 45,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fvm::div(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&) [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "boundedConvectionScheme.C",
+                        "line": 76,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::boundedConvectionScheme<Type>::fvmDiv(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) const [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "gaussConvectionScheme.C",
+                        "line": 76,
+                        "name": "Foam::tmp<Foam::fvMatrix<Type> > Foam::fv::gaussConvectionScheme<Type>::fvmDiv(const surfaceScalarField&, const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) const [with Type = Foam::Vector<double>]"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 33451984,
+            "scenario": 36373520,
+            "exectime": 6.45443,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                }
+            ]
+        },
+        {
+            "region": 41035136,
+            "scenario": 36278160,
+            "exectime": 0.373978,
+            "iid": 40246240,
+            "callpath": [
+                {
+                    "region": {
+                        "file": "simpleFoam.C",
+                        "line": 168,
+                        "name": "iteration"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "kOmegaSSTBase.C",
+                        "line": 425,
+                        "name": "void Foam::kOmegaSSTBase<BasicEddyViscosityModel>::correct() [with BasicEddyViscosityModel = Foam::eddyViscosity<Foam::RASModel<Foam::IncompressibleTurbulenceModel<Foam::transportModel> > >]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrix.C",
+                        "line": 1356,
+                        "name": "Foam::SolverPerformance<Type> Foam::solve(const Foam::tmp<Foam::fvMatrix<Type> >&) [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 317,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve() [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvMatrixSolve.C",
+                        "line": 57,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solve(const Foam::dictionary&) [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "fvScalarMatrix.C",
+                        "line": 140,
+                        "name": "Foam::SolverPerformance<Type> Foam::fvMatrix<Type>::solveSegregated(const Foam::dictionary&) [with Type = double]"
+                    },
+                    "identifiers": []
+                },
+                {
+                    "region": {
+                        "file": "PBiCG.C",
+                        "line": 73,
+                        "name": "virtual Foam::solverPerformance Foam::PBiCG::solve(Foam::scalarField&, const scalarField&, Foam::direction) const"
+                    },
+                    "identifiers": []
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "id": 36412608,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 1800
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1700
+                }
+            ]
+        },
+        {
+            "id": 36373520,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 2200
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1300
+                }
+            ]
+        },
+        {
+            "id": 36278160,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 3000
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1700
+                }
+            ]
+        },
+        {
+            "id": 36403392,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 2600
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1300
+                }
+            ]
+        },
+        {
+            "id": 36413072,
+            "configuration": [
+                {
+                    "id": "NUMTHREADS",
+                    "start": 1,
+                    "step": 1,
+                    "end": 1,
+                    "value": 1
+                },
+                {
+                    "id": "UNCORE_FREQ",
+                    "start": 1400,
+                    "step": 400,
+                    "end": 3000,
+                    "value": 1400
+                },
+                {
+                    "id": "CPU_FREQ",
+                    "start": 1300,
+                    "step": 400,
+                    "end": 2500,
+                    "value": 1300
+                }
+            ]
+        }
+    ]
+}
